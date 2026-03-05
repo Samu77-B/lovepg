@@ -1,0 +1,164 @@
+/* Modern Hamburger Menu CSS - Mobile First Approach */
+
+/* Main Navigation - Hide on mobile, show on desktop */
+.nav-links {
+  display: none;
+}
+
+@media (min-width: 769px) {
+  .nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 30px;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #8BC34A;
+  }
+}
+
+/* Hamburger Menu Styling - Simple White Lines */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 22px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin-left: 20px;
+  z-index: 1002;
+}
+
+.hamburger span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Hamburger animation when active */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(10px, 10px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -7px);
+}
+
+/* Mobile Navigation Menu */
+.mobile-nav-links {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(34, 34, 34, 0.98);
+  backdrop-filter: blur(10px);
+  list-style: none;
+  margin: 0;
+  padding: 80px 20px 20px 20px;
+  z-index: 1000;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 30px;
+}
+
+.mobile-nav-links.show {
+  display: flex;
+}
+
+.mobile-nav-links li {
+  width: 100%;
+  text-align: center;
+}
+
+.mobile-nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: 500;
+  padding: 15px 20px;
+  display: block;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  background: transparent;
+}
+
+.mobile-nav-links a:hover {
+  background-color: rgba(139, 195, 74, 0.2);
+  color: #8BC34A;
+  transform: translateY(-2px);
+}
+
+/* Hide hamburger on desktop */
+@media (min-width: 769px) {
+  .hamburger {
+    display: none;
+  }
+  
+  .mobile-nav-links {
+    display: none !important;
+  }
+}
+
+/* Show hamburger on mobile */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex !important;
+  }
+  
+  .nav-links {
+    display: none;
+  }
+}
+
+/* Style for the expanded menu when clicked */
+.w-nav-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+/* Ensure menu button is positioned correctly */
+.w-nav-button {
+  position: relative;
+  float: right;
+  cursor: pointer;
+}
+
+/* Make the expanded menu fullscreen */
+.w-nav-overlay [data-nav-menu-open] {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  background-color: #333;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  width: 200px !important;
+}
+
+/* Style for menu items in the dropdown */

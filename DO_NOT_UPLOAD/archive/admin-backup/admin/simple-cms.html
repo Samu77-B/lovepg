@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loves Palmers Green - Simple CMS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c5530;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #333;
+        }
+        input[type="text"], textarea, input[type="file"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        textarea {
+            height: 150px;
+            resize: vertical;
+        }
+        button {
+            background-color: #2c5530;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+        button:hover {
+            background-color: #1e3a21;
+        }
+        .stories-list {
+            margin-top: 40px;
+        }
+        .story-item {
+            background: #f9f9f9;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+            border-left: 4px solid #2c5530;
+        }
+        .story-title {
+            font-weight: bold;
+            color: #2c5530;
+            margin-bottom: 5px;
+        }
+        .story-meta {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+        .story-description {
+            color: #333;
+        }
+        .delete-btn {
+            background-color: #dc3545;
+            padding: 5px 10px;
+            font-size: 12px;
+        }
+        .delete-btn:hover {
+            background-color: #c82333;
+        }
+        .success-message {
+            background-color: #d4edda;
+            color: #155724;
+            padding: 10px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Loves Palmers Green - Story Manager</h1>
+        
+        <div id="successMessage" class="success-message">
+            Story saved successfully!
+        </div>
+
+        <form id="storyForm">
+            <div class="form-group">
+                <label for="title">Story Title:</label>
+                <input type="text" id="title" name="title" required>
+            </div>
+
+            <div class="form-group">
+                <label for="description">Story Description:</label>
+                <textarea id="description" name="description" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="author">Author:</label>
+                <input type="text" id="author" name="author" required>
+            </div>
+
+            <div class="form-group">
+                <label for="image">Image (URL):</label>
+                <input type="text" id="image" name="image" placeholder="https://example.com/image.jpg">
+            </div>
+
+            <div class="form-group">
+                <label for="visible">Visible:</label>
+                <input type="checkbox" id="visible" name="visible" checked>
+                <span>Show this story on the website</span>
+            </div>
+
+            <button type="submit">Save Story</button>
+            <button type="button" onclick="clearForm()">Clear Form</button>
+        </form>
+
+        <div class="stories-list">
+            <h2>Existing Stories</h2>
+            <div id="storiesList"></div>
+        </div>
+    </div>
+
+    <script>
+        // Load existing stories from localStorage
+        let stories = JSON.parse(localStorage.getItem('lpg_stories') || '[]');
+
+        // Display stories
+        function displayStories() {
+            const storiesList = document.getElementById('storiesList');
+            storiesList.innerHTML = '';
+
+            stories.forEach((story, index) => {
+                const storyDiv = document.createElement('div');
+                storyDiv.className = 'story-item';
+                storyDiv.innerHTML = `
+                    <div class="story-title">${story.title}</div>
+                    <div class="story-meta">By ${story.author} on ${story.date}</div>
+                    <div class="story-description">${story.description}</div>
+                    <button class="delete-btn" onclick="deleteStory(${index})">Delete</button>
+                `;
+                storiesList.appendChild(storyDiv);
+            });
+        }
+
+        // Save story
+        document.getElementById('storyForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(e.target);
+            const story = {
+                title: formData.get('title'),
+                description: formData.get('description'),
+                author: formData.get('author'),
+                image: formData.get('image'),
+                visible: formData.get('visible') === 'on',
+                date: new Date().toISOString().split('T')[0],
+                id: Date.now()
+            };
+
+            stories.push(story);
+            localStorage.setItem('lpg_stories', JSON.stringify(stories));
+            
+            displayStories();
+            clearForm();
+            
+            // Show success message
+            const successMessage = document.getElementById('successMessage');
+            successMessage.style.display = 'block';
+            setTimeout(() => {
+                successMessage.style.display = 'none';
+            }, 3000);
+        });
+
+        // Delete story
+        function deleteStory(index) {
+            if (confirm('Are you sure you want to delete this story?')) {
+                stories.splice(index, 1);
+                localStorage.setItem('lpg_stories', JSON.stringify(stories));
+                displayStories();
+            }
+        }
+
+        // Clear form
+        function clearForm() {
+            document.getElementById('storyForm').reset();
+        }
+
+        // Initialize display
+        displayStories();
+
+        // Export stories to JSON file (for backup/transfer)
+        function exportStories() {
+            const dataStr = JSON.stringify(stories, null, 2);
+            const dataBlob = new Blob([dataStr], {type: 'application/json'});
+            const url = URL.createObjectURL(dataBlob);
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = 'stories.json';
+            link.click();
+        }
+
+        // Add export button
+        const exportBtn = document.createElement('button');
+        exportBtn.textContent = 'Export Stories';
+        exportBtn.onclick = exportStories;
+        exportBtn.style.marginTop = '20px';
+        document.querySelector('.container').appendChild(exportBtn);
+    </script>
+</body>
+</html> 

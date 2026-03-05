@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loves Palmers Green - Database CMS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c5530;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #333;
+        }
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+        textarea {
+            height: 150px;
+            resize: vertical;
+        }
+        button {
+            background-color: #2c5530;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+        button:hover {
+            background-color: #1e3a21;
+        }
+        .stories-list {
+            margin-top: 40px;
+        }
+        .story-item {
+            background: #f9f9f9;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #2c5530;
+            position: relative;
+        }
+        .story-title {
+            font-weight: bold;
+            color: #2c5530;
+            margin-bottom: 5px;
+            font-size: 18px;
+        }
+        .story-meta {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+        .story-description {
+            color: #333;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+        .story-image {
+            max-width: 200px;
+            max-height: 150px;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+        .story-actions {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        .edit-btn {
+            background-color: #007bff;
+            padding: 8px 16px;
+            font-size: 14px;
+            margin-right: 10px;
+        }
+        .edit-btn:hover {
+            background-color: #0056b3;
+        }
+        .delete-btn {
+            background-color: #dc3545;
+            padding: 8px 16px;
+            font-size: 14px;
+        }
+        .delete-btn:hover {
+            background-color: #c82333;
+        }
+        .success-message {
+            background-color: #d4edda;
+            color: #155724;
+            padding: 15px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            display: none;
+        }
+        .error-message {
+            background-color: #f8d7da;
+            color: #721c24;
+            padding: 15px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            display: none;
+        }
+        .loading {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+        }
+        .visible-badge {
+            background-color: #28a745;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-size: 12px;
+            margin-left: 10px;
+        }
+        .hidden-badge {
+            background-color: #6c757d;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-size: 12px;
+            margin-left: 10px;
+        }
+        .image-upload-container {
+            border: 2px dashed #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            background-color: #fafafa;
+            transition: border-color 0.3s;
+        }
+        .image-upload-container:hover {
+            border-color: #2c5530;
+        }
+        .image-upload-container.dragover {
+            border-color: #2c5530;
+            background-color: #f0f8f0;
+        }
+        .image-preview {
+            max-width: 200px;
+            max-height: 150px;
+            margin: 10px 0;
+            border-radius: 4px;
+            display: none;
+        }
+        .upload-btn {
+            background-color: #6c757d;
+            margin-top: 10px;
+        }
+        .upload-btn:hover {
+            background-color: #545b62;
+        }
+        .remove-image-btn {
+            background-color: #dc3545;
+            padding: 5px 10px;
+            font-size: 12px;
+            margin-top: 5px;
+        }
+        .remove-image-btn:hover {
+            background-color: #c82333;
+        }
+        .file-info {
+            font-size: 14px;
+            color: #666;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Loves Palmers Green - Story Manager</h1>
+        
+        <div id="successMessage" class="success-message">
+            Story saved successfully!
+        </div>
+        
+        <div id="errorMessage" class="error-message">
+            Error occurred!
+        </div>
+
+        <form id="storyForm">
+            <input type="hidden" id="storyId" name="storyId">
+            <input type="hidden" id="imageUrl" name="imageUrl">
+            
+            <div class="form-group">
+                <label for="title">Story Title:</label>
+                <input type="text" id="title" name="title" required>
+            </div>
+
+            <div class="form-group">
+                <label for="description">Story Description:</label>
+                <textarea id="description" name="description" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="author">Author:</label>
+                <input type="text" id="author" name="author" required>
+            </div>
+
+            <div class="form-group">
+                <label for="image">Story Image:</label>
+                <div class="image-upload-container" id="imageUploadContainer">
+                    <div id="uploadText">
+                        <p>Drag and drop an image here, or click to select</p>
+                        <p><small>Supported formats: JPG, PNG, GIF, WebP (max 5MB)</small></p>
+                    </div>
+                    <input type="file" id="imageFile" accept="image/*" style="display: none;">
+                    <button type="button" class="upload-btn" onclick="document.getElementById('imageFile').click()">
+                        Choose Image
+                    </button>
+                    <img id="imagePreview" class="image-preview" alt="Preview">
+                    <div id="fileInfo" class="file-info"></div>
+                    <button type="button" id="removeImageBtn" class="remove-image-btn" style="display: none;" onclick="removeImage()">
+                        Remove Image
+                    </button>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="visible">Visible:</label>
+                <input type="checkbox" id="visible" name="visible" checked>
+                <span>Show this story on the website</span>
+            </div>
+
+            <button type="submit" id="submitBtn">Save Story</button>
+            <button type="button" onclick="clearForm()">Clear Form</button>
+            <button type="button" onclick="loadStories()">Refresh Stories</button>
+        </form>
+
+        <div class="stories-list">
+            <h2>Existing Stories</h2>
+            <div id="storiesList">
+                <div class="loading">Loading stories...</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const API_URL = 'api/stories.php';
+        const UPLOAD_URL = 'api/upload.php';
+        let editingId = null;
+        let currentImageUrl = '';
+
+        // Load stories on page load
+        document.addEventListener('DOMContentLoaded', loadStories);
+
+        // Image upload handling
+        const imageUploadContainer = document.getElementById('imageUploadContainer');
+        const imageFile = document.getElementById('imageFile');
+        const imagePreview = document.getElementById('imagePreview');
+        const uploadText = document.getElementById('uploadText');
+        const fileInfo = document.getElementById('fileInfo');
+        const removeImageBtn = document.getElementById('removeImageBtn');
+
+        // Drag and drop functionality
+        imageUploadContainer.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            imageUploadContainer.classList.add('dragover');
+        });
+
+        imageUploadContainer.addEventListener('dragleave', () => {
+            imageUploadContainer.classList.remove('dragover');
+        });
+
+        imageUploadContainer.addEventListener('drop', (e) => {
+            e.preventDefault();
+            imageUploadContainer.classList.remove('dragover');
+            const files = e.dataTransfer.files;
+            if (files.length > 0) {
+                handleImageFile(files[0]);
+            }
+        });
+
+        imageFile.addEventListener('change', (e) => {
+            if (e.target.files.length > 0) {
+                handleImageFile(e.target.files[0]);
+            }
+        });
+
+        function handleImageFile(file) {
+            // Validate file type
+            if (!file.type.startsWith('image/')) {
+                showError('Please select an image file');
+                return;
+            }
+
+            // Validate file size (5MB)
+            if (file.size > 5 * 1024 * 1024) {
+                showError('File size must be less than 5MB');
+                return;
+            }
+
+            // Show preview
+            const reader = new FileReader();
+            reader.onload = (e) => {
+                imagePreview.src = e.target.result;
+                imagePreview.style.display = 'block';
+                uploadText.style.display = 'none';
+                fileInfo.textContent = `File: ${file.name} (${(file.size / 1024 / 1024).toFixed(2)}MB)`;
+                removeImageBtn.style.display = 'block';
+            };
+            reader.readAsDataURL(file);
+
+            // Upload file
+            uploadImage(file);
+        }
+
+        async function uploadImage(file) {
+            const formData = new FormData();
+            formData.append('image', file);
+
+            try {
+                const response = await fetch(UPLOAD_URL, {
+                    method: 'POST',
+                    body: formData
+                });
+
+                const result = await response.json();
+                
+                if (result.success) {
+                    currentImageUrl = result.url;
+                    document.getElementById('imageUrl').value = result.url;
+                    showSuccess('Image uploaded successfully!');
+                } else {
+                    showError('Failed to upload image: ' + result.error);
+                }
+            } catch (error) {
+                showError('Error uploading image: ' + error.message);
+            }
+        }
+
+        function removeImage() {
+            imagePreview.style.display = 'none';
+            uploadText.style.display = 'block';
+            fileInfo.textContent = '';
+            removeImageBtn.style.display = 'none';
+            imageFile.value = '';
+            currentImageUrl = '';
+            document.getElementById('imageUrl').value = '';
+        }
+
+        // Load stories from database
+        async function loadStories() {
+            try {
+                const response = await fetch(API_URL);
+                const result = await response.json();
+                
+                if (result.success) {
+                    displayStories(result.data);
+                } else {
+                    showError('Failed to load stories: ' + result.error);
+                }
+            } catch (error) {
+                showError('Error loading stories: ' + error.message);
+            }
+        }
+
+        // Display stories
+        function displayStories(stories) {
+            const storiesList = document.getElementById('storiesList');
+            
+            if (stories.length === 0) {
+                storiesList.innerHTML = '<p>No stories found. Add your first story above!</p>';
+                return;
+            }
+
+            storiesList.innerHTML = '';
+            stories.forEach(story => {
+                const storyDiv = document.createElement('div');
+                storyDiv.className = 'story-item';
+                
+                const imageHtml = story.image_url ? `<img src="${story.image_url}" alt="${story.title}" class="story-image" onerror="this.style.display='none'">` : '';
+                const visibleBadge = story.visible == 1 ? 
+                    '<span class="visible-badge">Visible</span>' : 
+                    '<span class="hidden-badge">Hidden</span>';
+                
+                storyDiv.innerHTML = `
+                    <div class="story-actions">
+                        <button class="edit-btn" onclick="editStory(${story.id})">Edit</button>
+                        <button class="delete-btn" onclick="deleteStory(${story.id})">Delete</button>
+                    </div>
+                    <div class="story-title">${story.title} ${visibleBadge}</div>
+                    <div class="story-meta">By ${story.author} on ${formatDate(story.created_date)}</div>
+                    ${imageHtml}
+                    <div class="story-description">${story.description}</div>
+                `;
+                storiesList.appendChild(storyDiv);
+            });
+        }
+
+        // Save story
+        document.getElementById('storyForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(e.target);
+            const storyData = {
+                title: formData.get('title'),
+                description: formData.get('description'),
+                author: formData.get('author'),
+                image_url: currentImageUrl || formData.get('imageUrl'),
+                visible: formData.get('visible') === 'on'
+            };
+
+            if (editingId) {
+                storyData.id = editingId;
+            }
+
+            try {
+                const response = await fetch(API_URL, {
+                    method: editingId ? 'PUT' : 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(storyData)
+                });
+
+                const result = await response.json();
+                
+                if (result.success) {
+                    showSuccess(editingId ? 'Story updated successfully!' : 'Story created successfully!');
+                    clearForm();
+                    loadStories();
+                } else {
+                    showError('Failed to save story: ' + result.error);
+                }
+            } catch (error) {
+                showError('Error saving story: ' + error.message);
+            }
+        });
+
+        // Edit story
+        async function editStory(id) {
+            try {
+                const response = await fetch(API_URL);
+                const result = await response.json();
+                
+                if (result.success) {
+                    const story = result.data.find(s => s.id == id);
+                    if (story) {
+                        document.getElementById('storyId').value = story.id;
+                        document.getElementById('title').value = story.title;
+                        document.getElementById('description').value = story.description;
+                        document.getElementById('author').value = story.author;
+                        document.getElementById('visible').checked = story.visible == 1;
+                        
+                        // Handle image
+                        if (story.image_url) {
+                            currentImageUrl = story.image_url;
+                            document.getElementById('imageUrl').value = story.image_url;
+                            imagePreview.src = story.image_url;
+                            imagePreview.style.display = 'block';
+                            uploadText.style.display = 'none';
+                            fileInfo.textContent = 'Image from database';
+                            removeImageBtn.style.display = 'block';
+                        } else {
+                            removeImage();
+                        }
+                        
+                        editingId = story.id;
+                        document.getElementById('submitBtn').textContent = 'Update Story';
+                        
+                        // Scroll to form
+                        document.getElementById('storyForm').scrollIntoView({ behavior: 'smooth' });
+                    }
+                }
+            } catch (error) {
+                showError('Error loading story for editing: ' + error.message);
+            }
+        }
+
+        // Delete story
+        async function deleteStory(id) {
+            if (confirm('Are you sure you want to delete this story? This action cannot be undone.')) {
+                try {
+                    const response = await fetch(`${API_URL}?id=${id}`, {
+                        method: 'DELETE'
+                    });
+
+                    const result = await response.json();
+                    
+                    if (result.success) {
+                        showSuccess('Story deleted successfully!');
+                        loadStories();
+                    } else {
+                        showError('Failed to delete story: ' + result.error);
+                    }
+                } catch (error) {
+                    showError('Error deleting story: ' + error.message);
+                }
+            }
+        }
+
+        // Clear form
+        function clearForm() {
+            document.getElementById('storyForm').reset();
+            document.getElementById('storyId').value = '';
+            editingId = null;
+            document.getElementById('submitBtn').textContent = 'Save Story';
+            removeImage();
+        }
+
+        // Show success message
+        function showSuccess(message) {
+            const successMessage = document.getElementById('successMessage');
+            successMessage.textContent = message;
+            successMessage.style.display = 'block';
+            setTimeout(() => {
+                successMessage.style.display = 'none';
+            }, 3000);
+        }
+
+        // Show error message
+        function showError(message) {
+            const errorMessage = document.getElementById('errorMessage');
+            errorMessage.textContent = message;
+            errorMessage.style.display = 'block';
+            setTimeout(() => {
+                errorMessage.style.display = 'none';
+            }, 5000);
+        }
+
+        // Format date
+        function formatDate(dateString) {
+            const date = new Date(dateString);
+            return date.toLocaleDateString('en-GB', {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+            });
+        }
+    </script>
+</body>
+</html> 

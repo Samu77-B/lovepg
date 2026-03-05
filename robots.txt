@@ -1,0 +1,24 @@
+# robots.txt for Love Palmers Green
+# https://www.robotstxt.org/robotstxt.html
+
+User-agent: *
+Allow: /
+
+# Disallow admin and private directories
+Disallow: /DO_NOT_UPLOAD/
+Disallow: /uploads/
+Disallow: /*.txt$
+Disallow: /get-stories.php
+
+# Allow important resources
+Allow: /css/
+Allow: /js/
+Allow: /images/
+Allow: /favicon/
+
+# Sitemap location (dynamic PHP-based sitemap)
+# The sitemap.php file automatically uses your current domain
+Sitemap: https://lovepalmersgreen.com/sitemap.php
+
+# Crawl-delay (optional, adjust as needed)
+Crawl-delay: 1

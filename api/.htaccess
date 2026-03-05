@@ -1,0 +1,18 @@
+# Protect API directory
+# Only allow POST requests to API endpoints
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    # Block direct access to config files
+    RewriteRule ^.*config.*$ - [F,L]
+</IfModule>
+
+# Block access to sensitive files
+<FilesMatch "^(config|\.env|\.git|composer\.(json|lock))$">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order deny,allow
+        Deny from all
+    </IfModule>
+</FilesMatch>

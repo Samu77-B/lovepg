@@ -1,0 +1,191 @@
+# =============================================================================
+# Love Palmers Green - Enhanced Security Configuration
+# Last Updated: 2026-01-12
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# 1. CROSS-SITE CONTAMINATION PROTECTION
+# Prevents symlink attacks - a script in one site cannot read another site
+# -----------------------------------------------------------------------------
+Options -FollowSymLinks
+Options +SymLinksIfOwnerMatch
+
+# -----------------------------------------------------------------------------
+# 2. DIRECTORY BROWSING PROTECTION
+# Prevents hackers from seeing your file structure
+# -----------------------------------------------------------------------------
+Options -Indexes
+
+# -----------------------------------------------------------------------------
+# 3. DISABLE DANGEROUS HTTP METHODS
+# Only allow GET, POST, and HEAD requests
+# -----------------------------------------------------------------------------
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{REQUEST_METHOD} !^(GET|POST|HEAD)$ [NC]
+    RewriteRule .* - [F,L]
+</IfModule>
+
+# -----------------------------------------------------------------------------
+# 4. PROTECT SENSITIVE FILES
+# Block access to config files, logs, and system files
+# -----------------------------------------------------------------------------
+<FilesMatch "^(\.htaccess|\.htpasswd|\.user\.ini|php\.ini|error_log|\.git|\.env|composer\.(json|lock)|package(-lock)?\.json|\.DS_Store|Thumbs\.db)$">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order deny,allow
+        Deny from all
+    </IfModule>
+</FilesMatch>
+
+# Block access to backup and config files by extension
+<FilesMatch "\.(bak|backup|old|orig|save|swp|tmp|log|sql|ini|conf|config|dist|inc|sh|bash)$">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order deny,allow
+        Deny from all
+    </IfModule>
+</FilesMatch>
+
+# Protect secure configuration file
+<FilesMatch "^(config-secure\.php)$">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order deny,allow
+        Deny from all
+    </IfModule>
+</FilesMatch>
+
+# -----------------------------------------------------------------------------
+# 5. BLOCK MALICIOUS QUERY STRING INJECTIONS
+# Prevents common attack patterns including script injection
+# -----------------------------------------------------------------------------
+<IfModule mod_rewrite.c>
+    # Block script injections
+    RewriteCond %{QUERY_STRING} (<|%3C).*script.*(>|%3E) [NC,OR]
+    # Block GLOBALS variable exploits
+    RewriteCond %{QUERY_STRING} GLOBALS(=|\[|\%[0-9A-Z]{0,2}) [NC,OR]
+    # Block _REQUEST variable exploits
+    RewriteCond %{QUERY_STRING} _REQUEST(=|\[|\%[0-9A-Z]{0,2}) [NC,OR]
+    # Block base64 encoded attacks
+    RewriteCond %{QUERY_STRING} base64_(en|de)code[^(]*\([^)]*\) [NC,OR]
+    # Block common shell commands
+    RewriteCond %{QUERY_STRING} (bash|nc|netcat|perl|python|ruby|wget|curl|lwp-request) [NC,OR]
+    # Block file inclusion attempts
+    RewriteCond %{QUERY_STRING} (\.\.\/|\.\.\\) [NC,OR]
+    # Block null byte attacks
+    RewriteCond %{QUERY_STRING} (\0|%00|%2500) [NC]
+    RewriteRule .* - [F,L]
+</IfModule>
+
+# -----------------------------------------------------------------------------
+# 6. BLOCK COMMON EXPLOIT USER AGENTS
+# -----------------------------------------------------------------------------
+<IfModule mod_rewrite.c>
+    RewriteCond %{HTTP_USER_AGENT} (libwww-perl|wget|python|nikto|curl|scan|java|winhttp|clshttp|loader) [NC,OR]
+    RewriteCond %{HTTP_USER_AGENT} (<|>|'|%0A|%0D|%27|%3C|%3E|%00) [NC,OR]
+    RewriteCond %{HTTP_USER_AGENT} (;|<|>|'|"|\)|\(|%0A|%0D|%22|%27|%28|%29|%3C|%3E|%00).*(libwww-perl|wget|python|nikto|curl|scan|java|winhttp|HTTrack|clshttp|archiver|loader|email|harvest|extract|grab|miner|fetch) [NC]
+    RewriteRule .* - [F,L]
+</IfModule>
+
+# -----------------------------------------------------------------------------
+# 7. BLOCK ACCESS TO HIDDEN DIRECTORIES AND FILES
+# Blocks access to .git, .svn, etc.
+# -----------------------------------------------------------------------------
+<IfModule mod_rewrite.c>
+    RewriteRule "(^|/)\.(?!well-known)" - [F]
+</IfModule>
+
+# -----------------------------------------------------------------------------
+# 8. DISABLE SERVER SIGNATURE
+# Hides server version info from attackers
+# -----------------------------------------------------------------------------
+ServerSignature Off
+
+# -----------------------------------------------------------------------------
+# 9. SITEMAP REDIRECT (Existing functionality)
+# -----------------------------------------------------------------------------
+<IfModule mod_rewrite.c>
+    RewriteRule ^sitemap\.xml$ sitemap.php [L]
+</IfModule>
+
+# -----------------------------------------------------------------------------
+# 10. FORCE HTTPS (Enable when SSL certificate is configured)
+# -----------------------------------------------------------------------------
+<IfModule mod_rewrite.c>
+    # Only redirect to HTTPS if not localhost (for development)
+    RewriteCond %{HTTPS} off
+    RewriteCond %{HTTP_HOST} !^localhost [NC]
+    RewriteCond %{HTTP_HOST} !^127\.0\.0\.1 [NC]
+    RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>
+
+# -----------------------------------------------------------------------------
+# 11. SECURITY HEADERS
+# Protects against clickjacking, XSS, MIME sniffing, etc.
+# -----------------------------------------------------------------------------
+<IfModule mod_headers.c>
+    # Prevent clickjacking
+    Header always set X-Frame-Options "SAMEORIGIN"
+    
+    # XSS Protection
+    Header always set X-XSS-Protection "1; mode=block"
+    
+    # Prevent MIME type sniffing
+    Header always set X-Content-Type-Options "nosniff"
+    
+    # Referrer Policy
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    
+    # Permissions Policy (restricts browser features)
+    Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+    
+    # Content Security Policy (protects against XSS attacks)
+    # Note: 'unsafe-inline' is needed for inline scripts/styles - consider moving to external files for better security
+    Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https://api.rss2json.com; frame-ancestors 'self'; base-uri 'self';"
+    
+    # Remove PHP version header
+    Header unset X-Powered-By
+</IfModule>
+
+# -----------------------------------------------------------------------------
+# 12. COMPRESSION (Performance + Security)
+# -----------------------------------------------------------------------------
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json application/xml
+</IfModule>
+
+# -----------------------------------------------------------------------------
+# 13. BROWSER CACHING (Performance)
+# -----------------------------------------------------------------------------
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType image/jpg "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType image/x-icon "access plus 1 year"
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    ExpiresByType application/x-font-woff "access plus 1 year"
+    ExpiresByType application/x-font-woff2 "access plus 1 year"
+    ExpiresByType font/woff "access plus 1 year"
+    ExpiresByType font/woff2 "access plus 1 year"
+    ExpiresByType text/html "access plus 0 seconds"
+</IfModule>
+
+# -----------------------------------------------------------------------------
+# 14. LIMIT FILE UPLOAD SIZE (adjust as needed)
+# -----------------------------------------------------------------------------
+<IfModule mod_php.c>
+    php_value upload_max_filesize 5M
+    php_value post_max_size 5M
+</IfModule>
