@@ -725,62 +725,138 @@
               }
               </script>
               
-              <!-- Sample news articles layout using full width -->
-              <div id="local-news-grid" class="news-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-top: 20px; width: 100%;">
+              <!-- Local news grid -->
+              <div id="local-news-grid" class="local-news-grid">
                 <!-- Sample news article 1 -->
-                <article class="news-article" itemscope itemtype="https://schema.org/NewsArticle" style="border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); background-color: #fff; padding: 20px; transition: transform 0.2s ease;">
-                  <h3 itemprop="headline" style="font-size: 1.4em; margin-bottom: 10px;">Palmers Green Triangle Park Renovation Complete</h3>
-                  <p class="news-date" style="color: #666; font-size: 14px; margin-bottom: 10px;"><i class="fas fa-calendar-alt" style="margin-right: 5px;"></i><time itemprop="datePublished" datetime="2025-06-27">27 June 2025</time></p>
-                  <p itemprop="description" style="margin-bottom: 15px;">The renovation of Palmers Green Triangle Park has been completed. The new park features improved landscaping, seating areas, and sustainable planting designed to enhance biodiversity in the area.</p>
-                  <a href="https://letstalk.enfield.gov.uk/triangle" target="_blank" rel="noopener noreferrer" itemprop="url" class="news-link" style="display: inline-block; background: linear-gradient(to bottom, #555555, #333333, #222222); color: white; padding: 8px 15px; border-radius: 4px; text-decoration: none; font-size: 14px;">Read More</a>
+                <article class="news-article news-card" itemscope itemtype="https://schema.org/NewsArticle">
+                  <h3 itemprop="headline" class="news-card__title">Palmers Green Triangle Park Renovation Complete</h3>
+                  <p class="news-date news-card__date"><i class="fas fa-calendar-alt" aria-hidden="true"></i><time itemprop="datePublished" datetime="2025-06-27">27 June 2025</time></p>
+                  <p itemprop="description" class="news-card__description">The renovation of Palmers Green Triangle Park has been completed. The new park features improved landscaping, seating areas, and sustainable planting designed to enhance biodiversity in the area.</p>
+                  <a href="https://letstalk.enfield.gov.uk/triangle" target="_blank" rel="noopener noreferrer" itemprop="url" class="news-link news-card__link">Read More</a>
                 </article>
                 
                 <!-- Sample news article 2 -->
-                <article class="news-article" itemscope itemtype="https://schema.org/NewsArticle" style="border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); background-color: #fff; padding: 20px; transition: transform 0.2s ease;">
-                  <h3 itemprop="headline" style="font-size: 1.4em; margin-bottom: 10px;">New Independent Bookshop Opens on Green Lanes</h3>
-                  <p class="news-date" style="color: #666; font-size: 14px; margin-bottom: 10px;"><i class="fas fa-calendar-alt" style="margin-right: 5px;"></i><time itemprop="datePublished" datetime="2025-06-25">25 June 2025</time></p>
-                  <p itemprop="description" style="margin-bottom: 15px;">Book lovers in Palmers Green are celebrating the opening of a new independent bookshop on Green Lanes. The store features a wide selection of fiction and non-fiction titles, as well as a dedicated children's section.</p>
-                  <a href="https://allgoodbookshop.co.uk/" target="_blank" rel="noopener noreferrer" itemprop="url" class="news-link" style="display: inline-block; background: linear-gradient(to bottom, #555555, #333333, #222222); color: white; padding: 8px 15px; border-radius: 4px; text-decoration: none; font-size: 14px;">Read More</a>
+                <article class="news-article news-card" itemscope itemtype="https://schema.org/NewsArticle">
+                  <h3 itemprop="headline" class="news-card__title">New Independent Bookshop Opens on Green Lanes</h3>
+                  <p class="news-date news-card__date"><i class="fas fa-calendar-alt" aria-hidden="true"></i><time itemprop="datePublished" datetime="2025-06-25">25 June 2025</time></p>
+                  <p itemprop="description" class="news-card__description">Book lovers in Palmers Green are celebrating the opening of a new independent bookshop on Green Lanes. The store features a wide selection of fiction and non-fiction titles, as well as a dedicated children's section.</p>
+                  <a href="https://allgoodbookshop.co.uk/" target="_blank" rel="noopener noreferrer" itemprop="url" class="news-link news-card__link">Read More</a>
                 </article>
                 
                 <!-- Sample news article 3 -->
-                <article class="news-article" itemscope itemtype="https://schema.org/NewsArticle" style="border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); background-color: #fff; padding: 20px; transition: transform 0.2s ease;">
-                  <h3 itemprop="headline" style="font-size: 1.4em; margin-bottom: 10px;">Palmers Green Farmers Market Expands to Weekly Event</h3>
-                  <p class="news-date" style="color: #666; font-size: 14px; margin-bottom: 10px;"><i class="fas fa-calendar-alt" style="margin-right: 5px;"></i><time itemprop="datePublished" datetime="2025-06-22">22 June 2025</time></p>
-                  <p itemprop="description" style="margin-bottom: 15px;">Following its growing popularity, the Palmers Green Farmers Market will now be held weekly instead of bi-weekly. The market features local produce, artisan foods, and handcrafted goods from local vendors.</p>
-                  <a href="https://www.palmersgreenactionteam.org/streetmarkets" target="_blank" rel="noopener noreferrer" itemprop="url" class="news-link" style="display: inline-block; background: linear-gradient(to bottom, #555555, #333333, #222222); color: white; padding: 8px 15px; border-radius: 4px; text-decoration: none; font-size: 14px;">Read More</a>
+                <article class="news-article news-card" itemscope itemtype="https://schema.org/NewsArticle">
+                  <h3 itemprop="headline" class="news-card__title">Palmers Green Farmers Market Expands to Weekly Event</h3>
+                  <p class="news-date news-card__date"><i class="fas fa-calendar-alt" aria-hidden="true"></i><time itemprop="datePublished" datetime="2025-06-22">22 June 2025</time></p>
+                  <p itemprop="description" class="news-card__description">Following its growing popularity, the Palmers Green Farmers Market will now be held weekly instead of bi-weekly. The market features local produce, artisan foods, and handcrafted goods from local vendors.</p>
+                  <a href="https://www.palmersgreenactionteam.org/streetmarkets" target="_blank" rel="noopener noreferrer" itemprop="url" class="news-link news-card__link">Read More</a>
                 </article>
                 
                 <!-- Sample news article 4 -->
-                <article class="news-article" itemscope itemtype="https://schema.org/NewsArticle" style="border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); background-color: #fff; padding: 20px; transition: transform 0.2s ease;">
-                  <h3 itemprop="headline" style="font-size: 1.4em; margin-bottom: 10px;">Community Garden Initiative Launches in Palmers Green</h3>
-                  <p class="news-date" style="color: #666; font-size: 14px; margin-bottom: 10px;"><i class="fas fa-calendar-alt" style="margin-right: 5px;"></i><time itemprop="datePublished" datetime="2025-06-20">20 June 2025</time></p>
-                  <p itemprop="description" style="margin-bottom: 15px;">A new community garden initiative has been launched in Palmers Green, allowing residents to grow their own vegetables and flowers. The project aims to promote sustainable living and community bonding.</p>
-                  <a href="https://enfielddispatch.co.uk/how-the-local-community-can-help-build-an-action-plan-for-palmers-green/" target="_blank" rel="noopener noreferrer" itemprop="url" class="news-link" style="display: inline-block; background: linear-gradient(to bottom, #555555, #333333, #222222); color: white; padding: 8px 15px; border-radius: 4px; text-decoration: none; font-size: 14px;">Read More</a>
+                <article class="news-article news-card" itemscope itemtype="https://schema.org/NewsArticle">
+                  <h3 itemprop="headline" class="news-card__title">Community Garden Initiative Launches in Palmers Green</h3>
+                  <p class="news-date news-card__date"><i class="fas fa-calendar-alt" aria-hidden="true"></i><time itemprop="datePublished" datetime="2025-06-20">20 June 2025</time></p>
+                  <p itemprop="description" class="news-card__description">A new community garden initiative has been launched in Palmers Green, allowing residents to grow their own vegetables and flowers. The project aims to promote sustainable living and community bonding.</p>
+                  <a href="https://enfielddispatch.co.uk/how-the-local-community-can-help-build-an-action-plan-for-palmers-green/" target="_blank" rel="noopener noreferrer" itemprop="url" class="news-link news-card__link">Read More</a>
                 </article>
               </div>
               
-              <!-- News articles hover effect -->
               <style>
-                .news-article:hover {
-                  transform: translateY(-5px);
-                  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+                .local-news-grid {
+                  display: grid;
+                  grid-template-columns: repeat(3, 1fr);
+                  gap: 24px;
+                  margin-top: 24px;
+                  width: 100%;
                 }
-                .news-link:hover {
+                @media screen and (max-width: 992px) {
+                  .local-news-grid {
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 20px;
+                  }
+                }
+                @media screen and (max-width: 576px) {
+                  .local-news-grid {
+                    grid-template-columns: 1fr;
+                    gap: 20px;
+                  }
+                }
+                .news-card,
+                #news-container .news-item.news-card {
+                  background: #fff;
+                  border-radius: 12px;
+                  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+                  padding: 24px;
+                  display: flex;
+                  flex-direction: column;
+                  min-height: 220px;
+                  border: 1px solid #eee;
+                  transition: transform 0.2s ease, box-shadow 0.2s ease;
+                }
+                .news-card:hover,
+                #news-container .news-item.news-card:hover {
+                  transform: translateY(-4px);
+                  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+                }
+                .news-card__title {
+                  font-size: 1.2em;
+                  margin: 0 0 10px 0;
+                  line-height: 1.35;
+                  font-weight: 600;
+                }
+                .news-card__date {
+                  color: #666;
+                  font-size: 0.875rem;
+                  margin: 0 0 12px 0;
+                }
+                .news-card__date .fa-calendar-alt {
+                  margin-right: 6px;
+                }
+                .news-card__description {
+                  flex: 1;
+                  margin: 0 0 16px 0;
+                  font-size: 0.95rem;
+                  line-height: 1.5;
+                  color: #444;
+                }
+                .news-card__link {
+                  display: inline-block;
+                  background: linear-gradient(to bottom, #555555, #333333, #222222);
+                  color: #fff;
+                  padding: 10px 18px;
+                  border-radius: 6px;
+                  text-decoration: none;
+                  font-size: 0.875rem;
+                  font-weight: 500;
+                  margin-top: auto;
+                  transition: background 0.2s ease;
+                }
+                .news-card__link:hover {
                   background: linear-gradient(to bottom, #666666, #444444, #333333);
                 }
-                #local-news-grid .news-article {
-                  min-height: 200px;
+                #news-container .news-item.news-card {
+                  padding: 0;
+                  overflow: hidden;
+                }
+                #news-container .news-item.news-card .news-image {
+                  width: 100%;
+                  height: 180px;
+                  object-fit: cover;
+                  display: block;
+                  border-radius: 12px 12px 0 0;
+                }
+                #news-container .news-item.news-card .news-content {
+                  padding: 24px;
+                  flex-grow: 1;
                   display: flex;
                   flex-direction: column;
                 }
-                #local-news-grid .news-article .news-link {
-                  margin-top: auto;
+                #news-container .news-item.news-card h3 {
+                  font-size: 1.2em;
+                  margin: 0 0 10px 0;
                 }
-                @media screen and (max-width: 767px) {
-                  #local-news-grid {
-                    grid-template-columns: 1fr;
-                  }
+                #news-container .news-item.news-card .news-snippet {
+                  flex-grow: 1;
+                  margin-bottom: 12px;
                 }
               </style>
             </div>
@@ -834,8 +910,7 @@
             border-top: 2px solid #e0e0e0;
             display: block;
         }
-        #news-container .news-grid,
-        #news-container #local-news-grid {
+        #news-container .news-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
             gap: 20px;
@@ -1044,11 +1119,13 @@
                         }
                         const snippet = item.description ? item.description.replace(/<[^>]*>/g, '').substring(0, snippetLength) + '...' : '';
                         html += `
-                            <div class="news-item">
-                                <h3><a href="${item.link}" target="_blank">${item.title}</a></h3>
-                                <div class="news-snippet">${snippet}</div>
-                                <div class="news-source">${item.feedTitle}</div>
-                                ${imageUrl ? `<img src="${imageUrl}" alt="${item.title}">` : ''}
+                            <div class="news-item news-card">
+                                ${imageUrl ? `<img class="news-image" src="${imageUrl}" alt="">` : ''}
+                                <div class="news-content">
+                                    <h3><a href="${item.link}" target="_blank">${item.title}</a></h3>
+                                    <div class="news-snippet">${snippet}</div>
+                                    <div class="news-source">${item.feedTitle}</div>
+                                </div>
                             </div>
                         `;
                     });
