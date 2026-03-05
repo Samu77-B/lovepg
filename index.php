@@ -679,8 +679,8 @@
                     
           <!-- Font Awesome and Google Fonts now loaded in the head section -->
           
-          <!-- Local News Section -->
-          <div class="news-section" style="margin-top: 60px;">
+          <!-- Local News Section (hidden) -->
+          <div class="news-section" style="margin-top: 60px; display: none;" aria-hidden="true">
             <h2 class="heading-jumbo-small">Local News</h2>
             <p class="paragraph-light">Latest local news from Palmers Green</p>
             
