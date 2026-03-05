@@ -590,8 +590,8 @@
   <!-- Festive Featured Story: Christmas Stocking Hunt -->
 
 
-  <!-- Stories/News CMS Section -->
-  <section style="padding: 60px 0; background-color: #ededed; border-radius: 18px; box-shadow: 0 4px 24px rgba(0,0,0,0.07); margin: 40px 0;" class="stories-news-section">
+  <!-- Stories/News CMS Section (hidden) -->
+  <section style="padding: 60px 0; background-color: #ededed; border-radius: 18px; box-shadow: 0 4px 24px rgba(0,0,0,0.07); margin: 40px 0; display: none;" class="stories-news-section" aria-hidden="true">
     <div class="container" style="padding: 0 20px;">
       <div id="stories-section" class="section">
         <div class="section-header" style="display: flex; justify-content: space-between; align-items: center;">
@@ -858,6 +858,41 @@
                   flex-grow: 1;
                   margin-bottom: 12px;
                 }
+                /* Story links: make headlines and Read more clearly clickable */
+                .news-card__title-link,
+                #news-container .news-item .news-card__title-link {
+                  color: #2a5a2a;
+                  text-decoration: none;
+                  font-weight: 600;
+                  cursor: pointer;
+                  border-bottom: 1px solid transparent;
+                  transition: color 0.2s ease, border-color 0.2s ease;
+                }
+                .news-card__title-link:hover,
+                #news-container .news-item .news-card__title-link:hover {
+                  color: #93c13d;
+                  border-bottom-color: #93c13d;
+                }
+                #news-container .news-item .news-card__link {
+                  margin-top: 12px;
+                  display: inline-block;
+                  background: linear-gradient(to bottom, #555555, #333333, #222222);
+                  color: #fff;
+                  padding: 10px 18px;
+                  border-radius: 6px;
+                  text-decoration: none;
+                  font-size: 0.875rem;
+                  font-weight: 500;
+                  transition: background 0.2s ease;
+                }
+                #news-container .news-item .news-card__link:hover {
+                  background: linear-gradient(to bottom, #666666, #444444, #333333);
+                }
+                .news-card__image-link {
+                  display: block;
+                  text-decoration: none;
+                  color: inherit;
+                }
               </style>
             </div>
             
@@ -1118,13 +1153,15 @@
                             if (imgMatch && imgMatch[1]) imageUrl = imgMatch[1];
                         }
                         const snippet = item.description ? item.description.replace(/<[^>]*>/g, '').substring(0, snippetLength) + '...' : '';
+                        const safeLink = (item.link || '').replace(/"/g, '&quot;');
                         html += `
                             <div class="news-item news-card">
-                                ${imageUrl ? `<img class="news-image" src="${imageUrl}" alt="">` : ''}
+                                ${imageUrl ? `<a href="${safeLink}" target="_blank" rel="noopener noreferrer" class="news-card__image-link"><img class="news-image" src="${imageUrl}" alt=""></a>` : ''}
                                 <div class="news-content">
-                                    <h3><a href="${item.link}" target="_blank">${item.title}</a></h3>
+                                    <h3><a href="${safeLink}" target="_blank" rel="noopener noreferrer" class="news-card__title-link">${item.title}</a></h3>
                                     <div class="news-snippet">${snippet}</div>
                                     <div class="news-source">${item.feedTitle}</div>
+                                    <a href="${safeLink}" target="_blank" rel="noopener noreferrer" class="news-card__link">Read more</a>
                                 </div>
                             </div>
                         `;
