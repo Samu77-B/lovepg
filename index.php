@@ -611,17 +611,14 @@
     <div class="w-layout-blockcontainer container-5 w-container">
       <h1 class="scriptheading">Welcome to Love Palmers Green</h1>
       
-      <div class="intro-columns" style="display: flex; flex-wrap: wrap; justify-content: space-between; margin-bottom: 20px;">
-        <div class="intro-column" style="flex: 1 1 300px; padding: 0; margin-bottom: 10px;">
-          <p class="paragraph introtext" style="font-size: 1.15em; line-height: 1.3;">For over three decades, the Love Palmers Green community has been dedicated to supporting and connecting the vibrant business community of <strong>Palmers Green, North London</strong>. Formerly known as the <strong>Green Lanes Business Association (GLBA)</strong>, our association has been a cornerstone of the area since 1992.</p>
+      <p class="paragraph intro-lead" style="font-size: 1.4em; line-height: 1.5; margin-bottom: 28px; max-width: 48em; color: #333;">For over three decades, the Love Palmers Green community has been dedicated to supporting and connecting the vibrant business community of <strong>Palmers Green, North London</strong>. Formerly known as the <strong>Green Lanes Business Association (GLBA)</strong>, our association has been a cornerstone of the area since 1992.</p>
+      
+      <div class="intro-columns" style="display: flex; flex-wrap: wrap; gap: 24px 32px; margin-bottom: 20px;">
+        <div class="intro-column" style="flex: 1 1 280px; padding: 0; min-width: 0;">
+          <p class="paragraph introtext" style="font-size: 1.05em; line-height: 1.5; color: #444;">We are proud to bring together local businesses, entrepreneurs, and individuals to foster growth, collaboration, and a stronger sense of community. Our network spans across various industries and sectors within the local area.</p>
         </div>
-        
-        <div class="intro-column" style="flex: 1 1 300px; padding: 0 15px; margin-bottom: 10px;">
-          <p class="paragraph introtext" style="font-size: 1.15em; line-height: 1.3;">We are proud to bring together local businesses, entrepreneurs, and individuals to foster growth, collaboration, and a stronger sense of community. Our network spans across various industries and sectors within the local area.</p>
-        </div>
-        
-        <div class="intro-column" style="flex: 1 1 300px; padding: 0 15px; margin-bottom: 10px;">
-          <p class="paragraph introtext" style="font-size: 1.15em; line-height: 1.3;">As a hub for local commerce and innovation, we strive to provide valuable resources, networking opportunities, and expert guidance to help our members thrive. Whether you're a long-standing business owner or a newcomer to the area, we invite you to <a href="#contact" class="plainlink">join us</a> and become part of the <strong>Love Palmers Green family</strong>.</p>
+        <div class="intro-column" style="flex: 1 1 280px; padding: 0; min-width: 0;">
+          <p class="paragraph introtext" style="font-size: 1.05em; line-height: 1.5; color: #444;">As a hub for local commerce and innovation, we strive to provide valuable resources, networking opportunities, and expert guidance to help our members thrive. Whether you're a long-standing business owner or a newcomer to the area, we invite you to <a href="#contact" class="plainlink">join us</a> and become part of the <strong>Love Palmers Green family</strong>.</p>
         </div>
       </div>
       
