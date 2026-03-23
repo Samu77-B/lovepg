@@ -1,0 +1,29 @@
+name: Hostinger Auto Deploy
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+concurrency:
+  group: hostinger-auto-deploy
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    name: Trigger Hostinger Deploy Webhook
+    runs-on: ubuntu-latest
+    steps:
+      - name: Call Hostinger webhook
+        env:
+          HOSTINGER_DEPLOY_WEBHOOK: ${{ secrets.HOSTINGER_DEPLOY_WEBHOOK }}
+        run: |
+          if [ -z "$HOSTINGER_DEPLOY_WEBHOOK" ]; then
+            echo "Missing secret: HOSTINGER_DEPLOY_WEBHOOK"
+            exit 1
+          fi
+
+          curl --fail --show-error --silent \
+            -X POST \
+            "$HOSTINGER_DEPLOY_WEBHOOK"
