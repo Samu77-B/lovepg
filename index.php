@@ -50,6 +50,20 @@
   
   <meta content="width=device-width, initial-scale=1" name="viewport">
   
+  <!-- Dynamic Environmental Adaptation (apply theme ASAP) -->
+  <script>
+    (function () {
+      try {
+        var t = sessionStorage.getItem('lpg_theme_override') || sessionStorage.getItem('lpg_theme_auto');
+        if (!t) {
+          var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+          t = prefersDark ? 'midnight' : 'light';
+        }
+        document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    })();
+  </script>
+  
   <!-- Structured Data (JSON-LD) for SEO and AI -->
   <script type="application/ld+json">
   {
@@ -238,6 +252,7 @@
   <link href="css/stories-display.css" rel="stylesheet" type="text/css">
   <link href="css/header-styles.css" rel="stylesheet" type="text/css">
   <link href="css/wider-layout.css" rel="stylesheet" type="text/css">
+  <script src="js/dynamic-adaptation.js" defer></script>
   
   <!-- Mobile padding for Stories and News section -->
   <style>
