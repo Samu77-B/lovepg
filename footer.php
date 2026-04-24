@@ -102,7 +102,7 @@ $pathPrefix = '';
     <!-- Website Design Credit -->
     <div style="max-width: 1200px; margin: 0 auto; padding: 10px 20px 0 20px; text-align: center; border-top: 1px solid #333333;">
       <div style="color: #b0b0b0; font-size: 12px;">
-        Website design, build and maintained by <a href="https://paradigmstudio.net/" target="_blank" style="color: #8bc34a; text-decoration: none; transition: color 0.3s ease;">@https://paradigmstudio.net/</a>
+        Website design, build and maintained by <a href="https://paradigmstudio.net/" target="_blank" style="color: #8bc34a; text-decoration: none; transition: color 0.3s ease;">paradigmstudio.net</a>
       </div>
     </div>
   </div>
