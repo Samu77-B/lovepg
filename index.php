@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Love Palmers Green | Green Lanes Business Association - Supporting Local Businesses in Palmers Green N13 Since 1992</title>
-  <meta content="Love Palmers Green (formerly Green Lanes Business Association) supports local businesses in Palmers Green, North London N13. Join our community of entrepreneurs, shop owners, and local businesses. Plus: Easter Egg Hunt event on Saturday 28 March 2026." name="description">
+  <meta content="Love Palmers Green (formerly Green Lanes Business Association) supports local businesses in Palmers Green, North London N13. Join our community of entrepreneurs, shop owners, and local businesses. Networking, resources, and community support since 1992." name="description">
   <meta name="keywords" content="Palmers Green, Green Lanes Business Association, N13, North London, local business, community, business association, Palmers Green businesses, Enfield, local commerce">
   <meta name="author" content="Love Palmers Green">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
@@ -34,10 +34,10 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="<?php echo htmlspecialchars($canonical_url, ENT_QUOTES, 'UTF-8'); ?>">
   <meta content="Love Palmers Green | Green Lanes Business Association - Supporting Local Businesses in Palmers Green N13 Since 1992" property="og:title">
-  <meta content="Love Palmers Green supports local businesses in Palmers Green, North London N13. Featured event: Easter Egg Hunt on Saturday 28 March 2026." property="og:description">
-  <meta property="og:image" content="<?php echo $protocol . $domain; ?>/images/easter2026.jpg">
-  <meta property="og:image:width" content="734">
-  <meta property="og:image:height" content="1024">
+  <meta content="Love Palmers Green (formerly Green Lanes Business Association) supports local businesses in Palmers Green, North London N13. Join our community of entrepreneurs, shop owners, and local businesses. Networking, resources, and community support since 1992." property="og:description">
+  <meta property="og:image" content="<?php echo $protocol . $domain; ?>/images/LPG_2025_Long_logo_White03.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
   <meta property="og:locale" content="en_GB">
   <meta property="og:site_name" content="Love Palmers Green">
   
@@ -45,8 +45,8 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@LovePalmersGreen">
   <meta content="Love Palmers Green | Green Lanes Business Association - Supporting Local Businesses in Palmers Green N13 Since 1992" property="twitter:title">
-  <meta content="Love Palmers Green supports local businesses in Palmers Green, North London N13. Featured event: Easter Egg Hunt on Saturday 28 March 2026." property="twitter:description">
-  <meta name="twitter:image" content="<?php echo $protocol . $domain; ?>/images/easter2026.jpg">
+  <meta content="Love Palmers Green (formerly Green Lanes Business Association) supports local businesses in Palmers Green, North London N13. Join our community of entrepreneurs, shop owners, and local businesses. Networking, resources, and community support since 1992." property="twitter:description">
+  <meta name="twitter:image" content="<?php echo $protocol . $domain; ?>/images/LPG_2025_Long_logo_White03.png">
   
   <meta content="width=device-width, initial-scale=1" name="viewport">
   
@@ -212,40 +212,6 @@
         }
       }
     ]
-  }
-  </script>
-  
-  <!-- Event Schema -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Event",
-    "name": "Easter Egg Hunt 2026",
-    "description": "Join us for an Easter egg hunt in Palmers Green. Organised by Love Palmers Green with prizes for children under 12.",
-    "startDate": "2026-03-28T10:00:00+00:00",
-    "endDate": "2026-03-28T14:30:00+00:00",
-    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-    "eventStatus": "https://schema.org/EventScheduled",
-    "image": [
-      "<?php echo $protocol . $domain; ?>/images/easter2026.jpg"
-    ],
-    "organizer": {
-      "@type": "Organization",
-      "name": "Love Palmers Green",
-      "url": "<?php echo htmlspecialchars($canonical_url, ENT_QUOTES, 'UTF-8'); ?>"
-    },
-    "location": {
-      "@type": "Place",
-      "name": "Bennett Walden",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "54 Aldermans Hill",
-        "addressLocality": "Palmers Green",
-        "addressRegion": "London",
-        "postalCode": "N13 4PP",
-        "addressCountry": "GB"
-      }
-    }
   }
   </script>
   
@@ -621,16 +587,7 @@
     </div>
   </div>
 
-  <!-- Festive Featured Story: Easter Egg Hunt 2026 -->
-  <section class="festive-featured-story" aria-labelledby="easter-egg-hunt-title">
-    <div class="festive-text-content" style="max-width: 980px; margin: 0 auto; text-align: center;">
-      <h2 id="easter-egg-hunt-title" class="festive-title" style="font-size: 2.4em; margin-bottom: 12px;">Easter Egg Hunt 2026</h2>
-      <p class="festive-description" style="margin-bottom: 24px;">Saturday 28 March 2026, 10:00am - 2:30pm. Organised by Love Palmers Green.</p>
-      <img src="images/easter2026.jpg" alt="Love Palmers Green Easter Egg Hunt poster for Saturday 28th March 2026 with event details and prizes" class="festive-image" loading="lazy">
-    </div>
-  </section>
-
-
+  <!-- Featured section removed -->
   <!-- Stories/News CMS Section (hidden) -->
   <section style="padding: 60px 0; background-color: #ededed; border-radius: 18px; box-shadow: 0 4px 24px rgba(0,0,0,0.07); margin: 40px 0; display: none;" class="stories-news-section" aria-hidden="true">
     <div class="container" style="padding: 0 20px;">
@@ -717,10 +674,10 @@
                     
           <!-- Font Awesome and Google Fonts now loaded in the head section -->
           
-          <!-- Local News Section (hidden) -->
-          <div class="news-section" style="margin-top: 60px; display: none;" aria-hidden="true">
-            <h2 class="heading-jumbo-small">Local News</h2>
-            <p class="paragraph-light">Latest local news from Palmers Green</p>
+          <!-- Live Local News Feed -->
+          <div class="news-section" style="margin-top: 60px;">
+            <h2 class="heading-jumbo-small">Live Local News</h2>
+            <p class="paragraph-light">Live feed from local sources around Palmers Green and Enfield</p>
             
             <div class="news-controls" style="display: flex; justify-content: flex-end; margin: 20px 0;">
               <button id="refresh-news-button" style="padding: 8px 16px; border: none; border-radius: 4px; cursor: pointer; background: linear-gradient(to bottom, #555555, #333333, #222222); color: white;">
