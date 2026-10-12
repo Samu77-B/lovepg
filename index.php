@@ -2461,6 +2461,21 @@
             <h2 style="margin-top: 30px; border-bottom: 1px solid #eee; padding-bottom: 10px;">Health & Beauty</h2>
             <div class="business-listings" style="display: flex; flex-wrap: wrap; gap: 20px; margin-top: 15px;">
               <div class="business-item" data-category="health" style="flex: 1 1 300px; padding: 15px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); background-color: #fff;">
+                <h3 style="margin-top: 0; margin-bottom: 10px;">Fab Hair London</h3>
+                <div style="margin-bottom: 8px;"><span style="font-weight: bold;">Category:</span> Hair salon</div>
+                <div style="margin-bottom: 8px;"><i class="fas fa-map-marker-alt" style="margin-right: 5px;"></i> 382 Green Lanes, Palmers Green, London N13 5PD</div>
+                <div style="margin-bottom: 8px;"><i class="fas fa-phone" style="margin-right: 5px;"></i> <a href="tel:+442088867070">020 8886 7070</a></div>
+                <div style="margin-bottom: 8px;"><i class="fas fa-envelope" style="margin-right: 5px;"></i> <a href="mailto:salon@fabhair.london">salon@fabhair.london</a></div>
+                <div style="margin-bottom: 8px;"><i class="fas fa-globe" style="margin-right: 5px;"></i> <a href="https://www.fabhair.london/" target="_blank" rel="noopener noreferrer">fabhair.london</a></div>
+                <div style="margin-bottom: 12px;">Independent Palmers Green salon since 1997. Creative colour, balayage, precision cutting, extensions and keratin smoothing, with cruelty-free Paul Mitchell and Davines products.</div>
+                <div>
+                  <a href="https://maps.google.com/?q=382+Green+Lanes,+Palmers+Green,+London+N13+5PD" target="_blank" rel="noopener" style="display: inline-block; padding: 6px 12px; background: linear-gradient(to bottom, #555555, #333333, #222222); color: white; text-decoration: none; border-radius: 4px; margin-right: 8px;">Directions</a>
+                  <a href="https://www.fabhair.london/" target="_blank" rel="noopener noreferrer" style="display: inline-block; padding: 6px 12px; background: linear-gradient(to bottom, #555555, #333333, #222222); color: white; text-decoration: none; border-radius: 4px; margin-right: 8px;">Visit site</a>
+                  <button class="share-btn" data-business="Fab Hair London" style="padding: 6px 12px; border: 1px solid #ddd; background: #f8f8f8; border-radius: 4px; cursor: pointer;">Share</button>
+                </div>
+              </div>
+
+              <div class="business-item" data-category="health" style="flex: 1 1 300px; padding: 15px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); background-color: #fff;">
                 <h3 style="margin-top: 0; margin-bottom: 10px;">Scruples Hair &amp; Beauty Salon</h3>
                 <div class="directory-offer">20% OFF Your First Visit</div>
                 <div style="margin-bottom: 8px;"><span style="font-weight: bold;">Category:</span> Health &amp; Beauty</div>
