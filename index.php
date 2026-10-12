@@ -3,11 +3,15 @@
 <head>
   <meta charset="utf-8">
   <title>Love Palmers Green | Green Lanes Business Association - Supporting Local Businesses in Palmers Green N13 Since 1992</title>
-  <meta content="Love Palmers Green (formerly Green Lanes Business Association) supports local businesses in Palmers Green, North London N13. Join our community of entrepreneurs, shop owners, and local businesses. Networking, resources, and community support since 1992." name="description">
-  <meta name="keywords" content="Palmers Green, Green Lanes Business Association, N13, North London, local business, community, business association, Palmers Green businesses, Enfield, local commerce">
+  <meta content="Love Palmers Green (formerly Green Lanes Business Association / GLBA) supports local businesses in Palmers Green, North London N13. Halloween Trick or Treat on the High Street Saturday 31 October 2026, Christmas Lights Switch-On 26 November, plus a local business directory. Community events and support since 1992." name="description">
+  <meta name="keywords" content="Palmers Green, Green Lanes Business Association, GLBA, Love Palmers Green, N13, North London, Halloween Palmers Green, Trick or Treat High Street, Pumpkin Hunt Palmers Green, Christmas lights Palmers Green, business directory Palmers Green, The Yard Cafe, Enfield, local commerce">
   <meta name="author" content="Love Palmers Green">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <meta name="googlebot" content="index, follow">
+  <meta name="geo.region" content="GB-ENF">
+  <meta name="geo.placename" content="Palmers Green, London">
+  <meta name="geo.position" content="51.6175;-0.1025">
+  <meta name="ICBM" content="51.6175, -0.1025">
   
   <!-- Canonical URL -->
   <?php
@@ -34,10 +38,11 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="<?php echo htmlspecialchars($canonical_url, ENT_QUOTES, 'UTF-8'); ?>">
   <meta content="Love Palmers Green | Green Lanes Business Association - Supporting Local Businesses in Palmers Green N13 Since 1992" property="og:title">
-  <meta content="Love Palmers Green (formerly Green Lanes Business Association) supports local businesses in Palmers Green, North London N13. Join our community of entrepreneurs, shop owners, and local businesses. Networking, resources, and community support since 1992." property="og:description">
-  <meta property="og:image" content="<?php echo $protocol . $domain; ?>/images/LPG_2025_Long_logo_White03.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
+  <meta content="Love Palmers Green (formerly Green Lanes Business Association / GLBA) supports local businesses in Palmers Green, North London N13. Halloween Trick or Treat on the High Street Saturday 31 October 2026, Christmas Lights Switch-On 26 November, plus a local business directory. Community events and support since 1992." property="og:description">
+  <meta property="og:image" content="<?php echo $protocol . $domain; ?>/images/Hompage-HeroImage-Autumn.jpg">
+  <meta property="og:image:width" content="2390">
+  <meta property="og:image:height" content="1792">
+  <meta property="og:image:alt" content="Autumn on Palmers Green High Street, North London N13">
   <meta property="og:locale" content="en_GB">
   <meta property="og:site_name" content="Love Palmers Green">
   
@@ -45,8 +50,9 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@LovePalmersGreen">
   <meta content="Love Palmers Green | Green Lanes Business Association - Supporting Local Businesses in Palmers Green N13 Since 1992" property="twitter:title">
-  <meta content="Love Palmers Green (formerly Green Lanes Business Association) supports local businesses in Palmers Green, North London N13. Join our community of entrepreneurs, shop owners, and local businesses. Networking, resources, and community support since 1992." property="twitter:description">
-  <meta name="twitter:image" content="<?php echo $protocol . $domain; ?>/images/LPG_2025_Long_logo_White03.png">
+  <meta content="Love Palmers Green (formerly Green Lanes Business Association / GLBA) supports local businesses in Palmers Green, North London N13. Halloween Trick or Treat on the High Street Saturday 31 October 2026, Christmas Lights Switch-On 26 November, plus a local business directory. Community events and support since 1992." property="twitter:description">
+  <meta name="twitter:image" content="<?php echo $protocol . $domain; ?>/images/Hompage-HeroImage-Autumn.jpg">
+  <meta name="twitter:image:alt" content="Autumn on Palmers Green High Street, North London N13">
   
   <meta content="width=device-width, initial-scale=1" name="viewport">
   
@@ -71,11 +77,15 @@
     "@type": "LocalBusiness",
     "@id": "<?php echo htmlspecialchars($canonical_url, ENT_QUOTES, 'UTF-8'); ?>",
     "name": "Love Palmers Green",
-    "alternateName": "Green Lanes Business Association",
-    "description": "Love Palmers Green (formerly Green Lanes Business Association) supports local businesses in Palmers Green, North London N13. Join our community of entrepreneurs, shop owners, and local businesses. Networking, resources, and community support since 1992.",
+    "alternateName": ["Green Lanes Business Association", "GLBA"],
+    "description": "Love Palmers Green (formerly Green Lanes Business Association / GLBA) supports local businesses in Palmers Green, North London N13. Halloween Trick or Treat on the High Street Saturday 31 October 2026, Christmas Lights Switch-On 26 November, plus a local business directory. Community events and support since 1992.",
     "url": "<?php echo htmlspecialchars($canonical_url, ENT_QUOTES, 'UTF-8'); ?>",
     "logo": "<?php echo $protocol . $domain; ?>/images/LPG_2025_Long_logo_White03.png",
-    "image": "<?php echo $protocol . $domain; ?>/images/LPG_2025_Long_logo_White03.png",
+    "image": [
+      "<?php echo $protocol . $domain; ?>/images/Hompage-HeroImage-Autumn.jpg",
+      "<?php echo $protocol . $domain; ?>/images/halloween2026-poster.jpg",
+      "<?php echo $protocol . $domain; ?>/images/LPG_2025_Long_logo_White03.png"
+    ],
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Palmers Green",
@@ -89,7 +99,7 @@
       "latitude": "51.6175",
       "longitude": "-0.1025"
     },
-    "telephone": "020 8379 1000",
+    "telephone": "+44-7943-198198",
     "email": "contact@lovepalmersgreen.com",
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",
@@ -120,10 +130,11 @@
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Love Palmers Green",
-    "alternateName": "Green Lanes Business Association",
+    "alternateName": ["Green Lanes Business Association", "GLBA"],
     "url": "<?php echo htmlspecialchars($canonical_url, ENT_QUOTES, 'UTF-8'); ?>",
     "logo": "<?php echo $protocol . $domain; ?>/images/LPG_2025_Long_logo_White03.png",
-    "description": "A community-focused business association supporting local businesses in Palmers Green, North London since 1992.",
+    "description": "A community-focused business association supporting local businesses in Palmers Green, North London since 1992. Formerly Green Lanes Business Association (GLBA).",
+    "slogan": "Supporting local businesses, promoting our shopping area, bringing community together.",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Palmers Green",
@@ -131,13 +142,36 @@
       "postalCode": "N13",
       "addressCountry": "GB"
     },
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": "+44-20-8379-1000",
-      "contactType": "Customer Service",
-      "email": "contact@lovepalmersgreen.com",
-      "availableLanguage": "English"
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "51.6175",
+      "longitude": "-0.1025"
     },
+    "areaServed": {
+      "@type": "City",
+      "name": "Palmers Green"
+    },
+    "contactPoint": [
+      {
+        "@type": "ContactPoint",
+        "telephone": "+44-7943-198198",
+        "contactType": "Membership",
+        "email": "costas@lovepalmersgreen.com",
+        "availableLanguage": "English",
+        "areaServed": "GB"
+      },
+      {
+        "@type": "ContactPoint",
+        "email": "contact@lovepalmersgreen.com",
+        "contactType": "customer service",
+        "availableLanguage": "English",
+        "areaServed": "GB"
+      }
+    ],
+    "sameAs": [
+      "https://www.facebook.com/lovepalmersgreen",
+      "https://twitter.com/LovePalmersGreen"
+    ],
     "foundingDate": "1992",
     "numberOfEmployees": {
       "@type": "QuantitativeValue",
@@ -151,7 +185,10 @@
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "Love Palmers Green",
+    "alternateName": "Green Lanes Business Association",
     "url": "<?php echo htmlspecialchars($canonical_url, ENT_QUOTES, 'UTF-8'); ?>",
+    "description": "Official site for Love Palmers Green, the Green Lanes Business Association (GLBA) serving Palmers Green, North London N13. Local events, business directory, and community news.",
+    "inLanguage": "en-GB",
     "potentialAction": {
       "@type": "SearchAction",
       "target": {
@@ -174,6 +211,18 @@
         "position": 1,
         "name": "Home",
         "item": "<?php echo htmlspecialchars($canonical_url, ENT_QUOTES, 'UTF-8'); ?>"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Events",
+        "item": "<?php echo $protocol . $domain; ?>/index.php#events"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Business Directory",
+        "item": "<?php echo $protocol . $domain; ?>/index.php#business-directory"
       }
     ]
   }
@@ -198,7 +247,7 @@
         "name": "How can I join Love Palmers Green?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "You can join Love Palmers Green by contacting us through our website contact form or by emailing contact@lovepalmersgreen.com. We welcome all local businesses, entrepreneurs, and community members in the Palmers Green area."
+          "text": "You can join Love Palmers Green by contacting Costas for membership on 07943 198 198 or costas@lovepalmersgreen.com, using the website contact form, or emailing contact@lovepalmersgreen.com. We welcome local businesses, entrepreneurs, and community members in Palmers Green."
         }
       },
       {
@@ -206,7 +255,7 @@
         "name": "What services does Love Palmers Green provide?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Love Palmers Green provides networking opportunities, business resources, expert guidance, community support, and helps connect local businesses. We organize events, provide business directory listings, and work to strengthen the local business community in Palmers Green."
+          "text": "Love Palmers Green provides networking opportunities, business resources, community support, a local business directory, and high-street events including Halloween Trick or Treat and the Christmas Lights Switch-On. We work to strengthen the Palmers Green business community."
         }
       },
       {
@@ -224,6 +273,170 @@
           "@type": "Answer",
           "text": "Love Palmers Green was founded in 1992 as the Green Lanes Business Association (GLBA). For over three decades, we have been a cornerstone of the Palmers Green business community, supporting local commerce and fostering community connections."
         }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Love Palmers Green the same as the Green Lanes Business Association?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Love Palmers Green is the current name of the Green Lanes Business Association (GLBA), established in 1992 to support local businesses and the Palmers Green shopping area."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "When is Halloween Trick or Treat on Palmers Green High Street 2026?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Halloween Trick or Treat on the High Street is on Saturday 31 October 2026 from 10:00 AM to 8:00 PM. The Pumpkin Hunt runs 10:00 AM to 4:30 PM across 24 Palmers Green shops. The Mini-Monster Disco is at The Fox, 413 Green Lanes, N13 4JD, from 4:00 PM to 8:00 PM. The event is organised by Love Palmers Green / GLBA and sponsored by Peter Michael Estates and Lettings. Pickup hunt forms from participating High Street shops and Peter Michael."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "When is the Palmers Green Christmas Lights Switch-On 2026?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The Christmas Lights Switch-On is on Thursday 26 November 2026 at 3:30 PM at The Triangle, Palmers Green, with live performances by St Monica's Choir and Adorned Gospel Community Choir. The Christmas Stocking Hunt follows on Saturday 5 December 2026 along Palmers Green High Street. For Christmas advertising, contact Costas on 07943 198 198 or costas@lovepalmersgreen.com."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Event Schema for Halloween 2026 and Christmas 2026 -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Event",
+        "name": "Halloween \"Trick or Treat\" on the High Street",
+        "description": "Safe trick-or-treating along Palmers Green High Street for families, including a 24-shop Pumpkin Hunt and Mini-Monster Disco at The Fox. Organised by Love Palmers Green / Green Lanes Business Association (GLBA). Sponsored by Peter Michael Estates and Lettings.",
+        "startDate": "2026-10-31T10:00:00+00:00",
+        "endDate": "2026-10-31T20:00:00+00:00",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "image": "<?php echo $protocol . $domain; ?>/images/halloween2026-poster.jpg",
+        "url": "<?php echo $protocol . $domain; ?>/index.php#halloween-2026",
+        "location": {
+          "@type": "Place",
+          "name": "Palmers Green High Street",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Palmers Green",
+            "addressRegion": "London",
+            "postalCode": "N13",
+            "addressCountry": "GB"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "51.6175",
+            "longitude": "-0.1025"
+          }
+        },
+        "organizer": {
+          "@type": "Organization",
+          "name": "Love Palmers Green",
+          "alternateName": "Green Lanes Business Association",
+          "url": "https://lovepalmersgreen.com"
+        },
+        "sponsor": {
+          "@type": "Organization",
+          "name": "Peter Michael Estates and Lettings"
+        },
+        "isAccessibleForFree": true,
+        "subEvent": [
+          {
+            "@type": "Event",
+            "name": "Pumpkin Hunt",
+            "startDate": "2026-10-31T10:00:00+00:00",
+            "endDate": "2026-10-31T16:30:00+00:00",
+            "location": {
+              "@type": "Place",
+              "name": "Palmers Green High Street shops"
+            }
+          },
+          {
+            "@type": "Event",
+            "name": "Mini-Monster Disco",
+            "startDate": "2026-10-31T16:00:00+00:00",
+            "endDate": "2026-10-31T20:00:00+00:00",
+            "location": {
+              "@type": "Place",
+              "name": "The Fox Pub",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "413 Green Lanes",
+                "addressLocality": "London",
+                "postalCode": "N13 4JD",
+                "addressCountry": "GB"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "@type": "Event",
+        "name": "Christmas Lights Switch-On",
+        "description": "Christmas lights switch-on at The Triangle, Palmers Green, with live performances by St Monica's Choir and Adorned Gospel Community Choir. Organised by Love Palmers Green / Green Lanes Business Association (GLBA).",
+        "startDate": "2026-11-26T15:30:00+00:00",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "image": "<?php echo $protocol . $domain; ?>/images/LPG-Xmas2025.png",
+        "url": "<?php echo $protocol . $domain; ?>/index.php#events",
+        "location": {
+          "@type": "Place",
+          "name": "The Triangle, Palmers Green",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Palmers Green",
+            "addressRegion": "London",
+            "postalCode": "N13",
+            "addressCountry": "GB"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "51.6175",
+            "longitude": "-0.1025"
+          }
+        },
+        "organizer": {
+          "@type": "Organization",
+          "name": "Love Palmers Green",
+          "alternateName": "Green Lanes Business Association"
+        },
+        "isAccessibleForFree": true
+      },
+      {
+        "@type": "Event",
+        "name": "Christmas Stocking Hunt",
+        "description": "Festive family stocking hunt along Palmers Green High Street. Organised by Love Palmers Green / Green Lanes Business Association (GLBA).",
+        "startDate": "2026-12-05",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "image": "<?php echo $protocol . $domain; ?>/images/christmas/LPG-xmas2025-Santa.png",
+        "url": "<?php echo $protocol . $domain; ?>/index.php#events",
+        "location": {
+          "@type": "Place",
+          "name": "Palmers Green High Street",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Palmers Green",
+            "addressRegion": "London",
+            "postalCode": "N13",
+            "addressCountry": "GB"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "51.6175",
+            "longitude": "-0.1025"
+          }
+        },
+        "organizer": {
+          "@type": "Organization",
+          "name": "Love Palmers Green",
+          "alternateName": "Green Lanes Business Association"
+        },
+        "isAccessibleForFree": true
       }
     ]
   }
@@ -562,6 +775,225 @@
         font-size: 1.3em;
       }
     }
+
+    #halloween-2026,
+    #events,
+    #pumpkin-hunt,
+    #mini-monster-disco,
+    #business-directory,
+    #contact {
+      scroll-margin-top: 90px;
+    }
+
+    .festive-featured-story.halloween::before {
+      background: linear-gradient(to right, #7c3aed, #FFA500, #dc2626, #FFA500, #7c3aed);
+    }
+
+    .halloween-sponsor {
+      display: inline-block;
+      background: #2c5530;
+      color: #fff;
+      font-size: 0.78em;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 6px 12px;
+      border-radius: 4px;
+      margin-bottom: 12px;
+    }
+
+    .halloween-subevents {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-top: 36px;
+    }
+
+    .halloween-subevent {
+      background: #fff;
+      border: 2px solid #ffe0b2;
+      border-radius: 12px;
+      padding: 24px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+    }
+
+    .halloween-subevent h3 {
+      color: #2c5530;
+      font-size: 1.45em;
+      margin: 0 0 10px 0;
+      font-weight: 800;
+    }
+
+    .halloween-subevent p,
+    .halloween-subevent li {
+      color: #444;
+      font-size: 1.02em;
+      line-height: 1.6;
+      margin: 0 0 10px 0;
+    }
+
+    .halloween-subevent ul {
+      margin: 0 0 12px 18px;
+      padding: 0;
+    }
+
+    .halloween-subevent a {
+      color: #2c5530;
+      font-weight: 700;
+    }
+
+    .pumpkin-form-banner {
+      margin-top: 28px;
+      background: linear-gradient(135deg, #fff7ed 0%, #ffedd5 100%);
+      border: 3px solid #FFA500;
+      border-radius: 12px;
+      padding: 24px 28px;
+    }
+
+    .pumpkin-form-banner h3 {
+      color: #c2410c;
+      font-size: 1.5em;
+      margin: 0 0 10px 0;
+      font-weight: 800;
+    }
+
+    .pumpkin-form-banner p {
+      color: #333;
+      font-size: 1.08em;
+      line-height: 1.65;
+      margin: 0 0 8px 0;
+    }
+
+    .lpg-events-calendar {
+      max-width: 1280px;
+      margin: 10px auto 40px auto;
+      padding: 0 20px;
+    }
+
+    .lpg-events-calendar h2 {
+      font-size: 2em;
+      color: #2c5530;
+      margin: 0 0 8px 0;
+      font-weight: 800;
+    }
+
+    .lpg-events-calendar .events-intro {
+      color: #555;
+      font-size: 1.08em;
+      margin: 0 0 24px 0;
+    }
+
+    .lpg-events-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .lpg-event-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      border-top: 5px solid #FFA500;
+    }
+
+    .lpg-event-card.christmas {
+      border-top-color: #c41e3a;
+    }
+
+    .lpg-event-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      object-position: top center;
+      display: block;
+    }
+
+    .lpg-event-card .event-body {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    .lpg-event-card .event-date {
+      color: #d97706;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      font-size: 0.92em;
+      margin-bottom: 8px;
+    }
+
+    .lpg-event-card h3 {
+      color: #2c5530;
+      font-size: 1.25em;
+      margin: 0 0 10px 0;
+      font-weight: 800;
+    }
+
+    .lpg-event-card p {
+      color: #555;
+      font-size: 0.98em;
+      line-height: 1.55;
+      margin: 0 0 12px 0;
+      flex: 1;
+    }
+
+    .lpg-event-card a.event-link {
+      display: inline-block;
+      padding: 8px 14px;
+      background: linear-gradient(to bottom, #555555, #333333, #222222);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: 600;
+      width: fit-content;
+    }
+
+    .directory-offer {
+      display: inline-block;
+      background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+      color: #c2410c;
+      font-weight: 800;
+      font-size: 0.9em;
+      padding: 6px 10px;
+      border-radius: 4px;
+      border: 1px solid #FFA500;
+      margin: 0 0 10px 0;
+    }
+
+    .directory-sponsor {
+      display: inline-block;
+      background: #2c5530;
+      color: #fff;
+      font-weight: 700;
+      font-size: 0.78em;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 4px 8px;
+      border-radius: 4px;
+      margin: 0 0 10px 0;
+    }
+
+    @media (max-width: 900px) {
+      .halloween-subevents,
+      .lpg-events-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .pumpkin-form-banner,
+      .halloween-subevent {
+        padding: 18px;
+      }
+      .lpg-events-calendar {
+        padding: 0 15px;
+      }
+    }
     
     /* Hero Banner Image Styles + Parallax */
     .hero-banner-image {
@@ -597,12 +1029,96 @@
   <div class="hero cc-store-home-wrap" style="background-color: #ffffff; width: 100vw; margin-left: 0; margin-right: 0; padding-left: 0; padding-right: 0; max-width: 100%; overflow: hidden;">
     <div id="hero-intro" class="intro-header hero-parallax-wrap" style="background-color: #ffffff; background-image: none; width: 100vw; height: 50vh; padding-left: 0; padding-right: 0; margin-left: 0; margin-right: 0; position: relative; overflow: hidden;">
       <div class="hero-parallax-inner">
-        <img src="images/broomfieldpark.jpg" alt="Broomfield Park in Palmers Green, North London - A beautiful community park in the heart of N13" class="hero-banner-image" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+        <img src="images/Hompage-HeroImage-Autumn.jpg" alt="Broomfield Park in Palmers Green in autumn, with golden willow trees around the lake" class="hero-banner-image" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
       </div>
     </div>
   </div>
 
-  <!-- Featured section removed -->
+  <!-- Halloween 2026 featured event -->
+  <section class="festive-featured-story halloween" id="halloween-2026" aria-labelledby="halloween-title">
+    <div class="festive-content">
+      <div class="festive-santa-image">
+        <img src="images/halloween2026-poster.jpg" alt="Halloween Trick or Treat on the High Street 2026 poster, sponsored by Peter Michael Estates and Lettings">
+      </div>
+      <div class="festive-text-content">
+        <span class="halloween-sponsor">Sponsored by Peter Michael Estates and Lettings</span>
+        <p class="festive-subtitle">Saturday 31st October 2026</p>
+        <h2 class="festive-title" id="halloween-title">Halloween “Trick or Treat” on the High Street</h2>
+        <p class="festive-dates">10:00 AM – 8:00 PM · Palmers Green High Street</p>
+        <p class="festive-description">Safe trick-or-treating along the local high street for families. Organised by Love Palmers Green / Green Lanes Business Association (GLBA).</p>
+        <p class="festive-details">Get your Halloween costumes on and trick or treat safely on our local high street. Pumpkin Hunt during the day, Mini-Monster Disco at The Fox from 4pm.</p>
+      </div>
+    </div>
+
+    <div class="halloween-subevents">
+      <article class="halloween-subevent" id="pumpkin-hunt">
+        <h3>Pumpkin Hunt</h3>
+        <p><strong>10:00 AM – 4:30 PM</strong></p>
+        <p>Find 24 numbered pumpkins in shop windows and write the shop names on your entry form.</p>
+        <p><strong>Route:</strong> 24 High Street shops starting at Aldermans Hill (from Lakeside Road), through The Triangle, from Ruth Winston House, and along Green Lanes up towards Hedge Lane.</p>
+        <ul>
+          <li>Hand completed forms to Peter Michael Estates and Lettings by <strong>4:15 PM</strong></li>
+          <li>Prize draw at <strong>4:30 PM</strong> at Peter Michael</li>
+          <li>Grand prize: Nintendo Switch Lite (worth £200) + Mario Kart 8 Deluxe (worth £40), donated by Peter Michael</li>
+          <li>Gift for all participants</li>
+          <li>All entrants must be under 12 and accompanied by an adult</li>
+        </ul>
+      </article>
+      <article class="halloween-subevent" id="mini-monster-disco">
+        <h3>Mini-Monster Disco at The Fox</h3>
+        <p><strong>Saturday 31st October 2026 · 4:00 PM – 8:00 PM</strong></p>
+        <p>Venue: <a href="https://www.thefoxnorthlondon.com" target="_blank" rel="noopener noreferrer">The Fox Pub</a>, 413 Green Lanes, London N13 4JD</p>
+        <p>Entertainment: Eleni from Asterakia Entertaining</p>
+        <p class="directory-offer">10% OFF Kids Mains with leaflet</p>
+        <p>
+          <a href="tel:+442030910679">0203 091 0679</a><br>
+          <a href="mailto:ceyda@thefoxnorthlondon.com">ceyda@thefoxnorthlondon.com</a><br>
+          <a href="https://www.thefoxnorthlondon.com" target="_blank" rel="noopener noreferrer">thefoxnorthlondon.com</a><br>
+          <a href="https://www.instagram.com/THEFOXN13/" target="_blank" rel="noopener noreferrer">@THEFOXN13</a>
+        </p>
+      </article>
+    </div>
+
+    <aside class="pumpkin-form-banner" aria-label="Pumpkin Hunt form pickup">
+      <h3>Pick up your Pumpkin Hunt form</h3>
+      <p>Collect an entry form from <strong>participating High Street shops</strong> and from <strong>Peter Michael Estates and Lettings</strong>.</p>
+      <p>Fill in the child’s name, school and telephone number, find the 24 numbered pumpkins, then <strong>hand the completed form back to Peter Michael by 4:15 PM</strong> on Saturday 31st October 2026.</p>
+      <p>Prize draw at 4:30 PM at Peter Michael. All under 12s must be accompanied by an adult.</p>
+    </aside>
+  </section>
+
+  <section class="lpg-events-calendar" id="events" aria-labelledby="events-heading">
+    <h2 id="events-heading">Upcoming Community Events</h2>
+    <p class="events-intro">Halloween on the High Street, then Christmas lights and a family stocking hunt — all organised by Love Palmers Green / GLBA.</p>
+    <div class="lpg-events-grid">
+      <article class="lpg-event-card">
+        <img src="images/halloween2026-poster.jpg" alt="Halloween Trick or Treat on the High Street 2026">
+        <div class="event-body">
+          <div class="event-date">Saturday 31 October 2026 · 10:00 AM – 8:00 PM</div>
+          <h3>Halloween “Trick or Treat” on the High Street</h3>
+          <p>Pumpkin Hunt 10:00 AM–4:30 PM and Mini-Monster Disco at The Fox 4:00–8:00 PM. Sponsored by Peter Michael Estates and Lettings.</p>
+          <a class="event-link" href="#halloween-2026">Event details</a>
+        </div>
+      </article>
+      <article class="lpg-event-card christmas">
+        <img src="images/LPG-Xmas2025.png" alt="Palmers Green Christmas lights">
+        <div class="event-body">
+          <div class="event-date">Thursday 26 November 2026 · 3:30 PM</div>
+          <h3>Christmas Lights Switch-On</h3>
+          <p>The Triangle, Palmers Green. Live performances by St Monica’s Choir and Adorned Gospel Community Choir. Look out for posters around the high street.</p>
+        </div>
+      </article>
+      <article class="lpg-event-card christmas">
+        <img src="images/christmas/LPG-xmas2025-Santa.png" alt="Christmas Stocking Hunt in Palmers Green">
+        <div class="event-body">
+          <div class="event-date">Saturday 5 December 2026</div>
+          <h3>Christmas Stocking Hunt</h3>
+          <p>A festive family event along Palmers Green High Street. Look out for posters advertising both Christmas events.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
   <!-- Stories/News CMS Section (hidden) -->
   <section style="padding: 60px 0; background-color: #ededed; border-radius: 18px; box-shadow: 0 4px 24px rgba(0,0,0,0.07); margin: 40px 0; display: none;" class="stories-news-section" aria-hidden="true">
     <div class="container" style="padding: 0 20px;">
@@ -676,6 +1192,11 @@
         <a href="#contact" class="lpg-link-card">
           <div class="lpg-link-card-title"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 10px; vertical-align: middle;"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>Contact</div>
           <div class="lpg-link-card-description">Get in touch with us and join our community</div>
+        </a>
+        
+        <a href="#events" class="lpg-link-card">
+          <div class="lpg-link-card-title"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 10px; vertical-align: middle;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>Events</div>
+          <div class="lpg-link-card-description">Halloween 2026, Christmas lights and high street hunts</div>
         </a>
         
         <a href="#business-directory" class="lpg-link-card">
@@ -1359,6 +1880,18 @@
             
             <div class="business-listings" style="display: flex; flex-wrap: wrap; gap: 20px; margin-top: 15px;">
               <div class="business-item" data-category="cafe" style="flex: 1 1 300px; padding: 15px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); background-color: #fff;">
+                <h3 style="margin-top: 0; margin-bottom: 10px;">The Yard Café</h3>
+                <div style="margin-bottom: 8px;"><span style="font-weight: bold;">Category:</span> Café</div>
+                <div style="margin-bottom: 8px;"><i class="fas fa-map-marker-alt" style="margin-right: 5px;"></i> Palmers Green &amp; Alexandra Palace</div>
+                <div style="margin-bottom: 8px;"><i class="fas fa-globe" style="margin-right: 5px;"></i> <a href="https://theyardcafe.co.uk/" target="_blank" rel="noopener noreferrer">theyardcafe.co.uk</a></div>
+                <div style="margin-bottom: 12px;">Artisan coffee and food in Palmers Green and Alexandra Palace. Evenings include live music, wine tasting, supper clubs and champagne events.</div>
+                <div>
+                  <a href="https://maps.google.com/?q=The+Yard+Cafe,+Palmers+Green" target="_blank" rel="noopener" style="display: inline-block; padding: 6px 12px; background: linear-gradient(to bottom, #555555, #333333, #222222); color: white; text-decoration: none; border-radius: 4px; margin-right: 8px;">Directions</a>
+                  <button class="share-btn" data-business="The Yard Café" style="padding: 6px 12px; border: 1px solid #ddd; background: #f8f8f8; border-radius: 4px; cursor: pointer;">Share</button>
+                </div>
+              </div>
+
+              <div class="business-item" data-category="cafe" style="flex: 1 1 300px; padding: 15px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); background-color: #fff;">
                 <h3 style="margin-top: 0; margin-bottom: 10px;">Blend & Brew</h3>
                 <div style="margin-bottom: 8px;"><span style="font-weight: bold;">Category:</span> Café</div>
                 <div style="margin-bottom: 8px;"><i class="fas fa-map-marker-alt" style="margin-right: 5px;"></i> 24 Green Lanes, Palmers Green, N13 6HT</div>
@@ -1803,6 +2336,43 @@
             
             <div class="business-listings" style="display: flex; flex-wrap: wrap; gap: 20px; margin-top: 15px;">
               <div class="business-item" data-category="service" style="flex: 1 1 300px; padding: 15px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); background-color: #fff;">
+                <h3 style="margin-top: 0; margin-bottom: 10px;">Peter Michael Estates and Lettings</h3>
+                <div class="directory-sponsor">Halloween 2026 Main Sponsor &amp; Prize Donor</div>
+                <div style="margin-bottom: 8px;"><span style="font-weight: bold;">Category:</span> Estate Agents</div>
+                <div style="margin-bottom: 8px;"><i class="fas fa-map-marker-alt" style="margin-right: 5px;"></i> Palmers Green, London N13</div>
+                <div style="margin-bottom: 12px;">Main sponsor of Halloween 2026 Trick or Treat on the High Street. Pumpkin Hunt entry forms can be picked up and handed in here by 4:15 PM on 31st October 2026. Prize draw at 4:30 PM. Donating the Nintendo Switch Lite and Mario Kart 8 Deluxe grand prize.</div>
+                <div>
+                  <a href="https://maps.google.com/?q=Peter+Michael+Estates+and+Lettings,+Palmers+Green" target="_blank" rel="noopener" style="display: inline-block; padding: 6px 12px; background: linear-gradient(to bottom, #555555, #333333, #222222); color: white; text-decoration: none; border-radius: 4px; margin-right: 8px;">Directions</a>
+                  <button class="share-btn" data-business="Peter Michael Estates and Lettings" style="padding: 6px 12px; border: 1px solid #ddd; background: #f8f8f8; border-radius: 4px; cursor: pointer;">Share</button>
+                </div>
+              </div>
+
+              <div class="business-item" data-category="service" style="flex: 1 1 300px; padding: 15px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); background-color: #fff;">
+                <h3 style="margin-top: 0; margin-bottom: 10px;">Anthony Webb Estate Agents</h3>
+                <div class="directory-offer">Free, no-obligation property valuations</div>
+                <div style="margin-bottom: 8px;"><span style="font-weight: bold;">Category:</span> Estate Agents</div>
+                <div style="margin-bottom: 8px;"><i class="fas fa-map-marker-alt" style="margin-right: 5px;"></i> Palmers Green</div>
+                <div style="margin-bottom: 12px;">Local estate agents offering free, no-obligation property valuations in Palmers Green.</div>
+                <div>
+                  <a href="https://maps.google.com/?q=Anthony+Webb+Estate+Agents,+Palmers+Green" target="_blank" rel="noopener" style="display: inline-block; padding: 6px 12px; background: linear-gradient(to bottom, #555555, #333333, #222222); color: white; text-decoration: none; border-radius: 4px; margin-right: 8px;">Directions</a>
+                  <button class="share-btn" data-business="Anthony Webb Estate Agents" style="padding: 6px 12px; border: 1px solid #ddd; background: #f8f8f8; border-radius: 4px; cursor: pointer;">Share</button>
+                </div>
+              </div>
+
+              <div class="business-item" data-category="service" style="flex: 1 1 300px; padding: 15px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); background-color: #fff;">
+                <h3 style="margin-top: 0; margin-bottom: 10px;">Bennett Walden</h3>
+                <div style="margin-bottom: 8px;"><span style="font-weight: bold;">Category:</span> Estate Agents</div>
+                <div style="margin-bottom: 8px;"><i class="fas fa-map-marker-alt" style="margin-right: 5px;"></i> 54 Aldermans Hill, London N13 4PP</div>
+                <div style="margin-bottom: 8px;"><i class="fas fa-phone" style="margin-right: 5px;"></i> <a href="tel:+442088861777">020 8886 1777</a></div>
+                <div style="margin-bottom: 8px;"><i class="fas fa-globe" style="margin-right: 5px;"></i> <a href="https://www.bennett-walden.co.uk" target="_blank" rel="noopener noreferrer">www.bennett-walden.co.uk</a></div>
+                <div style="margin-bottom: 12px;">Residential sales, lettings and property management. Established 1933.</div>
+                <div>
+                  <a href="https://maps.google.com/?q=54+Aldermans+Hill,+London+N13+4PP" target="_blank" rel="noopener" style="display: inline-block; padding: 6px 12px; background: linear-gradient(to bottom, #555555, #333333, #222222); color: white; text-decoration: none; border-radius: 4px; margin-right: 8px;">Directions</a>
+                  <button class="share-btn" data-business="Bennett Walden" style="padding: 6px 12px; border: 1px solid #ddd; background: #f8f8f8; border-radius: 4px; cursor: pointer;">Share</button>
+                </div>
+              </div>
+
+              <div class="business-item" data-category="service" style="flex: 1 1 300px; padding: 15px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); background-color: #fff;">
                 <h3 style="margin-top: 0; margin-bottom: 10px;">PG Tech Solutions</h3>
                 <div style="margin-bottom: 8px;"><span style="font-weight: bold;">Category:</span> Services</div>
                 <div style="margin-bottom: 8px;"><i class="fas fa-map-marker-alt" style="margin-right: 5px;"></i> 89 Green Lanes, Palmers Green, N13 4TS</div>
@@ -1861,11 +2431,63 @@
                   <button class="share-btn" data-business="Palmers Green Auto Services" style="padding: 6px 12px; border: 1px solid #ddd; background: #f8f8f8; border-radius: 4px; cursor: pointer;">Share</button>
                 </div>
               </div>
+
+              <div class="business-item" data-category="service" style="flex: 1 1 300px; padding: 15px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); background-color: #fff;">
+                <h3 style="margin-top: 0; margin-bottom: 10px;">UrNextEvent</h3>
+                <div style="margin-bottom: 8px;"><span style="font-weight: bold;">Category:</span> Event tickets</div>
+                <div style="margin-bottom: 8px;"><i class="fas fa-globe" style="margin-right: 5px;"></i> <a href="https://urnextevent.com/" target="_blank" rel="noopener noreferrer">urnextevent.com</a></div>
+                <div style="margin-bottom: 8px;"><i class="fas fa-envelope" style="margin-right: 5px;"></i> <a href="mailto:support@urnextevent.com">support@urnextevent.com</a></div>
+                <div style="margin-bottom: 12px;">Account-free event tickets with a flat fee. No passwords and no hidden charges — list or find your next event.</div>
+                <div>
+                  <a href="https://urnextevent.com/" target="_blank" rel="noopener noreferrer" style="display: inline-block; padding: 6px 12px; background: linear-gradient(to bottom, #555555, #333333, #222222); color: white; text-decoration: none; border-radius: 4px; margin-right: 8px;">Visit site</a>
+                  <button class="share-btn" data-business="UrNextEvent" style="padding: 6px 12px; border: 1px solid #ddd; background: #f8f8f8; border-radius: 4px; cursor: pointer;">Share</button>
+                </div>
+              </div>
+
+              <div class="business-item" data-category="service" style="flex: 1 1 300px; padding: 15px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); background-color: #fff;">
+                <h3 style="margin-top: 0; margin-bottom: 10px;">SmartSynk</h3>
+                <div style="margin-bottom: 8px;"><span style="font-weight: bold;">Category:</span> Business software</div>
+                <div style="margin-bottom: 8px;"><i class="fas fa-globe" style="margin-right: 5px;"></i> <a href="https://www.smartsynk.net/" target="_blank" rel="noopener noreferrer">smartsynk.net</a></div>
+                <div style="margin-bottom: 8px;"><i class="fas fa-envelope" style="margin-right: 5px;"></i> <a href="mailto:hello@smartsynk.net">hello@smartsynk.net</a></div>
+                <div style="margin-bottom: 12px;">One login for salon, barber, nail, gym and retail locations. Appointments, clients, team and payments in one hub.</div>
+                <div>
+                  <a href="https://www.smartsynk.net/" target="_blank" rel="noopener noreferrer" style="display: inline-block; padding: 6px 12px; background: linear-gradient(to bottom, #555555, #333333, #222222); color: white; text-decoration: none; border-radius: 4px; margin-right: 8px;">Visit site</a>
+                  <button class="share-btn" data-business="SmartSynk" style="padding: 6px 12px; border: 1px solid #ddd; background: #f8f8f8; border-radius: 4px; cursor: pointer;">Share</button>
+                </div>
+              </div>
             </div>
             
             <!-- Health & Beauty Section -->
             <h2 style="margin-top: 30px; border-bottom: 1px solid #eee; padding-bottom: 10px;">Health & Beauty</h2>
             <div class="business-listings" style="display: flex; flex-wrap: wrap; gap: 20px; margin-top: 15px;">
+              <div class="business-item" data-category="health" style="flex: 1 1 300px; padding: 15px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); background-color: #fff;">
+                <h3 style="margin-top: 0; margin-bottom: 10px;">Scruples Hair &amp; Beauty Salon</h3>
+                <div class="directory-offer">20% OFF Your First Visit</div>
+                <div style="margin-bottom: 8px;"><span style="font-weight: bold;">Category:</span> Health &amp; Beauty</div>
+                <div style="margin-bottom: 8px;"><i class="fas fa-map-marker-alt" style="margin-right: 5px;"></i> 338 Green Lanes, London N13 5TW</div>
+                <div style="margin-bottom: 8px;"><i class="fas fa-phone" style="margin-right: 5px;"></i> <a href="tel:+442088861327">020 8886 1327</a></div>
+                <div style="margin-bottom: 8px;"><i class="fas fa-globe" style="margin-right: 5px;"></i> <a href="https://elite-hair-beauty-winchmore-hill.mytratwell.co.uk" target="_blank" rel="noopener noreferrer">Book on Treatwell</a></div>
+                <div style="margin-bottom: 12px;">Hair, nails, threading, make up and bridal make up.</div>
+                <div>
+                  <a href="https://maps.google.com/?q=338+Green+Lanes,+London+N13+5TW" target="_blank" rel="noopener" style="display: inline-block; padding: 6px 12px; background: linear-gradient(to bottom, #555555, #333333, #222222); color: white; text-decoration: none; border-radius: 4px; margin-right: 8px;">Directions</a>
+                  <button class="share-btn" data-business="Scruples Hair &amp; Beauty Salon" style="padding: 6px 12px; border: 1px solid #ddd; background: #f8f8f8; border-radius: 4px; cursor: pointer;">Share</button>
+                </div>
+              </div>
+
+              <div class="business-item" data-category="health" style="flex: 1 1 300px; padding: 15px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); background-color: #fff;">
+                <h3 style="margin-top: 0; margin-bottom: 10px;">The Nine Glow</h3>
+                <div class="directory-offer">10% OFF Your First Treatment</div>
+                <div style="margin-bottom: 8px;"><span style="font-weight: bold;">Category:</span> Advanced Skin Treatments</div>
+                <div style="margin-bottom: 8px;"><i class="fas fa-map-marker-alt" style="margin-right: 5px;"></i> 418 Green Lanes, London N13 5XG (inside Leyla Hair &amp; Beauty)</div>
+                <div style="margin-bottom: 8px;"><i class="fas fa-phone" style="margin-right: 5px;"></i> <a href="tel:+442088868089">020 8886 8089</a></div>
+                <div style="margin-bottom: 8px;"><i class="fab fa-instagram" style="margin-right: 5px;"></i> <a href="https://www.instagram.com/thenineglow/" target="_blank" rel="noopener noreferrer">@thenineglow</a></div>
+                <div style="margin-bottom: 12px;">Hydrafacial, Hydrascalp, Skin Pen, The Elements, iS Clinical Facials, Bio Repeel and Green Peel.</div>
+                <div>
+                  <a href="https://maps.google.com/?q=418+Green+Lanes,+London+N13+5XG" target="_blank" rel="noopener" style="display: inline-block; padding: 6px 12px; background: linear-gradient(to bottom, #555555, #333333, #222222); color: white; text-decoration: none; border-radius: 4px; margin-right: 8px;">Directions</a>
+                  <button class="share-btn" data-business="The Nine Glow" style="padding: 6px 12px; border: 1px solid #ddd; background: #f8f8f8; border-radius: 4px; cursor: pointer;">Share</button>
+                </div>
+              </div>
+
               <div class="business-item" data-category="health" style="flex: 1 1 300px; padding: 15px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); background-color: #fff;">
                 <h3 style="margin-top: 0; margin-bottom: 10px;">Rejuvenate Spa</h3>
                 <div style="margin-bottom: 8px;"><span style="font-weight: bold;">Category:</span> Health & Beauty</div>
@@ -1927,6 +2549,43 @@
               </div>
             </div>
             
+            <!-- Charity Shops Section -->
+            <h2 style="margin-top: 30px; border-bottom: 1px solid #eee; padding-bottom: 10px;">Charity Shops</h2>
+            <div class="business-listings" style="display: flex; flex-wrap: wrap; gap: 20px; margin-top: 15px;">
+              <div class="business-item" data-category="charity" style="flex: 1 1 300px; padding: 15px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); background-color: #fff;">
+                <h3 style="margin-top: 0; margin-bottom: 10px;">Philanthropy London</h3>
+                <div style="margin-bottom: 8px;"><span style="font-weight: bold;">Category:</span> Community Interest Company</div>
+                <div style="margin-bottom: 8px;"><i class="fas fa-map-marker-alt" style="margin-right: 5px;"></i> 248 Green Lanes, London N13 5TU</div>
+                <div style="margin-bottom: 8px;"><i class="fas fa-phone" style="margin-right: 5px;"></i> <a href="tel:+442038833185">020 3883 3185</a></div>
+                <div style="margin-bottom: 8px;"><i class="fab fa-instagram" style="margin-right: 5px;"></i> <a href="https://www.instagram.com/philanthropylondon/" target="_blank" rel="noopener noreferrer">@philanthropylondon</a></div>
+                <div style="margin-bottom: 12px;">Preloved and vintage finds supporting community projects.</div>
+                <div>
+                  <a href="https://maps.google.com/?q=248+Green+Lanes,+London+N13+5TU" target="_blank" rel="noopener" style="display: inline-block; padding: 6px 12px; background: linear-gradient(to bottom, #555555, #333333, #222222); color: white; text-decoration: none; border-radius: 4px; margin-right: 8px;">Directions</a>
+                  <button class="share-btn" data-business="Philanthropy London" style="padding: 6px 12px; border: 1px solid #ddd; background: #f8f8f8; border-radius: 4px; cursor: pointer;">Share</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pubs & Bars Section -->
+            <h2 style="margin-top: 30px; border-bottom: 1px solid #eee; padding-bottom: 10px;">Pubs &amp; Bars</h2>
+            <div class="business-listings" style="display: flex; flex-wrap: wrap; gap: 20px; margin-top: 15px;">
+              <div class="business-item" data-category="pub" style="flex: 1 1 300px; padding: 15px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); background-color: #fff;">
+                <h3 style="margin-top: 0; margin-bottom: 10px;">The Fox Pub</h3>
+                <div class="directory-offer">10% OFF Kids Mains with leaflet</div>
+                <div style="margin-bottom: 8px;"><span style="font-weight: bold;">Category:</span> Pubs &amp; Bars</div>
+                <div style="margin-bottom: 8px;"><i class="fas fa-map-marker-alt" style="margin-right: 5px;"></i> 413 Green Lanes, London N13 4JD</div>
+                <div style="margin-bottom: 8px;"><i class="fas fa-phone" style="margin-right: 5px;"></i> <a href="tel:+442030910679">0203 091 0679</a></div>
+                <div style="margin-bottom: 8px;"><i class="fas fa-envelope" style="margin-right: 5px;"></i> <a href="mailto:ceyda@thefoxnorthlondon.com">ceyda@thefoxnorthlondon.com</a></div>
+                <div style="margin-bottom: 8px;"><i class="fas fa-globe" style="margin-right: 5px;"></i> <a href="https://www.thefoxnorthlondon.com" target="_blank" rel="noopener noreferrer">www.thefoxnorthlondon.com</a></div>
+                <div style="margin-bottom: 8px;"><i class="fab fa-instagram" style="margin-right: 5px;"></i> <a href="https://www.instagram.com/THEFOXN13/" target="_blank" rel="noopener noreferrer">@THEFOXN13</a></div>
+                <div style="margin-bottom: 12px;">Host of the Mini-Monster Disco on Saturday 31st October 2026, 4:00 PM – 8:00 PM, with entertainment by Eleni from Asterakia Entertaining. 10% off kids mains with leaflet.</div>
+                <div>
+                  <a href="https://maps.google.com/?q=413+Green+Lanes,+London+N13+4JD" target="_blank" rel="noopener" style="display: inline-block; padding: 6px 12px; background: linear-gradient(to bottom, #555555, #333333, #222222); color: white; text-decoration: none; border-radius: 4px; margin-right: 8px;">Directions</a>
+                  <button class="share-btn" data-business="The Fox Pub" style="padding: 6px 12px; border: 1px solid #ddd; background: #f8f8f8; border-radius: 4px; cursor: pointer;">Share</button>
+                </div>
+              </div>
+            </div>
+
             <!-- No Results Message -->
             <div id="no-results" style="display: none; padding: 20px; text-align: center; background-color: #f8f8f8; border-radius: 8px; margin-top: 20px;">
               <p style="font-size: 16px; color: #666;">No businesses found matching your search. Please try different keywords or clear your search.</p>
@@ -2102,6 +2761,7 @@
           <div class="contact-form-heading-wrap">
             <h2 class="contact-heading" style="font-size: 1.8em; margin-bottom: 10px;">Contact us</h2>
             <div class="paragraph-light" style="font-size: 0.9em;">Feel free to contact us with your questions about Palmers Green business, ideas or suggestions. Use the contact form in the footer to get in touch.</div>
+            <div class="paragraph-light" style="font-size: 0.95em; margin-top: 16px; line-height: 1.6;">Green Lanes Business Association (GLBA), established 1992. Supporting local businesses, promoting our shopping area, bringing community together.</div>
           </div>
         </div>
         <div id="w-node-cec23962-3070-cb68-f915-574cfb69543f-8dd536ab" style="flex: 1 1 300px; padding: 20px; background-color: #f8f8f8; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
@@ -2112,6 +2772,13 @@
           <div class="details-wrap" style="margin-bottom: 15px; padding: 8px;">
             <div class="label" style="margin-bottom: 5px; font-weight: bold;">WORKING HOURS</div>
             <div class="paragraph-light" style="line-height: 1.5;">9AM - 6PM, Mon to Fri</div>
+          </div>
+          <div class="details-wrap" style="margin-bottom: 15px; padding: 8px;">
+            <div class="label" style="margin-bottom: 5px; font-weight: bold;">MEMBERSHIP &amp; CHRISTMAS ADVERTISING</div>
+            <div class="paragraph-light" style="line-height: 1.5;">Costas<br>
+              <a href="tel:+447943198198">07943 198 198</a><br>
+              <a href="mailto:costas@lovepalmersgreen.com">costas@lovepalmersgreen.com</a>
+            </div>
           </div>
           <div class="details-wrap" style="margin-bottom: 15px; padding: 8px;">
             <div class="label" style="margin-bottom: 5px; font-weight: bold;">CONTACT</div>

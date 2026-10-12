@@ -150,8 +150,11 @@
   <!-- Mobile Menu -->
   <nav id="mobile-menu" class="mobile-menu" aria-hidden="true">
     <a href="index.php" class="mobile-menu-link">Home</a>
+    <a href="index.php#events" class="mobile-menu-link">Events</a>
+    <a href="index.php#business-directory" class="mobile-menu-link">Directory</a>
     <a href="history.php" class="mobile-menu-link">History</a>
     <a href="the-commitee.php" class="mobile-menu-link">Committee</a>
     <a href="our-vision.php" class="mobile-menu-link">Vision</a>
+    <a href="index.php#contact" class="mobile-menu-link">Contact</a>
   </nav>
 </header>

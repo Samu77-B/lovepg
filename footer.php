@@ -11,7 +11,7 @@ $pathPrefix = '';
       <!-- Company Information -->
       <div>
         <h3 style="font-size: 1.5em; font-weight: 700; margin-bottom: 20px; color: #ffffff;">Love Palmers Green</h3>
-        <p style="color: #b0b0b0; line-height: 1.6; margin-bottom: 15px;">Building a stronger community through local business support and community engagement. Your trusted partner in Palmers Green development.</p>
+        <p style="color: #b0b0b0; line-height: 1.6; margin-bottom: 15px;">Green Lanes Business Association (GLBA), established 1992. Supporting local businesses, promoting our shopping area, bringing community together.</p>
         <p style="color: #b0b0b0; line-height: 1.6; margin-bottom: 20px;">Since 1992, we've been dedicated to supporting businesses and fostering community spirit in North London.</p>
       </div>
       
@@ -30,6 +30,12 @@ $pathPrefix = '';
         </div>
         
         <div style="margin-bottom: 15px;">
+          <div style="font-weight: 600; color: #ffffff; margin-bottom: 2px;">Membership &amp; Christmas advertising</div>
+          <div style="color: #b0b0b0;">Costas</div>
+          <div style="color: #b0b0b0;"><a href="tel:+447943198198" style="color: #b0b0b0; text-decoration: none; transition: color 0.3s ease;">07943 198 198</a></div>
+          <a href="mailto:costas@lovepalmersgreen.com" style="color: #b0b0b0; text-decoration: none; transition: color 0.3s ease;">costas@lovepalmersgreen.com</a>
+        </div>
+        <div style="margin-bottom: 15px;">
           <div style="font-weight: 600; color: #ffffff; margin-bottom: 2px;">Email</div>
           <a href="mailto:contact@lovepalmersgreen.com" style="color: #b0b0b0; text-decoration: none; transition: color 0.3s ease;">contact@lovepalmersgreen.com</a>
         </div>
@@ -40,6 +46,8 @@ $pathPrefix = '';
         <h3 style="font-size: 1.5em; font-weight: 700; margin-bottom: 20px; color: #ffffff;">Quick Links</h3>
         <ul style="list-style: none; padding: 0; margin: 0;">
           <li style="margin-bottom: 12px;"><a href="<?php echo $pathPrefix; ?>index.php" style="color: #b0b0b0; text-decoration: none; transition: color 0.3s ease;">Home</a></li>
+          <li style="margin-bottom: 12px;"><a href="<?php echo $pathPrefix; ?>index.php#events" style="color: #b0b0b0; text-decoration: none; transition: color 0.3s ease;">Events</a></li>
+          <li style="margin-bottom: 12px;"><a href="<?php echo $pathPrefix; ?>index.php#business-directory" style="color: #b0b0b0; text-decoration: none; transition: color 0.3s ease;">Business Directory</a></li>
           <li style="margin-bottom: 12px;"><a href="<?php echo $pathPrefix; ?>our-vision.php" style="color: #b0b0b0; text-decoration: none; transition: color 0.3s ease;">Our Vision</a></li>
           <li style="margin-bottom: 12px;"><a href="<?php echo $pathPrefix; ?>the-commitee.php" style="color: #b0b0b0; text-decoration: none; transition: color 0.3s ease;">Committee</a></li>
           <li style="margin-bottom: 12px;"><a href="<?php echo $pathPrefix; ?>history.php" style="color: #b0b0b0; text-decoration: none; transition: color 0.3s ease;">History</a></li>

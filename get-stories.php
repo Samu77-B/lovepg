@@ -1,29 +1,58 @@
 <?php
-// Halloween 2025 story for local development
+// Community stories / seasonal events shown in the Stories CMS section
+function lpg_format_story_description($text) {
+    $safe = htmlspecialchars($text, ENT_QUOTES, 'UTF-8');
+    $safe = preg_replace('/\*\*(.+?)\*\*/s', '<strong>$1</strong>', $safe);
+    return nl2br($safe);
+}
+
 $stories = [
     [
-        'title' => 'Halloween Trick or Treat on the High Street 2025',
-        'description' => 'Join us for a spooktacular Halloween celebration in Palmers Green! 
+        'title' => 'Halloween "Trick or Treat" on the High Street 2026',
+        'description' => 'Join us for a family-friendly Halloween on Palmers Green High Street, sponsored by Peter Michael Estates and Lettings.
 
-🎃 **Pumpkin Hunt** (10am - 6pm)
-- Hunt for hidden pumpkins around participating shops
-- Winner announced at 6:15pm at Teas & C\'s
-- Prize: £50 Amazon Voucher
+**Saturday 31st October 2026 · 10:00 AM – 8:00 PM**
+Safe trick-or-treating along the local high street. Organised by Love Palmers Green / Green Lanes Business Association (GLBA).
 
-🍬 **Trick or Treating** (All day until 8pm)
-- Visit participating shops on Green Lanes and Alderman\'s Hill
-- Extended opening hours until 8pm
-- All participants must be under 12 years old
+**Pumpkin Hunt (10:00 AM – 4:30 PM)**
+Find 24 numbered pumpkins in shop windows along Aldermans Hill (from Lakeside Road), through The Triangle, from Ruth Winston House, and along Green Lanes towards Hedge Lane. Write the shop names on your entry form.
 
-👻 **Get your Halloween costumes on and "Trick or Treat" safely on our local high street!**
+Pick up forms from participating High Street shops and Peter Michael Estates and Lettings. Hand completed forms to Peter Michael by 4:15 PM. Prize draw at 4:30 PM at Peter Michael.
 
-📋 **Pick up your Pumpkin Hunters Form** at most of Palmers Green high street cafes and shops
+Grand prize: Nintendo Switch Lite (worth £200) + Mario Kart 8 Deluxe (worth £40), donated by Peter Michael. Gift for all participants. Entrants must be under 12 and accompanied by an adult. Form fields: Child\'s Name, School, Telephone Number.
 
-This family-friendly event is sponsored by Teas & C\'s and organized by LOVEPALMERSGREEN and the Green Lanes Business Association (established 1992).',
+**Mini-Monster Disco at The Fox (4:00 PM – 8:00 PM)**
+The Fox Pub, 413 Green Lanes, London N13 4JD. Entertainment by Eleni from Asterakia Entertaining. 10% off kids mains with leaflet.',
         'author' => 'LOVEPALMERSGREEN',
-        'image_url_mobile' => 'images/Holloween/Palmers Green Halloween - Mobile.png?v=2',
-        'image_url_desktop' => 'images/Holloween/Palmers Green Halloween - Desktop.png?v=2',
-        'created_date' => '2025-10-22'
+        'image_url_mobile' => 'images/halloween2026-poster.jpg',
+        'image_url_desktop' => 'images/halloween2026-poster.jpg',
+        'created_date' => '2026-10-12'
+    ],
+    [
+        'title' => 'Christmas Lights Switch-On 2026',
+        'description' => 'Join us at The Triangle, Palmers Green for the Christmas Lights Switch-On.
+
+**Thursday 26th November 2026 at 3:30 PM**
+Live performances by St Monica\'s Choir and Adorned Gospel Community Choir.
+
+Look out for posters advertising this festive family event. Organised by Love Palmers Green / Green Lanes Business Association (GLBA).',
+        'author' => 'LOVEPALMERSGREEN',
+        'image_url_mobile' => 'images/christmas/LPG-xmas2025-Santa.png',
+        'image_url_desktop' => 'images/LPG-Xmas2025.png',
+        'created_date' => '2026-10-12'
+    ],
+    [
+        'title' => 'Christmas Stocking Hunt 2026',
+        'description' => 'A festive family hunt along Palmers Green High Street.
+
+**Saturday 5th December 2026**
+Look out for posters advertising both the Christmas Lights Switch-On and the Stocking Hunt.
+
+Organised by Love Palmers Green / Green Lanes Business Association (GLBA).',
+        'author' => 'LOVEPALMERSGREEN',
+        'image_url_mobile' => 'images/christmas/LPG-xmas2025-Santa.png',
+        'image_url_desktop' => 'images/LPG-Xmas2025.png',
+        'created_date' => '2026-10-12'
     ]
 ];
 ?>
@@ -50,7 +79,7 @@ This family-friendly event is sponsored by Teas & C\'s and organized by LOVEPALM
                         <?= htmlspecialchars($story['title']) ?>
                     </div>
                     <div class="story-description">
-                        <?= nl2br(htmlspecialchars($story['description'])) ?>
+                        <?= lpg_format_story_description($story['description']) ?>
                     </div>
                 </div>
             </div>
