@@ -2591,7 +2591,7 @@
                 <div style="margin-bottom: 8px;"><i class="fas fa-map-marker-alt" style="margin-right: 5px;"></i> 413 Green Lanes, London N13 4JD</div>
                 <div style="margin-bottom: 8px;"><i class="fas fa-phone" style="margin-right: 5px;"></i> <a href="tel:+442030910679">0203 091 0679</a></div>
                 <div style="margin-bottom: 8px;"><i class="fas fa-envelope" style="margin-right: 5px;"></i> <a href="mailto:ceyda@thefoxnorthlondon.com">ceyda@thefoxnorthlondon.com</a></div>
-                <div style="margin-bottom: 8px;"><i class="fas fa-globe" style="margin-right: 5px;"></i> <a href="https://www.thefoxnorthlondon.com" target="_blank" rel="noopener noreferrer">www.thefoxnorthlondon.com</a></div>
+                <div style="margin-bottom: 8px;"><i class="fas fa-globe" style="margin-right: 5px;"></i> <a href="https://thefoxnorthlondon.com/" target="_blank" rel="noopener noreferrer">www.thefoxnorthlondon.com</a></div>
                 <div style="margin-bottom: 8px;"><i class="fab fa-instagram" style="margin-right: 5px;"></i> <a href="https://www.instagram.com/THEFOXN13/" target="_blank" rel="noopener noreferrer">@THEFOXN13</a></div>
                 <div style="margin-bottom: 12px;">Host of the Mini-Monster Disco on Saturday 31st October 2026, 4:00 PM – 8:00 PM, with entertainment by Eleni from Asterakia Entertaining. 10% off kids mains with leaflet.</div>
                 <div>
