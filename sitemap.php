@@ -13,7 +13,7 @@ echo '<?xml version="1.0" encoding="UTF-8"?>' . "\n";
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   
-  <!-- Homepage: Halloween 2026, Christmas 2026, directory, autumn hero -->
+  <!-- Homepage: Christmas Tree Lights 2026, directory, autumn hero -->
   <url>
     <loc><?php echo htmlspecialchars($base_url . '/', ENT_XML1, 'UTF-8'); ?></loc>
     <lastmod><?php echo $current_date; ?></lastmod>
@@ -25,9 +25,9 @@ echo '<?xml version="1.0" encoding="UTF-8"?>' . "\n";
       <image:caption>Love Palmers Green homepage hero — Palmers Green, North London N13</image:caption>
     </image:image>
     <image:image>
-      <image:loc><?php echo htmlspecialchars($base_url . '/images/halloween2026-poster.jpg', ENT_XML1, 'UTF-8'); ?></image:loc>
-      <image:title>Halloween Trick or Treat on the High Street 2026</image:title>
-      <image:caption>Family Halloween on Palmers Green High Street, Saturday 31 October 2026, organised by Love Palmers Green / GLBA</image:caption>
+      <image:loc><?php echo htmlspecialchars($base_url . '/images/christmas2026-poster.jpg', ENT_XML1, 'UTF-8'); ?></image:loc>
+      <image:title>Palmers Green Town Centre Christmas Tree Lights 2026</image:title>
+      <image:caption>Christmas Tree Lights switch-on Thursday 26 November 2026 at The Triangle, organised by Love Palmers Green / GLBA</image:caption>
     </image:image>
   </url>
   
@@ -42,8 +42,8 @@ echo '<?xml version="1.0" encoding="UTF-8"?>' . "\n";
       <image:title>Autumn on Palmers Green High Street</image:title>
     </image:image>
     <image:image>
-      <image:loc><?php echo htmlspecialchars($base_url . '/images/halloween2026-poster.jpg', ENT_XML1, 'UTF-8'); ?></image:loc>
-      <image:title>Halloween Trick or Treat on the High Street 2026</image:title>
+      <image:loc><?php echo htmlspecialchars($base_url . '/images/christmas2026-poster.jpg', ENT_XML1, 'UTF-8'); ?></image:loc>
+      <image:title>Palmers Green Town Centre Christmas Tree Lights 2026</image:title>
     </image:image>
   </url>
   

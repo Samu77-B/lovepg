@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <title>Love Palmers Green | Green Lanes Business Association - Supporting Local Businesses in Palmers Green N13 Since 1992</title>
-  <meta content="Love Palmers Green (formerly Green Lanes Business Association / GLBA) supports local businesses in Palmers Green, North London N13. Halloween Trick or Treat on the High Street Saturday 31 October 2026, Christmas Lights Switch-On 26 November, plus a local business directory. Community events and support since 1992." name="description">
-  <meta name="keywords" content="Palmers Green, Green Lanes Business Association, GLBA, Love Palmers Green, N13, North London, Halloween Palmers Green, Trick or Treat High Street, Pumpkin Hunt Palmers Green, Christmas lights Palmers Green, business directory Palmers Green, The Yard Cafe, Enfield, local commerce">
+  <meta content="Love Palmers Green (formerly Green Lanes Business Association / GLBA) supports local businesses in Palmers Green, North London N13. Christmas Tree Lights switch-on Thursday 26 November 2026 at 3:30 PM at The Triangle, with carol singing by Adorned Community Gospel Choir and St Monica's School Choir. Community events and support since 1992." name="description">
+  <meta name="keywords" content="Palmers Green, Green Lanes Business Association, GLBA, Love Palmers Green, N13, North London, Christmas Tree Lights Palmers Green, Christmas lights switch-on, The Triangle Palmers Green, Adorned Community Gospel Choir, St Monica's School Choir, business directory Palmers Green, The Yard Cafe, Enfield, local commerce">
   <meta name="author" content="Love Palmers Green">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <meta name="googlebot" content="index, follow">
@@ -38,11 +38,11 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="<?php echo htmlspecialchars($canonical_url, ENT_QUOTES, 'UTF-8'); ?>">
   <meta content="Love Palmers Green | Green Lanes Business Association - Supporting Local Businesses in Palmers Green N13 Since 1992" property="og:title">
-  <meta content="Love Palmers Green (formerly Green Lanes Business Association / GLBA) supports local businesses in Palmers Green, North London N13. Halloween Trick or Treat on the High Street Saturday 31 October 2026, Christmas Lights Switch-On 26 November, plus a local business directory. Community events and support since 1992." property="og:description">
-  <meta property="og:image" content="<?php echo $protocol . $domain; ?>/images/Hompage-HeroImage-Autumn.jpg">
-  <meta property="og:image:width" content="2390">
-  <meta property="og:image:height" content="1792">
-  <meta property="og:image:alt" content="Autumn on Palmers Green High Street, North London N13">
+  <meta content="Love Palmers Green (formerly Green Lanes Business Association / GLBA) supports local businesses in Palmers Green, North London N13. Christmas Tree Lights switch-on Thursday 26 November 2026 at 3:30 PM at The Triangle, with carol singing by Adorned Community Gospel Choir and St Monica's School Choir. Community events and support since 1992." property="og:description">
+  <meta property="og:image" content="<?php echo $protocol . $domain; ?>/images/christmas2026-poster.jpg">
+  <meta property="og:image:width" content="764">
+  <meta property="og:image:height" content="1024">
+  <meta property="og:image:alt" content="Palmers Green Town Centre Christmas Tree Lights 2026, Thursday 26 November at The Triangle">
   <meta property="og:locale" content="en_GB">
   <meta property="og:site_name" content="Love Palmers Green">
   
@@ -50,9 +50,9 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@LovePalmersGreen">
   <meta content="Love Palmers Green | Green Lanes Business Association - Supporting Local Businesses in Palmers Green N13 Since 1992" property="twitter:title">
-  <meta content="Love Palmers Green (formerly Green Lanes Business Association / GLBA) supports local businesses in Palmers Green, North London N13. Halloween Trick or Treat on the High Street Saturday 31 October 2026, Christmas Lights Switch-On 26 November, plus a local business directory. Community events and support since 1992." property="twitter:description">
-  <meta name="twitter:image" content="<?php echo $protocol . $domain; ?>/images/Hompage-HeroImage-Autumn.jpg">
-  <meta name="twitter:image:alt" content="Autumn on Palmers Green High Street, North London N13">
+  <meta content="Love Palmers Green (formerly Green Lanes Business Association / GLBA) supports local businesses in Palmers Green, North London N13. Christmas Tree Lights switch-on Thursday 26 November 2026 at 3:30 PM at The Triangle, with carol singing by Adorned Community Gospel Choir and St Monica's School Choir. Community events and support since 1992." property="twitter:description">
+  <meta name="twitter:image" content="<?php echo $protocol . $domain; ?>/images/christmas2026-poster.jpg">
+  <meta name="twitter:image:alt" content="Palmers Green Town Centre Christmas Tree Lights 2026, Thursday 26 November at The Triangle">
   
   <meta content="width=device-width, initial-scale=1" name="viewport">
   
@@ -78,12 +78,12 @@
     "@id": "<?php echo htmlspecialchars($canonical_url, ENT_QUOTES, 'UTF-8'); ?>",
     "name": "Love Palmers Green",
     "alternateName": ["Green Lanes Business Association", "GLBA"],
-    "description": "Love Palmers Green (formerly Green Lanes Business Association / GLBA) supports local businesses in Palmers Green, North London N13. Halloween Trick or Treat on the High Street Saturday 31 October 2026, Christmas Lights Switch-On 26 November, plus a local business directory. Community events and support since 1992.",
+    "description": "Love Palmers Green (formerly Green Lanes Business Association / GLBA) supports local businesses in Palmers Green, North London N13. Christmas Tree Lights switch-on Thursday 26 November 2026 at 3:30 PM at The Triangle, with carol singing by Adorned Community Gospel Choir and St Monica's School Choir. Community events and support since 1992.",
     "url": "<?php echo htmlspecialchars($canonical_url, ENT_QUOTES, 'UTF-8'); ?>",
     "logo": "<?php echo $protocol . $domain; ?>/images/LPG_2025_Long_logo_White03.png",
     "image": [
+      "<?php echo $protocol . $domain; ?>/images/christmas2026-poster.jpg",
       "<?php echo $protocol . $domain; ?>/images/Hompage-HeroImage-Autumn.jpg",
-      "<?php echo $protocol . $domain; ?>/images/halloween2026-poster.jpg",
       "<?php echo $protocol . $domain; ?>/images/LPG_2025_Long_logo_White03.png"
     ],
     "address": {
@@ -255,7 +255,7 @@
         "name": "What services does Love Palmers Green provide?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Love Palmers Green provides networking opportunities, business resources, community support, a local business directory, and high-street events including Halloween Trick or Treat and the Christmas Lights Switch-On. We work to strengthen the Palmers Green business community."
+          "text": "Love Palmers Green provides networking opportunities, business resources, community support, a local business directory, and high-street events including the Palmers Green Town Centre Christmas Tree Lights switch-on. We work to strengthen the Palmers Green business community."
         }
       },
       {
@@ -284,106 +284,30 @@
       },
       {
         "@type": "Question",
-        "name": "When is Halloween Trick or Treat on Palmers Green High Street 2026?",
+        "name": "When is the Palmers Green Christmas Tree Lights switch-on 2026?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Halloween Trick or Treat on the High Street is on Saturday 31 October 2026 from 10:00 AM to 8:00 PM. The Pumpkin Hunt runs 10:00 AM to 4:30 PM across 24 Palmers Green shops. The Mini-Monster Disco is at The Fox, 413 Green Lanes, N13 4JD, from 4:00 PM to 8:00 PM. The event is organised by Love Palmers Green / GLBA and sponsored by Peter Michael Estates and Lettings. Pickup hunt forms from participating High Street shops and Peter Michael."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "When is the Palmers Green Christmas Lights Switch-On 2026?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "The Christmas Lights Switch-On is on Thursday 26 November 2026 at 3:30 PM at The Triangle, Palmers Green, with live performances by St Monica's Choir and Adorned Gospel Community Choir. The Christmas Stocking Hunt follows on Saturday 5 December 2026 along Palmers Green High Street. For Christmas advertising, contact Costas on 07943 198 198 or costas@lovepalmersgreen.com."
+          "text": "Christmas Tree Lights will be switched on on Thursday 26 November 2026, starting at 3:30 PM at The Triangle, Palmers Green Town Centre. Christmas carol singing is by Adorned Community Gospel Choir and St Monica's School Choir. The event is organised by Love Palmers Green / GLBA, in association with Enfield Council, and invited by 2026 sponsors Hommix, Zelal Water Technology and Bloomsbury Court Interiors. For Christmas advertising, contact Costas on 07943 198 198 or costas@lovepalmersgreen.com."
         }
       }
     ]
   }
   </script>
 
-  <!-- Event Schema for Halloween 2026 and Christmas 2026 -->
+  <!-- Event Schema for Christmas 2026 -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@graph": [
       {
         "@type": "Event",
-        "name": "Halloween \"Trick or Treat\" on the High Street",
-        "description": "Safe trick-or-treating along Palmers Green High Street for families, including a 24-shop Pumpkin Hunt and Mini-Monster Disco at The Fox. Organised by Love Palmers Green / Green Lanes Business Association (GLBA). Sponsored by Peter Michael Estates and Lettings.",
-        "startDate": "2026-10-31T10:00:00+00:00",
-        "endDate": "2026-10-31T20:00:00+00:00",
-        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-        "eventStatus": "https://schema.org/EventScheduled",
-        "image": "<?php echo $protocol . $domain; ?>/images/halloween2026-poster.jpg",
-        "url": "<?php echo $protocol . $domain; ?>/index.php#halloween-2026",
-        "location": {
-          "@type": "Place",
-          "name": "Palmers Green High Street",
-          "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Palmers Green",
-            "addressRegion": "London",
-            "postalCode": "N13",
-            "addressCountry": "GB"
-          },
-          "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": "51.6175",
-            "longitude": "-0.1025"
-          }
-        },
-        "organizer": {
-          "@type": "Organization",
-          "name": "Love Palmers Green",
-          "alternateName": "Green Lanes Business Association",
-          "url": "https://lovepalmersgreen.com"
-        },
-        "sponsor": {
-          "@type": "Organization",
-          "name": "Peter Michael Estates and Lettings"
-        },
-        "isAccessibleForFree": true,
-        "subEvent": [
-          {
-            "@type": "Event",
-            "name": "Pumpkin Hunt",
-            "startDate": "2026-10-31T10:00:00+00:00",
-            "endDate": "2026-10-31T16:30:00+00:00",
-            "location": {
-              "@type": "Place",
-              "name": "Palmers Green High Street shops"
-            }
-          },
-          {
-            "@type": "Event",
-            "name": "Mini-Monster Disco",
-            "startDate": "2026-10-31T16:00:00+00:00",
-            "endDate": "2026-10-31T20:00:00+00:00",
-            "location": {
-              "@type": "Place",
-              "name": "The Fox Pub",
-              "url": "https://thefoxnorthlondon.com/",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "413 Green Lanes",
-                "addressLocality": "London",
-                "postalCode": "N13 4JD",
-                "addressCountry": "GB"
-              }
-            }
-          }
-        ]
-      },
-      {
-        "@type": "Event",
-        "name": "Christmas Lights Switch-On",
-        "description": "Christmas lights switch-on at The Triangle, Palmers Green, with live performances by St Monica's Choir and Adorned Gospel Community Choir. Organised by Love Palmers Green / Green Lanes Business Association (GLBA).",
+        "name": "Christmas Tree Lights",
+        "description": "Palmers Green Town Centre Christmas Tree Lights switch-on at The Triangle, with carol singing by Adorned Community Gospel Choir and St Monica's School Choir. Organised by Love Palmers Green / Green Lanes Business Association (GLBA), in association with Enfield Council. Invited by 2026 sponsors Hommix, Zelal Water Technology and Bloomsbury Court Interiors.",
         "startDate": "2026-11-26T15:30:00+00:00",
         "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
         "eventStatus": "https://schema.org/EventScheduled",
-        "image": "<?php echo $protocol . $domain; ?>/images/LPG-Xmas2025.png",
-        "url": "<?php echo $protocol . $domain; ?>/index.php#events",
+        "image": "<?php echo $protocol . $domain; ?>/images/christmas2026-poster.jpg",
+        "url": "<?php echo $protocol . $domain; ?>/index.php#christmas-2026",
         "location": {
           "@type": "Place",
           "name": "The Triangle, Palmers Green",
@@ -403,8 +327,18 @@
         "organizer": {
           "@type": "Organization",
           "name": "Love Palmers Green",
-          "alternateName": "Green Lanes Business Association"
+          "alternateName": "Green Lanes Business Association",
+          "url": "https://lovepalmersgreen.com"
         },
+        "sponsor": [
+          { "@type": "Organization", "name": "Hommix" },
+          { "@type": "Organization", "name": "Zelal Water Technology" },
+          { "@type": "Organization", "name": "Bloomsbury Court Interiors" }
+        ],
+        "performer": [
+          { "@type": "MusicGroup", "name": "Adorned Community Gospel Choir" },
+          { "@type": "MusicGroup", "name": "St Monica's School Choir" }
+        ],
         "isAccessibleForFree": true
       },
       {
@@ -777,17 +711,17 @@
       }
     }
 
-    #halloween-2026,
+    #christmas-2026,
     #events,
-    #pumpkin-hunt,
-    #mini-monster-disco,
+    #christmas-carols,
+    #christmas-sponsors,
     #business-directory,
     #contact {
       scroll-margin-top: 90px;
     }
 
-    .festive-featured-story.halloween::before {
-      background: linear-gradient(to right, #7c3aed, #FFA500, #dc2626, #FFA500, #7c3aed);
+    .festive-featured-story.christmas::before {
+      background: linear-gradient(to right, #165b33, #c41e3a, #165b33, #c41e3a, #165b33);
     }
 
     .halloween-sponsor {
@@ -886,7 +820,7 @@
 
     .lpg-events-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       gap: 22px;
     }
 
@@ -1035,78 +969,51 @@
     </div>
   </div>
 
-  <!-- Halloween 2026 featured event -->
-  <section class="festive-featured-story halloween" id="halloween-2026" aria-labelledby="halloween-title">
+  <!-- Christmas Tree Lights 2026 featured event -->
+  <section class="festive-featured-story christmas" id="christmas-2026" aria-labelledby="christmas-title">
     <div class="festive-content">
       <div class="festive-santa-image">
-        <img src="images/halloween2026-poster.jpg" alt="Halloween Trick or Treat on the High Street 2026 poster, sponsored by Peter Michael Estates and Lettings">
+        <img src="images/christmas2026-poster.jpg" alt="Palmers Green Town Centre Christmas Tree Lights 2026 poster, Thursday 26 November at The Triangle">
       </div>
       <div class="festive-text-content">
-        <span class="halloween-sponsor">Sponsored by Peter Michael Estates and Lettings</span>
-        <p class="festive-subtitle">Saturday 31st October 2026</p>
-        <h2 class="festive-title" id="halloween-title">Halloween “Trick or Treat” on the High Street</h2>
-        <p class="festive-dates">10:00 AM – 8:00 PM · Palmers Green High Street</p>
-        <p class="festive-description">Safe trick-or-treating along the local high street for families. Organised by Love Palmers Green / Green Lanes Business Association (GLBA).</p>
-        <p class="festive-details">Get your Halloween costumes on and trick or treat safely on our local high street. Pumpkin Hunt during the day, Mini-Monster Disco at The Fox from 4pm.</p>
+        <span class="halloween-sponsor">2026 sponsors: Hommix, Zelal Water Technology and Bloomsbury Court Interiors</span>
+        <p class="festive-subtitle">Thursday 26th November 2026</p>
+        <h2 class="festive-title" id="christmas-title">Christmas Tree Lights</h2>
+        <p class="festive-dates">3:30 PM · The Triangle, Palmers Green Town Centre</p>
+        <p class="festive-description">As your 2026 sponsors, Hommix, Zelal Water Technology and Bloomsbury Court Interiors invite you to Palmers Green Town Centre for the Christmas Tree Lights switch-on.</p>
+        <p class="festive-details">Organised by Love Palmers Green / Green Lanes Business Association (GLBA), in association with Enfield Council. Please support your local shops in Palmers Green.</p>
       </div>
     </div>
 
     <div class="halloween-subevents">
-      <article class="halloween-subevent" id="pumpkin-hunt">
-        <h3>Pumpkin Hunt</h3>
-        <p><strong>10:00 AM – 4:30 PM</strong></p>
-        <p>Find 24 numbered pumpkins in shop windows and write the shop names on your entry form.</p>
-        <p><strong>Route:</strong> 24 High Street shops starting at Aldermans Hill (from Lakeside Road), through The Triangle, from Ruth Winston House, and along Green Lanes up towards Hedge Lane.</p>
-        <ul>
-          <li>Hand completed forms to Peter Michael Estates and Lettings by <strong>4:15 PM</strong></li>
-          <li>Prize draw at <strong>4:30 PM</strong> at Peter Michael</li>
-          <li>Grand prize: Nintendo Switch Lite (worth £200) + Mario Kart 8 Deluxe (worth £40), donated by Peter Michael</li>
-          <li>Gift for all participants</li>
-          <li>All entrants must be under 12 and accompanied by an adult</li>
-        </ul>
+      <article class="halloween-subevent" id="christmas-carols">
+        <h3>Christmas Carol Singing</h3>
+        <p><strong>Starting at 3:30 PM</strong></p>
+        <p>Live carol singing at The Triangle by Adorned Community Gospel Choir and St Monica’s School Choir.</p>
       </article>
-      <article class="halloween-subevent" id="mini-monster-disco">
-        <h3>Mini-Monster Disco at The Fox</h3>
-        <p><strong>Saturday 31st October 2026 · 4:00 PM – 8:00 PM</strong></p>
-        <p>Venue: <a href="https://thefoxnorthlondon.com/" target="_blank" rel="noopener noreferrer">The Fox Pub</a>, 413 Green Lanes, London N13 4JD</p>
-        <p>Entertainment: Eleni from Asterakia Entertaining</p>
-        <p class="directory-offer">10% OFF Kids Mains with leaflet</p>
-        <p>
-          <a href="tel:+442030910679">0203 091 0679</a><br>
-          <a href="mailto:ceyda@thefoxnorthlondon.com">ceyda@thefoxnorthlondon.com</a><br>
-          <a href="https://thefoxnorthlondon.com/" target="_blank" rel="noopener noreferrer">thefoxnorthlondon.com</a><br>
-          <a href="https://www.instagram.com/THEFOXN13/" target="_blank" rel="noopener noreferrer">@THEFOXN13</a>
-        </p>
+      <article class="halloween-subevent" id="christmas-sponsors">
+        <h3>With thanks to our 2026 sponsors</h3>
+        <ul>
+          <li>Hommix Water Filtration</li>
+          <li>Zelal Water Technology</li>
+          <li>Bloomsbury Court Interiors</li>
+        </ul>
+        <p>In association with Enfield Council.</p>
       </article>
     </div>
-
-    <aside class="pumpkin-form-banner" aria-label="Pumpkin Hunt form pickup">
-      <h3>Pick up your Pumpkin Hunt form</h3>
-      <p>Collect an entry form from <strong>participating High Street shops</strong> and from <strong>Peter Michael Estates and Lettings</strong>.</p>
-      <p>Fill in the child’s name, school and telephone number, find the 24 numbered pumpkins, then <strong>hand the completed form back to Peter Michael by 4:15 PM</strong> on Saturday 31st October 2026.</p>
-      <p>Prize draw at 4:30 PM at Peter Michael. All under 12s must be accompanied by an adult.</p>
-    </aside>
   </section>
 
   <section class="lpg-events-calendar" id="events" aria-labelledby="events-heading">
     <h2 id="events-heading">Upcoming Community Events</h2>
-    <p class="events-intro">Halloween on the High Street, then Christmas lights and a family stocking hunt — all organised by Love Palmers Green / GLBA.</p>
+    <p class="events-intro">Christmas Tree Lights at The Triangle, then a family stocking hunt — all organised by Love Palmers Green / GLBA.</p>
     <div class="lpg-events-grid">
-      <article class="lpg-event-card">
-        <img src="images/halloween2026-poster.jpg" alt="Halloween Trick or Treat on the High Street 2026">
-        <div class="event-body">
-          <div class="event-date">Saturday 31 October 2026 · 10:00 AM – 8:00 PM</div>
-          <h3>Halloween “Trick or Treat” on the High Street</h3>
-          <p>Pumpkin Hunt 10:00 AM–4:30 PM and Mini-Monster Disco at The Fox 4:00–8:00 PM. Sponsored by Peter Michael Estates and Lettings.</p>
-          <a class="event-link" href="#halloween-2026">Event details</a>
-        </div>
-      </article>
       <article class="lpg-event-card christmas">
-        <img src="images/LPG-Xmas2025.png" alt="Palmers Green Christmas lights">
+        <img src="images/christmas2026-poster.jpg" alt="Palmers Green Town Centre Christmas Tree Lights 2026">
         <div class="event-body">
           <div class="event-date">Thursday 26 November 2026 · 3:30 PM</div>
-          <h3>Christmas Lights Switch-On</h3>
-          <p>The Triangle, Palmers Green. Live performances by St Monica’s Choir and Adorned Gospel Community Choir. Look out for posters around the high street.</p>
+          <h3>Christmas Tree Lights</h3>
+          <p>Switch-on at The Triangle, Palmers Green Town Centre. Carol singing by Adorned Community Gospel Choir and St Monica’s School Choir.</p>
+          <a class="event-link" href="#christmas-2026">Event details</a>
         </div>
       </article>
       <article class="lpg-event-card christmas">
@@ -1197,7 +1104,7 @@
         
         <a href="#events" class="lpg-link-card">
           <div class="lpg-link-card-title"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 10px; vertical-align: middle;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>Events</div>
-          <div class="lpg-link-card-description">Halloween 2026, Christmas lights and high street hunts</div>
+          <div class="lpg-link-card-description">Christmas Tree Lights 2026 and high street hunts</div>
         </a>
         
         <a href="#business-directory" class="lpg-link-card">
@@ -2338,10 +2245,9 @@
             <div class="business-listings" style="display: flex; flex-wrap: wrap; gap: 20px; margin-top: 15px;">
               <div class="business-item" data-category="service" style="flex: 1 1 300px; padding: 15px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); background-color: #fff;">
                 <h3 style="margin-top: 0; margin-bottom: 10px;">Peter Michael Estates and Lettings</h3>
-                <div class="directory-sponsor">Halloween 2026 Main Sponsor &amp; Prize Donor</div>
                 <div style="margin-bottom: 8px;"><span style="font-weight: bold;">Category:</span> Estate Agents</div>
                 <div style="margin-bottom: 8px;"><i class="fas fa-map-marker-alt" style="margin-right: 5px;"></i> Palmers Green, London N13</div>
-                <div style="margin-bottom: 12px;">Main sponsor of Halloween 2026 Trick or Treat on the High Street. Pumpkin Hunt entry forms can be picked up and handed in here by 4:15 PM on 31st October 2026. Prize draw at 4:30 PM. Donating the Nintendo Switch Lite and Mario Kart 8 Deluxe grand prize.</div>
+                <div style="margin-bottom: 12px;">Local estate agents and lettings in Palmers Green.</div>
                 <div>
                   <a href="https://maps.google.com/?q=Peter+Michael+Estates+and+Lettings,+Palmers+Green" target="_blank" rel="noopener" style="display: inline-block; padding: 6px 12px; background: linear-gradient(to bottom, #555555, #333333, #222222); color: white; text-decoration: none; border-radius: 4px; margin-right: 8px;">Directions</a>
                   <button class="share-btn" data-business="Peter Michael Estates and Lettings" style="padding: 6px 12px; border: 1px solid #ddd; background: #f8f8f8; border-radius: 4px; cursor: pointer;">Share</button>
@@ -2587,14 +2493,13 @@
             <div class="business-listings" style="display: flex; flex-wrap: wrap; gap: 20px; margin-top: 15px;">
               <div class="business-item" data-category="pub" style="flex: 1 1 300px; padding: 15px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); background-color: #fff;">
                 <h3 style="margin-top: 0; margin-bottom: 10px;">The Fox Pub</h3>
-                <div class="directory-offer">10% OFF Kids Mains with leaflet</div>
                 <div style="margin-bottom: 8px;"><span style="font-weight: bold;">Category:</span> Pubs &amp; Bars</div>
                 <div style="margin-bottom: 8px;"><i class="fas fa-map-marker-alt" style="margin-right: 5px;"></i> 413 Green Lanes, London N13 4JD</div>
                 <div style="margin-bottom: 8px;"><i class="fas fa-phone" style="margin-right: 5px;"></i> <a href="tel:+442030910679">0203 091 0679</a></div>
                 <div style="margin-bottom: 8px;"><i class="fas fa-envelope" style="margin-right: 5px;"></i> <a href="mailto:ceyda@thefoxnorthlondon.com">ceyda@thefoxnorthlondon.com</a></div>
                 <div style="margin-bottom: 8px;"><i class="fas fa-globe" style="margin-right: 5px;"></i> <a href="https://thefoxnorthlondon.com/" target="_blank" rel="noopener noreferrer">thefoxnorthlondon.com</a></div>
                 <div style="margin-bottom: 8px;"><i class="fab fa-instagram" style="margin-right: 5px;"></i> <a href="https://www.instagram.com/THEFOXN13/" target="_blank" rel="noopener noreferrer">@THEFOXN13</a></div>
-                <div style="margin-bottom: 12px;">Host of the Mini-Monster Disco on Saturday 31st October 2026, 4:00 PM – 8:00 PM, with entertainment by Eleni from Asterakia Entertaining. 10% off kids mains with leaflet.</div>
+                <div style="margin-bottom: 12px;">Historic family-friendly pub in Palmers Green, serving food, drink and sport.</div>
                 <div>
                   <a href="https://maps.google.com/?q=413+Green+Lanes,+London+N13+4JD" target="_blank" rel="noopener" style="display: inline-block; padding: 6px 12px; background: linear-gradient(to bottom, #555555, #333333, #222222); color: white; text-decoration: none; border-radius: 4px; margin-right: 8px;">Directions</a>
                   <button class="share-btn" data-business="The Fox Pub" style="padding: 6px 12px; border: 1px solid #ddd; background: #f8f8f8; border-radius: 4px; cursor: pointer;">Share</button>
