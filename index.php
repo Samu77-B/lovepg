@@ -2,9 +2,9 @@
 <html lang="en" data-wf-page="67f01a4044bdf3418dd536ab" data-wf-site="67f01a4044bdf3418dd536a4">
 <head>
   <meta charset="utf-8">
-  <title>Love Palmers Green | Green Lanes Business Association - Supporting Local Businesses in Palmers Green N13 Since 1992</title>
-  <meta content="Love Palmers Green (formerly Green Lanes Business Association / GLBA) supports local businesses in Palmers Green, North London N13. Christmas Tree Lights switch-on Thursday 26 November 2026 at 3:30 PM at The Triangle, with carol singing by Adorned Community Gospel Choir and St Monica's School Choir. Community events and support since 1992." name="description">
-  <meta name="keywords" content="Palmers Green, Green Lanes Business Association, GLBA, Love Palmers Green, N13, North London, Christmas Tree Lights Palmers Green, Christmas lights switch-on, The Triangle Palmers Green, Adorned Community Gospel Choir, St Monica's School Choir, business directory Palmers Green, The Yard Cafe, Enfield, local commerce">
+  <title>Love Palmers Green | Businesses, Events &amp; Living in Palmers Green, North London N13</title>
+  <meta content="Love Palmers Green is the Green Lanes Business Association for Palmers Green, North London N13. Find local business information, a shopping directory, and community events including Christmas Tree Lights at The Triangle on 26 November 2026. A practical guide if you are moving to Palmers Green, London." name="description">
+  <meta name="keywords" content="Palmers Green, Palmers Green North London, moving to Palmers Green, Palmers Green N13, North London businesses, North London events, Green Lanes Palmers Green, Palmers Green area, Palmers Green shopping, The Triangle Palmers Green, Green Lanes Business Association, GLBA, Love Palmers Green, Enfield, local business directory, Christmas Tree Lights Palmers Green">
   <meta name="author" content="Love Palmers Green">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <meta name="googlebot" content="index, follow">
@@ -37,8 +37,8 @@
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="<?php echo htmlspecialchars($canonical_url, ENT_QUOTES, 'UTF-8'); ?>">
-  <meta content="Love Palmers Green | Green Lanes Business Association - Supporting Local Businesses in Palmers Green N13 Since 1992" property="og:title">
-  <meta content="Love Palmers Green (formerly Green Lanes Business Association / GLBA) supports local businesses in Palmers Green, North London N13. Christmas Tree Lights switch-on Thursday 26 November 2026 at 3:30 PM at The Triangle, with carol singing by Adorned Community Gospel Choir and St Monica's School Choir. Community events and support since 1992." property="og:description">
+  <meta content="Love Palmers Green | Businesses, Events &amp; Living in Palmers Green, North London N13" property="og:title">
+  <meta content="Love Palmers Green is the Green Lanes Business Association for Palmers Green, North London N13. Find local business information, a shopping directory, and community events including Christmas Tree Lights at The Triangle on 26 November 2026. A practical guide if you are moving to Palmers Green, London." property="og:description">
   <meta property="og:image" content="<?php echo $protocol . $domain; ?>/images/christmas2026-poster.jpg">
   <meta property="og:image:width" content="764">
   <meta property="og:image:height" content="1024">
@@ -49,8 +49,8 @@
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@LovePalmersGreen">
-  <meta content="Love Palmers Green | Green Lanes Business Association - Supporting Local Businesses in Palmers Green N13 Since 1992" property="twitter:title">
-  <meta content="Love Palmers Green (formerly Green Lanes Business Association / GLBA) supports local businesses in Palmers Green, North London N13. Christmas Tree Lights switch-on Thursday 26 November 2026 at 3:30 PM at The Triangle, with carol singing by Adorned Community Gospel Choir and St Monica's School Choir. Community events and support since 1992." property="twitter:description">
+  <meta content="Love Palmers Green | Businesses, Events &amp; Living in Palmers Green, North London N13" property="twitter:title">
+  <meta content="Love Palmers Green is the Green Lanes Business Association for Palmers Green, North London N13. Find local business information, a shopping directory, and community events including Christmas Tree Lights at The Triangle on 26 November 2026. A practical guide if you are moving to Palmers Green, London." property="twitter:description">
   <meta name="twitter:image" content="<?php echo $protocol . $domain; ?>/images/christmas2026-poster.jpg">
   <meta name="twitter:image:alt" content="Palmers Green Town Centre Christmas Tree Lights 2026, Thursday 26 November at The Triangle">
   
@@ -78,7 +78,7 @@
     "@id": "<?php echo htmlspecialchars($canonical_url, ENT_QUOTES, 'UTF-8'); ?>",
     "name": "Love Palmers Green",
     "alternateName": ["Green Lanes Business Association", "GLBA"],
-    "description": "Love Palmers Green (formerly Green Lanes Business Association / GLBA) supports local businesses in Palmers Green, North London N13. Christmas Tree Lights switch-on Thursday 26 November 2026 at 3:30 PM at The Triangle, with carol singing by Adorned Community Gospel Choir and St Monica's School Choir. Community events and support since 1992.",
+    "description": "Love Palmers Green is the Green Lanes Business Association for Palmers Green, North London N13. Local business information, shopping directory, community events, and a practical guide to the Palmers Green area.",
     "url": "<?php echo htmlspecialchars($canonical_url, ENT_QUOTES, 'UTF-8'); ?>",
     "logo": "<?php echo $protocol . $domain; ?>/images/LPG_2025_Long_logo_White03.png",
     "image": [
@@ -114,10 +114,34 @@
       "closes": "18:00"
     },
     "foundingDate": "1992",
-    "areaServed": {
-      "@type": "City",
-      "name": "Palmers Green"
-    },
+    "knowsAbout": [
+      "Palmers Green local businesses",
+      "North London community events",
+      "Palmers Green shopping area",
+      "Moving to Palmers Green London",
+      "Green Lanes Palmers Green"
+    ],
+    "areaServed": [
+      {
+        "@type": "Place",
+        "name": "Palmers Green",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Palmers Green",
+          "addressRegion": "London",
+          "postalCode": "N13",
+          "addressCountry": "GB"
+        }
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "London Borough of Enfield"
+      },
+      {
+        "@type": "Place",
+        "name": "North London"
+      }
+    ],
     "sameAs": [
       "https://www.facebook.com/lovepalmersgreen",
       "https://twitter.com/LovePalmersGreen"
@@ -147,10 +171,11 @@
       "latitude": "51.6175",
       "longitude": "-0.1025"
     },
-    "areaServed": {
-      "@type": "City",
-      "name": "Palmers Green"
-    },
+    "areaServed": [
+      { "@type": "Place", "name": "Palmers Green" },
+      { "@type": "AdministrativeArea", "name": "London Borough of Enfield" },
+      { "@type": "Place", "name": "North London" }
+    ],
     "contactPoint": [
       {
         "@type": "ContactPoint",
@@ -187,7 +212,7 @@
     "name": "Love Palmers Green",
     "alternateName": "Green Lanes Business Association",
     "url": "<?php echo htmlspecialchars($canonical_url, ENT_QUOTES, 'UTF-8'); ?>",
-    "description": "Official site for Love Palmers Green, the Green Lanes Business Association (GLBA) serving Palmers Green, North London N13. Local events, business directory, and community news.",
+    "description": "Official site for Love Palmers Green, the Green Lanes Business Association (GLBA). Local business information, North London events, and a guide to Palmers Green N13.",
     "inLanguage": "en-GB",
     "potentialAction": {
       "@type": "SearchAction",
@@ -225,6 +250,47 @@
         "item": "<?php echo $protocol . $domain; ?>/index.php#business-directory"
       }
     ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Love Palmers Green | Businesses, Events and Living in Palmers Green, North London N13",
+    "url": "<?php echo htmlspecialchars($canonical_url, ENT_QUOTES, 'UTF-8'); ?>",
+    "inLanguage": "en-GB",
+    "about": {
+      "@type": "Place",
+      "name": "Palmers Green",
+      "alternateName": "Palmers Green, North London",
+      "description": "Palmers Green is a North London neighbourhood in the London Borough of Enfield, postcode N13. The town centre runs along Green Lanes and Aldermans Hill around The Triangle.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Palmers Green",
+        "addressRegion": "London",
+        "postalCode": "N13",
+        "addressCountry": "GB"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "51.6175",
+        "longitude": "-0.1025"
+      },
+      "containedInPlace": {
+        "@type": "AdministrativeArea",
+        "name": "London Borough of Enfield"
+      }
+    },
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": [".aeo-answer", "#about-palmers-green", "#local-faq"]
+    },
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Love Palmers Green",
+      "url": "https://lovepalmersgreen.com"
+    }
   }
   </script>
   
@@ -288,6 +354,38 @@
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "Christmas Tree Lights will be switched on on Thursday 26 November 2026, starting at 3:30 PM at The Triangle, Palmers Green Town Centre. Christmas carol singing is by Adorned Community Gospel Choir and St Monica's School Choir. The event is organised by Love Palmers Green / GLBA, in association with Enfield Council, and invited by 2026 sponsors Hommix, Zelal Water Technology and Bloomsbury Court Interiors. For Christmas advertising, contact Costas on 07943 198 198 or costas@lovepalmersgreen.com."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Where is Palmers Green in London?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Palmers Green is a neighbourhood in North London, in the London Borough of Enfield, postcode N13. The town centre is around Green Lanes, Aldermans Hill and The Triangle."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is Palmers Green like if I am moving to Palmers Green London?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Palmers Green is a North London neighbourhood with a high-street shopping area of independent shops, cafes, restaurants, salons and services along Green Lanes and Aldermans Hill. Broomfield Park and The Triangle are local landmarks. Love Palmers Green publishes a local business directory and community events such as Christmas Tree Lights. For council services such as bins, parking and planning, contact Enfield Council on 020 8379 1000."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Where can I find local business information in Palmers Green and North London?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The Love Palmers Green website has a Palmers Green business directory covering cafes, restaurants, shops, professional services, health and beauty, charity shops, and pubs. Love Palmers Green (formerly Green Lanes Business Association) has supported local businesses in Palmers Green N13 since 1992. To list a business, contact Costas on 07943 198 198 or costas@lovepalmersgreen.com."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What events are on in Palmers Green and North London?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Love Palmers Green organises community events in Palmers Green Town Centre, including Christmas Tree Lights at The Triangle on Thursday 26 November 2026 at 3:30 PM, and a Christmas Stocking Hunt on Saturday 5 December 2026 along Palmers Green High Street. Upcoming events are listed on lovepalmersgreen.com."
         }
       }
     ]
@@ -715,9 +813,67 @@
     #events,
     #christmas-carols,
     #christmas-sponsors,
+    #about-palmers-green,
+    #local-faq,
     #business-directory,
     #contact {
       scroll-margin-top: 90px;
+    }
+
+    .lpg-aeo {
+      max-width: 1280px;
+      margin: 10px auto 40px auto;
+      padding: 0 20px;
+    }
+    .lpg-aeo h2 {
+      font-size: 2em;
+      color: #2c5530;
+      margin: 0 0 8px 0;
+      font-weight: 800;
+    }
+    .lpg-aeo .aeo-lead {
+      color: #555;
+      font-size: 1.08em;
+      line-height: 1.6;
+      margin: 0 0 20px 0;
+      max-width: 48em;
+    }
+    .lpg-aeo .aeo-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    .lpg-aeo article {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+      padding: 22px 24px;
+    }
+    .lpg-aeo article h3 {
+      color: #2c5530;
+      font-size: 1.15em;
+      margin: 0 0 10px 0;
+      font-weight: 800;
+    }
+    .lpg-aeo article p,
+    .lpg-aeo article li {
+      color: #444;
+      font-size: 1.02em;
+      line-height: 1.6;
+      margin: 0 0 8px 0;
+    }
+    .lpg-aeo article ul {
+      margin: 0 0 8px 18px;
+      padding: 0;
+    }
+    .lpg-aeo article a {
+      color: #2c5530;
+      font-weight: 700;
+    }
+    @media (max-width: 900px) {
+      .lpg-aeo .aeo-grid {
+        grid-template-columns: 1fr;
+      }
     }
 
     .festive-featured-story.christmas::before {
@@ -1058,6 +1214,21 @@
           <p class="paragraph introtext" style="font-size: 1.05em; line-height: 1.5; color: #444;">As a hub for local commerce and innovation, we strive to provide valuable resources, networking opportunities, and expert guidance to help our members thrive. Whether you're a long-standing business owner or a newcomer to the area, we invite you to <a href="#contact" class="plainlink">join us</a> and become part of the <strong>Love Palmers Green family</strong>.</p>
         </div>
       </div>
+
+      <section class="lpg-aeo" id="about-palmers-green" aria-labelledby="about-pg-heading" style="padding: 0; margin: 28px 0 32px 0;">
+        <h2 id="about-pg-heading">Palmers Green, North London</h2>
+        <p class="aeo-lead aeo-answer">Palmers Green is a North London neighbourhood in the London Borough of Enfield, postcode N13. The town centre runs along Green Lanes and Aldermans Hill around The Triangle, with independent shops, cafes, restaurants and services — many family-run — across about 235 retail premises. Broomfield Park sits beside the high street. Love Palmers Green (formerly Green Lanes Business Association) has supported this shopping area since 1992.</p>
+        <div class="aeo-grid">
+          <article>
+            <h3>Moving to Palmers Green, London</h3>
+            <p class="aeo-answer">If you are moving to Palmers Green, start with the high street: Green Lanes, Aldermans Hill and The Triangle are the local shops, cafes and services. Use our <a href="#business-directory">business directory</a> for Palmers Green N13 listings, and <a href="#events">community events</a> for what is on. Council services such as bins, parking and planning are with Enfield Council on 020 8379 1000 (Monday to Friday, 9am to 5pm).</p>
+          </article>
+          <article>
+            <h3>Local businesses and North London events</h3>
+            <p class="aeo-answer">Love Palmers Green publishes local business information for Palmers Green and nearby North London, plus town-centre events such as Christmas Tree Lights at The Triangle on Thursday 26 November 2026 at 3:30 PM. To list a business or ask about membership, contact Costas on <a href="tel:+447943198198">07943 198 198</a> or <a href="mailto:costas@lovepalmersgreen.com">costas@lovepalmersgreen.com</a>.</p>
+          </article>
+        </div>
+      </section>
       
       <div class="enfield-contact" style="background-color: #f5f5f5; padding: 15px; border-radius: 8px; margin-bottom: 25px; text-align: center;">
         <p style="font-size: 1.1em; margin: 0;"><strong>Enfield Council contact number:</strong> <a href="tel:02083791000" style="color: #444; text-decoration: underline; font-weight: bold;">020 8379 1000</a></p>
@@ -1112,6 +1283,29 @@
           <div class="lpg-link-card-description">Browse our local Palmers Green businesses</div>
         </a>
       </div>
+
+      <section class="lpg-aeo" id="local-faq" aria-labelledby="faq-heading" style="padding: 0; margin: 36px 0 10px 0;">
+        <h2 id="faq-heading">Palmers Green questions</h2>
+        <p class="aeo-lead">Quick answers about the Palmers Green area, local businesses, North London events, and moving to N13.</p>
+        <div class="aeo-grid">
+          <article>
+            <h3>Where is Palmers Green in London?</h3>
+            <p class="aeo-answer">Palmers Green is a neighbourhood in North London, in the London Borough of Enfield, postcode N13. The town centre is around Green Lanes, Aldermans Hill and The Triangle.</p>
+          </article>
+          <article>
+            <h3>What is Palmers Green like if I am moving here?</h3>
+            <p class="aeo-answer">It is a North London high-street neighbourhood with independent shops, cafes, restaurants, salons and services. Broomfield Park and The Triangle are local landmarks. Use our business directory for shops and our events list for what is on. Enfield Council handles bins, parking and planning on 020 8379 1000.</p>
+          </article>
+          <article>
+            <h3>Where can I find local business information in North London?</h3>
+            <p class="aeo-answer">Our <a href="#business-directory">Palmers Green business directory</a> lists cafes, restaurants, shops, professional services, health and beauty, charity shops and pubs. Love Palmers Green has supported this shopping area since 1992.</p>
+          </article>
+          <article>
+            <h3>What events are on in Palmers Green?</h3>
+            <p class="aeo-answer">Upcoming community events include Christmas Tree Lights at The Triangle on Thursday 26 November 2026 at 3:30 PM, and a Christmas Stocking Hunt on Saturday 5 December 2026. See <a href="#events">upcoming events</a>.</p>
+          </article>
+        </div>
+      </section>
       
       <div class="home-content-wrap">
         <div class="newsdiv">

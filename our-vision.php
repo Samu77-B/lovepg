@@ -2,15 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Love Palmers Green | Green Lanes Business Association: support your local business. Palmers Green N13</title>
-  <meta content="Since 1992, Green Lanes Business Association has been dedicated to supporting businesses in Palmers Green, North London. Discover our community and learn how we can help your business thrive." name="description">
-  <meta content="Love Palmers Green | Green Lanes Business Association: support your local business. Palmers Green N13" property="og:title">
-  <meta content="Since 1992, Green Lanes Business Association has been dedicated to supporting businesses in Palmers Green, North London. Discover our community and learn how we can help your business thrive." property="og:description">
-  <meta content="Love Palmers Green | Green Lanes Business Association: support your local business. Palmers Green N13" property="twitter:title">
-  <meta content="Since 1992, Green Lanes Business Association has been dedicated to supporting businesses in Palmers Green, North London. Discover our community and learn how we can help your business thrive." property="twitter:description">
+  <title>Our Vision for Palmers Green Town Centre | Love Palmers Green GLBA</title>
+  <meta content="Love Palmers Green (GLBA) works to make Palmers Green, North London a better place to shop and do business. Around 235 retail premises on Green Lanes and Aldermans Hill, plus community events." name="description">
+  <meta name="geo.region" content="GB-ENF">
+  <meta name="geo.placename" content="Palmers Green, London">
+  <meta content="Our Vision for Palmers Green Town Centre | Love Palmers Green GLBA" property="og:title">
+  <meta content="Love Palmers Green (GLBA) works to make Palmers Green, North London a better place to shop and do business. Around 235 retail premises on Green Lanes and Aldermans Hill, plus community events." property="og:description">
+  <meta content="Our Vision for Palmers Green Town Centre | Love Palmers Green GLBA" property="twitter:title">
+  <meta content="Love Palmers Green (GLBA) works to make Palmers Green, North London a better place to shop and do business. Around 235 retail premises on Green Lanes and Aldermans Hill, plus community events." property="twitter:description">
   <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_GB">
   <meta content="summary_large_image" name="twitter:card">
   <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link rel="canonical" href="https://lovepalmersgreen.com/our-vision.php">
   
   <!-- Dynamic Environmental Adaptation (apply theme ASAP) -->
   <script>

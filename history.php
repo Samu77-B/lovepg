@@ -2,15 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Love Palmers Green | Green Lanes Business Association: support your local business. Palmers Green N13</title>
-  <meta content="Since 1992, Green Lanes Business Association has been dedicated to supporting businesses in Palmers Green, North London. Discover our community and learn how we can help your business thrive." name="description">
-  <meta content="Love Palmers Green | Green Lanes Business Association: support your local business. Palmers Green N13" property="og:title">
-  <meta content="Since 1992, Green Lanes Business Association has been dedicated to supporting businesses in Palmers Green, North London. Discover our community and learn how we can help your business thrive." property="og:description">
-  <meta content="Love Palmers Green | Green Lanes Business Association: support your local business. Palmers Green N13" property="twitter:title">
-  <meta content="Since 1992, Green Lanes Business Association has been dedicated to supporting businesses in Palmers Green, North London. Discover our community and learn how we can help your business thrive." property="twitter:description">
+  <title>Palmers Green History in Photos | Love Palmers Green, North London N13</title>
+  <meta content="Historic photographs of Palmers Green, North London N13. Explore the Green Lanes shopping area and local community through Love Palmers Green, the Green Lanes Business Association." name="description">
+  <meta name="geo.region" content="GB-ENF">
+  <meta name="geo.placename" content="Palmers Green, London">
+  <meta content="Palmers Green History in Photos | Love Palmers Green, North London N13" property="og:title">
+  <meta content="Historic photographs of Palmers Green, North London N13. Explore the Green Lanes shopping area and local community through Love Palmers Green, the Green Lanes Business Association." property="og:description">
+  <meta content="Palmers Green History in Photos | Love Palmers Green, North London N13" property="twitter:title">
+  <meta content="Historic photographs of Palmers Green, North London N13. Explore the Green Lanes shopping area and local community through Love Palmers Green, the Green Lanes Business Association." property="twitter:description">
   <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_GB">
   <meta content="summary_large_image" name="twitter:card">
   <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link rel="canonical" href="https://lovepalmersgreen.com/history.php">
   
   <!-- Dynamic Environmental Adaptation (apply theme ASAP) -->
   <script>
@@ -85,7 +89,8 @@
 <body style="background: #f7f7f7; margin: 0; padding: 0; min-height: 100vh;">
     <?php include('header.php'); ?>
     <div style="max-width: 1000px; margin: 32px auto 0 auto; padding: 0 16px;">
-      <div style="background: #8bc34a; color: #fff; border-radius: 0; padding: 18px 0 14px 0; text-align: center; font-size: 2.2em; font-weight: 600; letter-spacing: -1px; margin-bottom: 32px;">Palmers Green a History Pictures</div>
+      <div style="background: #8bc34a; color: #fff; border-radius: 0; padding: 18px 0 14px 0; text-align: center; font-size: 2.2em; font-weight: 600; letter-spacing: -1px; margin-bottom: 16px;">Palmers Green a History Pictures</div>
+      <p style="color: #444; font-size: 1.08em; line-height: 1.6; margin: 0 0 32px 0; text-align: center;">Historic photographs of Palmers Green, North London N13 — the Green Lanes shopping area and local community, shared by Love Palmers Green / Green Lanes Business Association.</p>
       <div style="display: flex; flex-direction: column; gap: 36px;">
         <div style="background: #fff; border-radius: 12px; box-shadow: 0 4px 24px rgba(0,0,0,0.07); padding: 18px 18px 8px 18px; display: flex; flex-direction: column; align-items: center;">
           <img src="images/history/Layer-25-p-1080-p-500.png" alt="History Image 1" style="width: 100%; max-width: 900px; border-radius: 8px; margin-bottom: 8px; object-fit: cover;">

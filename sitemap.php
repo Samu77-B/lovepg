@@ -13,7 +13,7 @@ echo '<?xml version="1.0" encoding="UTF-8"?>' . "\n";
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   
-  <!-- Homepage: Christmas Tree Lights 2026, directory, autumn hero -->
+  <!-- Homepage: Palmers Green area guide, businesses, events, Christmas 2026 -->
   <url>
     <loc><?php echo htmlspecialchars($base_url . '/', ENT_XML1, 'UTF-8'); ?></loc>
     <lastmod><?php echo $current_date; ?></lastmod>

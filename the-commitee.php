@@ -2,15 +2,19 @@
 <html data-wf-page="68052bf8ebd77b444f90ca88" data-wf-site="67f01a4044bdf3418dd536a4">
 <head>
   <meta charset="utf-8">
-  <title>Love Palmers Green | Green Lanes Business Association: support your local business. Palmers Green N13</title>
-  <meta content="Since 1992, Green Lanes Business Association has been dedicated to supporting businesses in Palmers Green, North London. Discover our community and learn how we can help your business thrive." name="description">
-  <meta content="Love Palmers Green | Green Lanes Business Association: support your local business. Palmers Green N13" property="og:title">
-  <meta content="Since 1992, Green Lanes Business Association has been dedicated to supporting businesses in Palmers Green, North London. Discover our community and learn how we can help your business thrive." property="og:description">
-  <meta content="Love Palmers Green | Green Lanes Business Association: support your local business. Palmers Green N13" property="twitter:title">
-  <meta content="Since 1992, Green Lanes Business Association has been dedicated to supporting businesses in Palmers Green, North London. Discover our community and learn how we can help your business thrive." property="twitter:description">
+  <title>Committee | Love Palmers Green Business Association, Palmers Green N13</title>
+  <meta content="Meet the Love Palmers Green committee supporting local businesses in Palmers Green, North London N13 since 1992. Formerly Green Lanes Business Association (GLBA)." name="description">
+  <meta name="geo.region" content="GB-ENF">
+  <meta name="geo.placename" content="Palmers Green, London">
+  <meta content="Committee | Love Palmers Green Business Association, Palmers Green N13" property="og:title">
+  <meta content="Meet the Love Palmers Green committee supporting local businesses in Palmers Green, North London N13 since 1992. Formerly Green Lanes Business Association (GLBA)." property="og:description">
+  <meta content="Committee | Love Palmers Green Business Association, Palmers Green N13" property="twitter:title">
+  <meta content="Meet the Love Palmers Green committee supporting local businesses in Palmers Green, North London N13 since 1992. Formerly Green Lanes Business Association (GLBA)." property="twitter:description">
   <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_GB">
   <meta content="summary_large_image" name="twitter:card">
   <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link rel="canonical" href="https://lovepalmersgreen.com/the-commitee.php">
   
   <!-- Dynamic Environmental Adaptation (apply theme ASAP) -->
   <script>
