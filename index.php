@@ -385,7 +385,7 @@
         "name": "What events are on in Palmers Green and North London?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Love Palmers Green organises community events in Palmers Green Town Centre, including Christmas Tree Lights at The Triangle on Thursday 26 November 2026 at 3:30 PM, and a Christmas Stocking Hunt on Saturday 5 December 2026 along Palmers Green High Street. Upcoming events are listed on lovepalmersgreen.com."
+          "text": "Love Palmers Green organises community events in Palmers Green Town Centre, including Christmas Tree Lights at The Triangle on Thursday 26 November 2026 at 3:30 PM, and a Christmas Stocking Hunt prize draw on Saturday 5 December 2026 at 3:30 PM at Hommix and Bloomsbury Court Interiors. Aksular Restaurant is offering 10% off on Thursday 26 November 2026 (drinks and set menus excluded) and is taking part in the stocking hunt. Upcoming events are listed on lovepalmersgreen.com."
         }
       }
     ]
@@ -442,15 +442,15 @@
       {
         "@type": "Event",
         "name": "Christmas Stocking Hunt",
-        "description": "Festive family stocking hunt along Palmers Green High Street. Organised by Love Palmers Green / Green Lanes Business Association (GLBA).",
-        "startDate": "2026-12-05",
+        "description": "Palmers Green Town Centre Christmas Stocking Hunt. Prize draw on Saturday 5 December 2026 at 3:30 PM at Hommix and Bloomsbury Court Interiors. First prize FujiFilm Instax camera with films and accessories. Face painting, bauble decorating, letters to Santa and festive treats. Stockings displayed in town centre shops from 28 November to 5 December 2026. Under 12s must be accompanied by an adult. Organised by Love Palmers Green / Green Lanes Business Association (GLBA), in association with Enfield Council.",
+        "startDate": "2026-12-05T15:30:00",
         "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
         "eventStatus": "https://schema.org/EventScheduled",
-        "image": "<?php echo $protocol . $domain; ?>/images/christmas/LPG-xmas2025-Santa.png",
-        "url": "<?php echo $protocol . $domain; ?>/index.php#events",
+        "image": "<?php echo $protocol . $domain; ?>/images/stocking-hunt-2026.png",
+        "url": "<?php echo $protocol . $domain; ?>/index.php#stocking-hunt-2026",
         "location": {
           "@type": "Place",
-          "name": "Palmers Green High Street",
+          "name": "Hommix and Bloomsbury Court Interiors, Palmers Green Town Centre",
           "address": {
             "@type": "PostalAddress",
             "addressLocality": "Palmers Green",
@@ -470,6 +470,40 @@
           "alternateName": "Green Lanes Business Association"
         },
         "isAccessibleForFree": true
+      },
+      {
+        "@type": "Event",
+        "name": "Aksular Christmas lights, festive delights",
+        "description": "10% off at Aksular Restaurant, Palmers Green, on Thursday 26 November 2026. Drinks and set menus excluded. Also taking part in the Palmers Green Christmas Stocking Hunt on Saturday 5 December 2026.",
+        "startDate": "2026-11-26",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "image": "<?php echo $protocol . $domain; ?>/images/aksular-christmas2026.png",
+        "url": "https://aksularpalmersgreen.com/",
+        "location": {
+          "@type": "Restaurant",
+          "name": "Aksular Restaurant",
+          "telephone": "+44-20-8886-3503",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "232-234 Green Lanes",
+            "addressLocality": "Palmers Green",
+            "addressRegion": "London",
+            "postalCode": "N13 5UD",
+            "addressCountry": "GB"
+          }
+        },
+        "organizer": {
+          "@type": "Restaurant",
+          "name": "Aksular Restaurant",
+          "url": "https://aksularpalmersgreen.com/"
+        },
+        "offers": {
+          "@type": "Offer",
+          "name": "10% off",
+          "description": "Drinks and set menus are excluded. Cannot be combined with other offers.",
+          "url": "https://aksularpalmersgreen.com/"
+        }
       }
     ]
   }
@@ -976,7 +1010,7 @@
 
     .lpg-events-grid {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(3, 1fr);
       gap: 22px;
     }
 
@@ -996,10 +1030,15 @@
 
     .lpg-event-card img {
       width: 100%;
-      height: 180px;
+      height: 260px;
       object-fit: cover;
       object-position: top center;
+      background: #fff;
       display: block;
+    }
+
+    .lpg-event-card#stocking-hunt-2026 img {
+      object-position: center 18%;
     }
 
     .lpg-event-card .event-body {
@@ -1033,6 +1072,11 @@
       flex: 1;
     }
 
+    .lpg-event-card > a {
+      display: block;
+      line-height: 0;
+    }
+
     .lpg-event-card a.event-link {
       display: inline-block;
       padding: 8px 14px;
@@ -1054,6 +1098,11 @@
       border-radius: 4px;
       border: 1px solid #FFA500;
       margin: 0 0 10px 0;
+    }
+
+    .lpg-event-card .directory-offer {
+      align-self: flex-start;
+      width: fit-content;
     }
 
     .directory-sponsor {
@@ -1161,7 +1210,7 @@
 
   <section class="lpg-events-calendar" id="events" aria-labelledby="events-heading">
     <h2 id="events-heading">Upcoming Community Events</h2>
-    <p class="events-intro">Christmas Tree Lights at The Triangle, then a family stocking hunt — all organised by Love Palmers Green / GLBA.</p>
+    <p class="events-intro">Christmas Tree Lights at The Triangle, then a family stocking hunt — organised by Love Palmers Green / GLBA — plus festive restaurant offers along Green Lanes.</p>
     <div class="lpg-events-grid">
       <article class="lpg-event-card christmas">
         <img src="images/christmas2026-poster.jpg" alt="Palmers Green Town Centre Christmas Tree Lights 2026">
@@ -1172,12 +1221,25 @@
           <a class="event-link" href="#christmas-2026">Event details</a>
         </div>
       </article>
-      <article class="lpg-event-card christmas">
-        <img src="images/christmas/LPG-xmas2025-Santa.png" alt="Christmas Stocking Hunt in Palmers Green">
+      <article class="lpg-event-card christmas" id="stocking-hunt-2026">
+        <a href="images/stocking-hunt-2026.png" target="_blank" rel="noopener noreferrer" aria-label="Open Christmas Stocking Hunt 2026 poster">
+          <img src="images/stocking-hunt-2026.png" alt="Palmers Green Town Centre Christmas Stocking Hunt 2026 poster, prize draw Saturday 5 December">
+        </a>
         <div class="event-body">
-          <div class="event-date">Saturday 5 December 2026</div>
+          <div class="event-date">Saturday 5 December 2026 · 3:30 PM</div>
           <h3>Christmas Stocking Hunt</h3>
-          <p>A festive family event along Palmers Green High Street. Look out for posters advertising both Christmas events.</p>
+          <p>Prize draw at Hommix &amp; Bloomsbury Court Interiors. First prize: FujiFilm Instax camera. Face painting, bauble decorating, letters to Santa and festive treats. Stockings in town centre shops from 28 November. Under 12s must be with an adult.</p>
+          <a class="event-link" href="images/stocking-hunt-2026.png" target="_blank" rel="noopener noreferrer">View poster</a>
+        </div>
+      </article>
+      <article class="lpg-event-card christmas" id="aksular-christmas">
+        <img src="images/aksular-christmas2026.png" alt="Aksular Restaurant Christmas lights, festive delights — 10% off Thursday 26 November 2026">
+        <div class="event-body">
+          <div class="directory-offer">10% OFF</div>
+          <div class="event-date">Thursday 26 November 2026</div>
+          <h3>Aksular: Christmas lights, festive delights</h3>
+          <p>Authentic Turkish cuisine at 232–234 Green Lanes. 10% off on switch-on night. Also part of the Christmas Stocking Hunt on Saturday 5 December. Drinks and set menus excluded.</p>
+          <a class="event-link" href="https://aksularpalmersgreen.com/" target="_blank" rel="noopener noreferrer">Book a table</a>
         </div>
       </article>
     </div>
@@ -1302,7 +1364,7 @@
           </article>
           <article>
             <h3>What events are on in Palmers Green?</h3>
-            <p class="aeo-answer">Upcoming community events include Christmas Tree Lights at The Triangle on Thursday 26 November 2026 at 3:30 PM, and a Christmas Stocking Hunt on Saturday 5 December 2026. See <a href="#events">upcoming events</a>.</p>
+            <p class="aeo-answer">Upcoming community events include Christmas Tree Lights at The Triangle on Thursday 26 November 2026 at 3:30 PM, and a Christmas Stocking Hunt prize draw on Saturday 5 December 2026 at 3:30 PM at Hommix and Bloomsbury Court Interiors. Aksular Restaurant is offering 10% off on switch-on night (drinks and set menus excluded). See <a href="#events">upcoming events</a>.</p>
           </article>
         </div>
       </section>

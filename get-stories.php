@@ -22,16 +22,29 @@ As your 2026 sponsors, Hommix, Zelal Water Technology and Bloomsbury Court Inter
     ],
     [
         'title' => 'Christmas Stocking Hunt 2026',
-        'description' => 'A festive family hunt along Palmers Green High Street.
+        'description' => 'Join Palmers Green Town Centre for the Christmas Stocking Hunt.
 
-**Saturday 5th December 2026**
-Look out for posters advertising both the Christmas Tree Lights and the Stocking Hunt.
+**Saturday 5th December 2026 · 3:30 PM at Hommix & Bloomsbury Court Interiors**
+Prize draw, with first prize a FujiFilm Instax camera with films and accessories. Face painting, bauble decorating, letters to Santa and festive treats for all participants. Stockings will be displayed in town centre shops from 28 November until 5 December. All under 12s must be accompanied by an adult.
 
-Organised by Love Palmers Green / Green Lanes Business Association (GLBA).',
+Organised by Love Palmers Green / Green Lanes Business Association (GLBA), in association with Enfield Council. 2026 sponsors: Hommix, Zelal Water Technology and Bloomsbury Court Interiors.',
         'author' => 'LOVEPALMERSGREEN',
-        'image_url_mobile' => 'images/christmas/LPG-xmas2025-Santa.png',
-        'image_url_desktop' => 'images/LPG-Xmas2025.png',
+        'image_url_mobile' => 'images/stocking-hunt-2026.png',
+        'image_url_desktop' => 'images/stocking-hunt-2026.png',
         'created_date' => '2026-10-12'
+    ],
+    [
+        'title' => 'Aksular: Christmas lights, festive delights',
+        'description' => 'Authentic Turkish cuisine in Palmers Green. 10% off on Christmas lights night.
+
+**Thursday 26th November 2026**
+10% off at Aksular Restaurant, 232–234 Green Lanes. Drinks and set menus excluded; cannot be combined with other offers.
+
+Also taking part in the Palmers Green Christmas Stocking Hunt on **Saturday 5th December 2026**. Book on 020 8886 3503 or aksularpalmersgreen.com.',
+        'author' => 'LOVEPALMERSGREEN',
+        'image_url_mobile' => 'images/aksular-christmas2026.png',
+        'image_url_desktop' => 'images/aksular-christmas2026.png',
+        'created_date' => '2026-11-23'
     ]
 ];
 ?>

@@ -29,6 +29,16 @@ echo '<?xml version="1.0" encoding="UTF-8"?>' . "\n";
       <image:title>Palmers Green Town Centre Christmas Tree Lights 2026</image:title>
       <image:caption>Christmas Tree Lights switch-on Thursday 26 November 2026 at The Triangle, organised by Love Palmers Green / GLBA</image:caption>
     </image:image>
+    <image:image>
+      <image:loc><?php echo htmlspecialchars($base_url . '/images/stocking-hunt-2026.png', ENT_XML1, 'UTF-8'); ?></image:loc>
+      <image:title>Palmers Green Town Centre Christmas Stocking Hunt 2026</image:title>
+      <image:caption>Christmas Stocking Hunt prize draw Saturday 5 December 2026 at Hommix and Bloomsbury Court Interiors</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc><?php echo htmlspecialchars($base_url . '/images/aksular-christmas2026.png', ENT_XML1, 'UTF-8'); ?></image:loc>
+      <image:title>Aksular Restaurant Christmas lights, festive delights</image:title>
+      <image:caption>10% off at Aksular Restaurant, Palmers Green, on Thursday 26 November 2026</image:caption>
+    </image:image>
   </url>
   
   <!-- Main Pages -->
@@ -44,6 +54,14 @@ echo '<?xml version="1.0" encoding="UTF-8"?>' . "\n";
     <image:image>
       <image:loc><?php echo htmlspecialchars($base_url . '/images/christmas2026-poster.jpg', ENT_XML1, 'UTF-8'); ?></image:loc>
       <image:title>Palmers Green Town Centre Christmas Tree Lights 2026</image:title>
+    </image:image>
+    <image:image>
+      <image:loc><?php echo htmlspecialchars($base_url . '/images/stocking-hunt-2026.png', ENT_XML1, 'UTF-8'); ?></image:loc>
+      <image:title>Palmers Green Town Centre Christmas Stocking Hunt 2026</image:title>
+    </image:image>
+    <image:image>
+      <image:loc><?php echo htmlspecialchars($base_url . '/images/aksular-christmas2026.png', ENT_XML1, 'UTF-8'); ?></image:loc>
+      <image:title>Aksular Restaurant Christmas lights, festive delights</image:title>
     </image:image>
   </url>
   
