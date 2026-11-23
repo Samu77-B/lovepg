@@ -353,7 +353,7 @@
         "name": "When is the Palmers Green Christmas Tree Lights switch-on 2026?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Christmas Tree Lights will be switched on on Thursday 26 November 2026, starting at 3:30 PM at The Triangle, Palmers Green Town Centre. Christmas carol singing is by Adorned Community Gospel Choir and St Monica's School Choir. The event is organised by Love Palmers Green / GLBA, in association with Enfield Council, and invited by 2026 sponsors Hommix, Zelal Water Technology and Bloomsbury Court Interiors. For Christmas advertising, contact Costas on 07943 198 198 or costas@lovepalmersgreen.com."
+          "text": "Christmas Tree Lights will be switched on on Thursday 26 November 2026, starting at 3:30 PM at The Triangle, Palmers Green Town Centre. Christmas carol singing is by Adorned Community Gospel Choir and St Monica's School Choir. The event is organised by Love Palmers Green / GLBA, in association with Enfield Council, and invited by 2026 sponsors Hommix and Bloomsbury Court Interiors. For Christmas advertising, contact Costas on 07943 198 198 or costas@lovepalmersgreen.com."
         }
       },
       {
@@ -400,7 +400,7 @@
       {
         "@type": "Event",
         "name": "Christmas Tree Lights",
-        "description": "Palmers Green Town Centre Christmas Tree Lights switch-on at The Triangle, with carol singing by Adorned Community Gospel Choir and St Monica's School Choir. Organised by Love Palmers Green / Green Lanes Business Association (GLBA), in association with Enfield Council. Invited by 2026 sponsors Hommix, Zelal Water Technology and Bloomsbury Court Interiors.",
+        "description": "Palmers Green Town Centre Christmas Tree Lights switch-on at The Triangle, with carol singing by Adorned Community Gospel Choir and St Monica's School Choir. Organised by Love Palmers Green / Green Lanes Business Association (GLBA), in association with Enfield Council. Invited by 2026 sponsors Hommix and Bloomsbury Court Interiors.",
         "startDate": "2026-11-26T15:30:00+00:00",
         "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
         "eventStatus": "https://schema.org/EventScheduled",
@@ -430,7 +430,6 @@
         },
         "sponsor": [
           { "@type": "Organization", "name": "Hommix" },
-          { "@type": "Organization", "name": "Zelal Water Technology" },
           { "@type": "Organization", "name": "Bloomsbury Court Interiors" }
         ],
         "performer": [
@@ -967,6 +966,47 @@
       font-weight: 700;
     }
 
+    #christmas-carols img {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 0 16px 0;
+    }
+
+    .sponsor-logos {
+      list-style: none;
+      margin: 16px 0 8px 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 22px;
+    }
+
+    .sponsor-logos li {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .sponsor-logos img,
+    #christmas-sponsors .enfield-logo {
+      width: auto;
+      max-width: 240px;
+      max-height: 88px;
+      height: auto;
+      object-fit: contain;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .sponsor-association {
+      text-align: center;
+      color: #555;
+      font-size: 0.98em;
+      margin: 22px 0 12px 0;
+    }
+
     .pumpkin-form-banner {
       margin-top: 28px;
       background: linear-gradient(135deg, #fff7ed 0%, #ffedd5 100%);
@@ -1181,29 +1221,30 @@
         <img src="images/christmas2026-poster.jpg" alt="Palmers Green Town Centre Christmas Tree Lights 2026 poster, Thursday 26 November at The Triangle">
       </div>
       <div class="festive-text-content">
-        <span class="halloween-sponsor">2026 sponsors: Hommix, Zelal Water Technology and Bloomsbury Court Interiors</span>
+        <span class="halloween-sponsor">2026 sponsors: Hommix and Bloomsbury Court Interiors</span>
         <p class="festive-subtitle">Thursday 26th November 2026</p>
         <h2 class="festive-title" id="christmas-title">Christmas Tree Lights</h2>
         <p class="festive-dates">3:30 PM · The Triangle, Palmers Green Town Centre</p>
-        <p class="festive-description">As your 2026 sponsors, Hommix, Zelal Water Technology and Bloomsbury Court Interiors invite you to Palmers Green Town Centre for the Christmas Tree Lights switch-on.</p>
+        <p class="festive-description">As your 2026 sponsors, Hommix and Bloomsbury Court Interiors invite you to Palmers Green Town Centre for the Christmas Tree Lights switch-on.</p>
         <p class="festive-details">Organised by Love Palmers Green / Green Lanes Business Association (GLBA), in association with Enfield Council. Please support your local shops in Palmers Green.</p>
       </div>
     </div>
 
     <div class="halloween-subevents">
       <article class="halloween-subevent" id="christmas-carols">
+        <img src="images/christmas-carol-singing.png" alt="Illustration of carol singers around a Christmas tree in the snow">
         <h3>Christmas Carol Singing</h3>
         <p><strong>Starting at 3:30 PM</strong></p>
         <p>Live carol singing at The Triangle by Adorned Community Gospel Choir and St Monica’s School Choir.</p>
       </article>
       <article class="halloween-subevent" id="christmas-sponsors">
         <h3>With thanks to our 2026 sponsors</h3>
-        <ul>
-          <li>Hommix Water Filtration</li>
-          <li>Zelal Water Technology</li>
-          <li>Bloomsbury Court Interiors</li>
+        <ul class="sponsor-logos">
+          <li><img src="images/sponsor-hommix.png" alt="Hommix"></li>
+          <li><img src="images/sponsor-bloomsbury.png" alt="Bloomsbury Court Interiors"></li>
         </ul>
-        <p>In association with Enfield Council.</p>
+        <p class="sponsor-association">In association with</p>
+        <img class="enfield-logo" src="images/enfield-council.png" alt="Enfield Council">
       </article>
     </div>
   </section>

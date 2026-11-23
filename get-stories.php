@@ -14,7 +14,7 @@ $stories = [
 **Thursday 26th November 2026 · 3:30 PM at The Triangle**
 Christmas carol singing by Adorned Community Gospel Choir and St Monica\'s School Choir.
 
-As your 2026 sponsors, Hommix, Zelal Water Technology and Bloomsbury Court Interiors invite you. Organised by Love Palmers Green / Green Lanes Business Association (GLBA), in association with Enfield Council. Please support your local shops in Palmers Green.',
+As your 2026 sponsors, Hommix and Bloomsbury Court Interiors invite you. Organised by Love Palmers Green / Green Lanes Business Association (GLBA), in association with Enfield Council. Please support your local shops in Palmers Green.',
         'author' => 'LOVEPALMERSGREEN',
         'image_url_mobile' => 'images/christmas2026-poster.jpg',
         'image_url_desktop' => 'images/christmas2026-poster.jpg',
@@ -27,7 +27,7 @@ As your 2026 sponsors, Hommix, Zelal Water Technology and Bloomsbury Court Inter
 **Saturday 5th December 2026 · 3:30 PM at Hommix & Bloomsbury Court Interiors**
 Prize draw, with first prize a FujiFilm Instax camera with films and accessories. Face painting, bauble decorating, letters to Santa and festive treats for all participants. Stockings will be displayed in town centre shops from 28 November until 5 December. All under 12s must be accompanied by an adult.
 
-Organised by Love Palmers Green / Green Lanes Business Association (GLBA), in association with Enfield Council. 2026 sponsors: Hommix, Zelal Water Technology and Bloomsbury Court Interiors.',
+Organised by Love Palmers Green / Green Lanes Business Association (GLBA), in association with Enfield Council. 2026 sponsors: Hommix and Bloomsbury Court Interiors.',
         'author' => 'LOVEPALMERSGREEN',
         'image_url_mobile' => 'images/stocking-hunt-2026.png',
         'image_url_desktop' => 'images/stocking-hunt-2026.png',
