@@ -20,9 +20,9 @@ echo '<?xml version="1.0" encoding="UTF-8"?>' . "\n";
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc><?php echo htmlspecialchars($base_url . '/images/Hompage-HeroImage-Autumn.jpg', ENT_XML1, 'UTF-8'); ?></image:loc>
-      <image:title>Autumn on Palmers Green High Street</image:title>
-      <image:caption>Love Palmers Green homepage hero — Palmers Green, North London N13</image:caption>
+      <image:loc><?php echo htmlspecialchars($base_url . '/images/LPG-Xmas2025-PillerBox.jpg', ENT_XML1, 'UTF-8'); ?></image:loc>
+      <image:title>Christmas on Aldermans Hill, Palmers Green</image:title>
+      <image:caption>Love Palmers Green homepage hero — Christmas lights on Aldermans Hill, Palmers Green N13</image:caption>
     </image:image>
     <image:image>
       <image:loc><?php echo htmlspecialchars($base_url . '/images/christmas2026-poster.jpg', ENT_XML1, 'UTF-8'); ?></image:loc>
@@ -38,8 +38,8 @@ echo '<?xml version="1.0" encoding="UTF-8"?>' . "\n";
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc><?php echo htmlspecialchars($base_url . '/images/Hompage-HeroImage-Autumn.jpg', ENT_XML1, 'UTF-8'); ?></image:loc>
-      <image:title>Autumn on Palmers Green High Street</image:title>
+      <image:loc><?php echo htmlspecialchars($base_url . '/images/LPG-Xmas2025-PillerBox.jpg', ENT_XML1, 'UTF-8'); ?></image:loc>
+      <image:title>Christmas on Aldermans Hill, Palmers Green</image:title>
     </image:image>
     <image:image>
       <image:loc><?php echo htmlspecialchars($base_url . '/images/christmas2026-poster.jpg', ENT_XML1, 'UTF-8'); ?></image:loc>

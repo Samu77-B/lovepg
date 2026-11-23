@@ -83,7 +83,7 @@
     "logo": "<?php echo $protocol . $domain; ?>/images/LPG_2025_Long_logo_White03.png",
     "image": [
       "<?php echo $protocol . $domain; ?>/images/christmas2026-poster.jpg",
-      "<?php echo $protocol . $domain; ?>/images/Hompage-HeroImage-Autumn.jpg",
+      "<?php echo $protocol . $domain; ?>/images/LPG-Xmas2025-PillerBox.jpg",
       "<?php echo $protocol . $domain; ?>/images/LPG_2025_Long_logo_White03.png"
     ],
     "address": {
@@ -1120,7 +1120,7 @@
   <div class="hero cc-store-home-wrap" style="background-color: #ffffff; width: 100vw; margin-left: 0; margin-right: 0; padding-left: 0; padding-right: 0; max-width: 100%; overflow: hidden;">
     <div id="hero-intro" class="intro-header hero-parallax-wrap" style="background-color: #ffffff; background-image: none; width: 100vw; height: 50vh; padding-left: 0; padding-right: 0; margin-left: 0; margin-right: 0; position: relative; overflow: hidden;">
       <div class="hero-parallax-inner">
-        <img src="images/Hompage-HeroImage-Autumn.jpg" alt="Broomfield Park in Palmers Green in autumn, with golden willow trees around the lake" class="hero-banner-image" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+        <img src="images/LPG-Xmas2025-PillerBox.jpg" alt="Christmas lights on Aldermans Hill, Palmers Green, with a snow-covered Christmas tree and shop fronts" class="hero-banner-image" style="width: 100%; height: 100%; object-fit: cover; object-position: center bottom;">
       </div>
     </div>
   </div>
