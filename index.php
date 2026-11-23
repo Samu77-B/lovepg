@@ -433,7 +433,7 @@
           { "@type": "Organization", "name": "Bloomsbury Court Interiors" }
         ],
         "performer": [
-          { "@type": "MusicGroup", "name": "Adorned Community Gospel Choir" },
+          { "@type": "MusicGroup", "name": "Adorned Community Gospel Choir", "url": "https://adornedgospelchoir.com/" },
           { "@type": "MusicGroup", "name": "St Monica's School Choir" }
         ],
         "isAccessibleForFree": true
@@ -928,9 +928,8 @@
 
     .halloween-subevents {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: auto auto auto auto;
-      gap: 24px;
+      grid-template-columns: 1fr;
+      gap: 20px;
       margin-top: 36px;
     }
 
@@ -940,9 +939,47 @@
       border-radius: 12px;
       padding: 24px;
       box-shadow: 0 2px 10px rgba(0,0,0,0.06);
-      display: grid;
-      grid-template-rows: subgrid;
-      grid-row: span 4;
+      min-width: 0;
+    }
+
+    #christmas-carols {
+      position: relative;
+      isolation: isolate;
+      overflow: hidden;
+      min-height: 340px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 28px 32px 26px;
+      background: #1a1210;
+      border-color: #c9a06a;
+    }
+
+    #christmas-carols .carol-bg {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 42%;
+      z-index: 0;
+    }
+
+    #christmas-carols::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(20,12,10,0.08) 0%, rgba(20,12,10,0.2) 45%, rgba(12,8,6,0.78) 100%);
+      z-index: 1;
+    }
+
+    #christmas-carols > *:not(.carol-bg) {
+      position: relative;
+      z-index: 2;
+    }
+
+    #christmas-sponsors {
+      padding: 22px 24px 20px;
     }
 
     .halloween-subevent h3 {
@@ -950,6 +987,27 @@
       font-size: 1.45em;
       margin: 0 0 10px 0;
       font-weight: 800;
+    }
+
+    #christmas-carols h3 {
+      font-size: 1.7em;
+      color: #fff;
+      text-shadow: 0 1px 8px rgba(0,0,0,0.45);
+    }
+
+    #christmas-carols p {
+      color: #f3f0ea;
+      text-shadow: 0 1px 6px rgba(0,0,0,0.4);
+    }
+
+    #christmas-carols a {
+      color: #ffe7b0;
+    }
+
+    #christmas-sponsors h3 {
+      font-size: 1.2em;
+      text-align: center;
+      margin-bottom: 16px;
     }
 
     .halloween-subevent p,
@@ -978,10 +1036,11 @@
       margin: 0 0 16px 0;
     }
 
-    #christmas-carols img {
-      width: 100%;
-      height: auto;
-      display: block;
+    #christmas-sponsors .subevent-visual {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 28px 40px;
       margin: 0;
     }
 
@@ -990,10 +1049,12 @@
       margin: 0;
       padding: 0;
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
+      flex-wrap: wrap;
       align-items: center;
-      gap: 28px;
-      width: 100%;
+      justify-content: center;
+      gap: 28px 36px;
+      width: auto;
     }
 
     .sponsor-logos li {
@@ -1005,19 +1066,26 @@
     .sponsor-logos img,
     #christmas-sponsors .enfield-logo {
       width: auto;
-      max-width: 300px;
-      max-height: 120px;
+      max-width: 200px;
+      max-height: 72px;
       height: auto;
       object-fit: contain;
       display: block;
       margin: 0 auto;
     }
 
+    .sponsor-association-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+    }
+
     .sponsor-association {
       text-align: center;
       color: #555;
-      font-size: 0.98em;
-      margin: 28px 0 14px 0;
+      font-size: 0.9em;
+      margin: 0;
     }
 
     .pumpkin-form-banner {
@@ -1125,6 +1193,11 @@
       flex: 1;
     }
 
+    .lpg-event-card p a {
+      color: #2c5530;
+      font-weight: 700;
+    }
+
     .lpg-event-card > a {
       display: block;
       line-height: 0;
@@ -1172,17 +1245,18 @@
     }
 
     @media (max-width: 900px) {
-      .halloween-subevents,
       .lpg-events-grid {
         grid-template-columns: 1fr;
       }
-      .halloween-subevents {
-        grid-template-rows: none;
+      #christmas-carols {
+        padding: 24px 18px 20px;
       }
-      .halloween-subevent {
-        display: flex;
+      #christmas-carols h3 {
+        font-size: 1.4em;
+      }
+      #christmas-sponsors .subevent-visual,
+      .sponsor-logos {
         flex-direction: column;
-        grid-row: auto;
       }
     }
 
@@ -1253,23 +1327,23 @@
 
     <div class="halloween-subevents">
       <article class="halloween-subevent" id="christmas-carols">
-        <div class="subevent-visual">
-          <img src="images/christmas-carol-singing.png" alt="Illustration of carol singers around a Christmas tree in the snow">
-        </div>
+        <img class="carol-bg" src="images/adorned-gospel-choir.jpg" alt="Adorned Community Gospel Choir">
         <h3>Christmas Carol Singing</h3>
         <p><strong>Starting at 3:30 PM</strong></p>
-        <p>Live carol singing at The Triangle by Adorned Community Gospel Choir and St Monica’s School Choir.</p>
+        <p>Live carol singing at The Triangle by <a href="https://adornedgospelchoir.com/" target="_blank" rel="noopener noreferrer">Adorned Community Gospel Choir</a> and St Monica’s School Choir.</p>
       </article>
       <article class="halloween-subevent" id="christmas-sponsors">
+        <h3>With thanks to our 2026 sponsors</h3>
         <div class="subevent-visual">
           <ul class="sponsor-logos">
             <li><img src="images/sponsor-hommix.png" alt="Hommix"></li>
             <li><img src="images/sponsor-bloomsbury.png" alt="Bloomsbury Court Interiors"></li>
           </ul>
-          <p class="sponsor-association">In association with</p>
-          <img class="enfield-logo" src="images/enfield-council.png" alt="Enfield Council">
+          <div class="sponsor-association-wrap">
+            <p class="sponsor-association">In association with</p>
+            <img class="enfield-logo" src="images/enfield-council.png" alt="Enfield Council">
+          </div>
         </div>
-        <h3>With thanks to our 2026 sponsors</h3>
       </article>
     </div>
   </section>
@@ -1283,7 +1357,7 @@
         <div class="event-body">
           <div class="event-date">Thursday 26 November 2026 · 3:30 PM</div>
           <h3>Christmas Tree Lights</h3>
-          <p>Switch-on at The Triangle, Palmers Green Town Centre. Carol singing by Adorned Community Gospel Choir and St Monica’s School Choir.</p>
+          <p>Switch-on at The Triangle, Palmers Green Town Centre. Carol singing by <a href="https://adornedgospelchoir.com/" target="_blank" rel="noopener noreferrer">Adorned Community Gospel Choir</a> and St Monica’s School Choir.</p>
           <a class="event-link" href="#christmas-2026">Event details</a>
         </div>
       </article>

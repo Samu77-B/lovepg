@@ -12,7 +12,7 @@ $stories = [
         'description' => 'Join us at Palmers Green Town Centre for the Christmas Tree Lights switch-on.
 
 **Thursday 26th November 2026 · 3:30 PM at The Triangle**
-Christmas carol singing by Adorned Community Gospel Choir and St Monica\'s School Choir.
+Christmas carol singing by Adorned Community Gospel Choir (https://adornedgospelchoir.com/) and St Monica\'s School Choir.
 
 As your 2026 sponsors, Hommix and Bloomsbury Court Interiors invite you. Organised by Love Palmers Green / Green Lanes Business Association (GLBA), in association with Enfield Council. Please support your local shops in Palmers Green.',
         'author' => 'LOVEPALMERSGREEN',
